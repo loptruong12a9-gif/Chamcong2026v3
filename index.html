@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BẢNG CHẤM CÔNG CÁ NHÂN - 2026</title>
+
+    <!-- PWA Settings -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS Specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Chấm Công">
+    <link rel="apple-touch-icon" href="logo.jpg">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-orientations" content="portrait-any">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed', err));
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-left">
+                <img src="logo.jpg" alt="Logo" class="app-logo">
+                <h1 class="app-title">BẢNG CHẤM CÔNG KHOA PT - GMHS</h1>
+            </div>
+
+            <div class="header-right">
+                <div class="user-info-group">
+                    <div id="status-indicator" class="status-indicator online" title="Đang trực tuyến"></div>
+                    <span id="current-user-display" class="user-name"></span>
+                    <button id="help-btn" class="help-button" title="Hướng dẫn sử dụng">
+                        <span class="help-icon">?</span>
+                    </button>
+                    <button id="logout-btn" class="btn btn-logout" style="display:none;">Đăng xuất</button>
+                </div>
+
+                <div class="controls-group">
+                    <input type="month" id="month-picker" class="month-input">
+                    <div class="btn-group">
+                        <button id="save-btn" class="btn btn-save" title="Lưu dữ liệu">💾 Lưu</button>
+                        <button id="export-btn" class="btn btn-export" title="Xuất Excel">📊 Xuất</button>
+                        <button id="print-btn" class="btn btn-print" title="In báo cáo">🖨️ In</button>
+                        <button id="clear-btn" class="btn btn-clear" title="Xóa hết">✕ Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="employee-info">
+            <div class="info-group-row">
+                <div class="info-group">
+                    <label>HỌ VÀ TÊN:</label>
+                    <input type="text" id="employee-name" list="employee-names-list"
+                        placeholder="Vui lòng nhập đầy đủ họ và tên..." autocomplete="off">
+                    <datalist id="employee-names-list">
+                        <!-- Name suggestions will be populated by JavaScript -->
+                    </datalist>
+                </div>
+                <div class="info-group">
+                    <label>CHỨC VỤ:</label>
+                    <select id="employee-position">
+                        <option value="ĐIỀU DƯỠNG DỤNG CỤ">ĐIỀU DƯỠNG DỤNG CỤ</option>
+                        <option value="ĐIỀU DƯỠNG HỒI SỨC">ĐIỀU DƯỠNG HỒI SỨC</option>
+                        <option value="KTV GÂY MÊ">KTV GÂY MÊ</option>
+                        <option value="PHỤ TRÁCH KHO">PHỤ TRÁCH KHO</option>
+                        <option value="THƯ KÍ Y KHOA">THƯ KÍ Y KHOA</option>
+                        <option value="HỘ LÝ">HỘ LÝ</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <main class="table-wrapper">
+            <table id="attendance-table">
+                <thead>
+                    <tr id="header-row">
+                        <th class="sticky-col">NGÀY</th>
+                        <!-- Dates will be injected here -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="regular-row">
+                        <td class="sticky-col label-cell">TRONG GIỜ</td>
+                        <!-- Regular hours inputs will be injected here -->
+                    </tr>
+                    <tr id="overtime-row">
+                        <td class="sticky-col label-cell">NGOÀI GIỜ</td>
+                        <!-- Multi-line overtime inputs will be injected here -->
+                    </tr>
+                    <tr id="duty-row">
+                        <td class="sticky-col label-cell">CẤU HÌNH TRỰC</td>
+                        <!-- Main duty checkboxes will be injected here -->
+                    </tr>
+                    <tr id="calculated-overtime-row">
+                        <td class="sticky-col label-cell">Tổng cộng Ngoài giờ (x Hệ số)</td>
+                        <!-- Daily calculated overtime totals will be injected here -->
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <div class="totals-section">
+            <div class="total-card regular-card">
+                <span class="total-label">Tổng cộng Trong giờ:</span>
+                <span id="total-regular" class="total-value">0</span>
+            </div>
+            <div class="total-card overtime-card">
+                <span class="total-label">TỔNG CỘNG NGOÀI GIỜ:</span>
+                <span id="total-overtime" class="total-value">0</span>
+            </div>
+            <div class="total-card highlight-card">
+                <span class="total-label">TỔNG CỘNG THỰC NHẬN:</span>
+                <span id="total-all" class="total-value">0</span>
+            </div>
+        </div>
+
+        <section class="summary-section" id="summary-section">
+            <div class="section-header">
+                <h2 class="section-title">DANH SÁCH NHÂN VIÊN</h2>
+                <div class="summary-controls">
+                    <div id="admin-data-controls" style="display: none; align-items: center; gap: 8px;">
+                        <button id="backup-btn" class="btn btn-backup" title="Sao lưu toàn bộ dữ liệu ra file .json">
+                            📥 SAO LƯU
+                        </button>
+                        <button id="restore-btn" class="btn btn-restore" title="Khôi phục dữ liệu từ file .json">
+                            📤 KHÔI PHỤC
+                        </button>
+                        <input type="file" id="restore-input" style="display: none;" accept=".json">
+                    </div>
+                    <button id="refresh-summary" class="btn btn-print">Làm mới bảng</button>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table id="summary-table">
+                    <thead>
+                        <tr>
+                            <th class="summary-sticky-stt">STT</th>
+                            <th class="summary-sticky-name">HỌ VÀ TÊN</th>
+                            <th>CHỨC VỤ</th>
+                            <th>TRONG GIỜ</th>
+                            <th>NGOÀI GIỜ (xHS)</th>
+                            <th>HỆ SỐ</th>
+                            <th>TỔNG CỘNG</th>
+                            <th id="summary-actions-header">THAO TÁC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="summary-body">
+                        <!-- Summary data will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <div class="signature-section">
+                <div class="signature-box">
+                    <p id="display-sig-date"></p>
+                    <p class="signature-title">NGƯỜI LẬP BẢNG</p>
+                    <p class="signature-name" id="signature-name"></p>
+                </div>
+            </div>
+
+            <div class="dev-info">
+                <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
+                <p class="slogan">"Code một lần- Dùng một đời"</p>
+                <p class="version-info">Version 3.0 (Updated: 21.01.2026)</p>
+            </div>
+        </footer>
+
+
+
+        <!-- Help Guide Panel -->
+        <div id="help-panel" class="help-panel">
+            <div class="help-header">
+                <h2>📖 HƯỚNG DẪN SỬ DỤNG</h2>
+                <button id="close-help-btn" class="close-help-btn">✕</button>
+            </div>
+            <div class="help-content">
+                <section>
+                    <h3>Bước 1: ĐĂNG NHẬP 🔐</h3>
+                    <p>Để sử dụng bảng chấm công, anh/chị cần đăng nhập:</p>
+                    <ul>
+                        <li>👉 <strong>Tên đăng nhập:</strong> Viết <strong>TÊN</strong> của mình (viết HOA).<br>
+                            <em>Lưu ý: Nếu trùng tên (như Nga, Thanh, Thảo, Ngọc) thì phải nhập <strong>ĐẦY ĐỦ HỌ TÊN CÓ
+                                    DẤU</strong>.</em>
+                        </li>
+                        <li>👉 <strong>Mật khẩu:</strong> Nhập số <strong>123456</strong></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bước 2: CHỌN THÁNG CẦN CHẤM 📅</h3>
+                    <p>Nhìn lên góc trên, bên phải màn hình có ô chọn tháng.</p>
+                    <p>👉 Anh/chị bấm vào đó để chọn tháng mình muốn chấm công.</p>
+                </section>
+
+                <section>
+                    <h3>Bước 3: NHẬP GIỜ LÀM VIỆC ✍️</h3>
+                    <p><strong>1. Cột TRONG GIỜ:</strong></p>
+                    <ul>
+                        <li>Nhập số giờ làm hành chính của ngày hôm đó.</li>
+                        <li>Ví dụ: Làm cả ngày thì nhập số <strong>8</strong>.</li>
+                    </ul>
+                    <p><strong>2. Cột NGOÀI GIỜ:</strong> (Dành cho làm thêm)</p>
+                    <ul>
+                        <li>Cách 1: Nhập số tiếng làm thêm. Ví dụ: <strong>4</strong></li>
+                        <li>Cách 2: Nhập giờ bắt đầu và kết thúc. Ví dụ: <strong>17h-21h</strong></li>
+                        <li>Nếu làm đêm: Nhập <strong>22h30-2h30</strong></li>
+                    </ul>
+                    <p><strong>3. Cột CẤU HÌNH TRỰC:</strong></p>
+                    <ul>
+                        <li>Bấm vào ô đó, nó sẽ hiện ra danh sách.</li>
+                        <li>Chọn loại trực phù hợp (Ví dụ: TRỰC CHÍNH).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Bước 4: LƯU LẠI 💾</h3>
+                    <p>⚠️ Quan trọng: Sau khi nhập xong, anh/chị nhớ bấm nút màu xanh <strong>"Lưu dữ liệu"</strong> ở
+                        trên cùng nhé.</p>
+                    <p>Nếu không bấm Lưu, dữ liệu sẽ bị mất!</p>
+                </section>
+
+                <section>
+                    <h3>Bước 5: XEM TỔNG KẾT 📊</h3>
+                    <p>Kéo xuống dưới cùng trang web, anh/chị sẽ thấy bảng tổng hợp:</p>
+                    <ul>
+                        <li><strong>Màu xanh:</strong> Tổng giờ làm bình thường.</li>
+                        <li><strong>Màu vàng:</strong> Tổng giờ làm thêm (đã nhân hệ số).</li>
+                        <li><strong>Tổng cộng thực nhận:</strong> Là tổng tất cả giờ công của anh/chị.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>CẦN GIÚP ĐỠ? 📞</h3>
+                    <p>Nếu anh/chị gặp khó khăn, hãy gọi ngay cho em Tân nhé:</p>
+                    <p>👉 <strong>SĐT/Zalo:</strong> 036.728.7102 (Tân Nguyễn)</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- History Modal -->
+        <div id="history-modal" class="modal">
+            <div class="modal-content history-modal-content">
+                <div class="modal-header">
+                    <h2>LỊCH SỬ CHỈNH SỬA</h2>
+                    <button class="close-modal-btn" onclick="hideHistoryModal()">✕</button>
+                </div>
+                <div class="history-employee-info">
+                    Tên: <span id="history-employee-name">...</span>
+                </div>
+                <div class="history-list-container">
+                    <ul id="history-list" class="history-list">
+                        <!-- History items will be injected here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <h2>Đăng nhập hệ thống</h2>
+                <p class="modal-subtitle">Vui lòng đăng nhập để tiếp tục</p>
+                <div class="form-group">
+                    <label>Tên đăng nhập:</label>
+                    <input type="text" id="login-username" placeholder="Tên (VD: TÂN) hoặc ĐỦ HỌ TÊN nếu trùng..."
+                        autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input type="password" id="login-password" placeholder="Nhập mật khẩu"
+                        autocomplete="current-password">
+                </div>
+                <div class="modal-actions">
+                    <button id="login-submit-btn" class="btn btn-save">Đăng nhập</button>
+                </div>
+                <p class="login-hint">ID: TÊN viết HOA (Trùng tên: ĐỦ HỌ TÊN CÓ DẤU) | MK: 123456</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

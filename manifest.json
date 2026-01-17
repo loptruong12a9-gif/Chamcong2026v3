@@ -1,0 +1,21 @@
+{
+  "name": "Chấm Công - Tân Nguyễn",
+  "short_name": "Chấm Công",
+  "description": "Ứng dụng chấm công cá nhân cho Khoa Phẫu thuật - GMHS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
