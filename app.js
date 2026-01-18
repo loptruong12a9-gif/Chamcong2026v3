@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "MY": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "THƯƠNG": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "HẬU": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "KHUYÊN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "NGUYỄN THỊ ĐỨC KHUYÊN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
     };
 
@@ -498,6 +499,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const totals = calculateDataTotals(data);
             const isNoData = !savedDataMap[name];
 
+            const currentMonth = monthPicker.value;
+            const globalCoeff = localStorage.getItem(`coeff_global_${name.toUpperCase()}`) || data.adminCoeff || '';
+            const displayCoeff = globalCoeff || '';
+
             const tr = document.createElement('tr');
             tr.dataset.name = name.toUpperCase();
             if (isNoData) tr.style.opacity = '0.6';
@@ -510,11 +515,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td class="summary-ovt" style="color: #b8860b;">${isNoData ? '-' : totals.ovtStr}</td>
                 <td>
                     ${isAdminUser ?
-                    `<input type="number" step="0.1" value="${data.adminCoeff || ''}" 
+                    `<input type="number" step="0.1" value="${displayCoeff}" 
                             class="coeff-input" 
                             style="width: 50px; text-align: center; border: 1px solid var(--border); border-radius: 4px;"
+                            oninput="window.liveUpdateTotal(this, '${name}')"
                             onchange="updateAdminCoeff('${name}', this.value)">` :
-                    `<span style="font-weight: 700; color: var(--accent);">${data.adminCoeff || '-'}</span>`
+                    `<span style="font-weight: 700; color: var(--accent);">${displayCoeff || '-'}</span>`
                 }
                 </td>
                 <td class="summary-all" style="color: var(--accent); font-weight: 800;">${isNoData ? '-' : totals.allStr}</td>
@@ -606,11 +612,16 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.updateAdminCoeff = (name, value) => {
+        const upperName = name.toUpperCase();
+        // 1. Lưu vào bộ nhớ chung (Global) để các tháng khác đều nhận được
+        localStorage.setItem(`coeff_global_${upperName}`, value);
+
+        // 2. Cập nhật vào bản ghi tháng hiện tại để lưu lịch sử
         const currentMonth = monthPicker.value;
-        const key = `attendance_${currentMonth}_${name}`;
+        const key = `attendance_${currentMonth}_${upperName}`;
         let data = {
             name: name,
-            position: EMPLOYEE_MAP[name],
+            position: EMPLOYEE_MAP[upperName],
             month: currentMonth,
             entries: [],
             duties: [],
@@ -624,16 +635,54 @@ document.addEventListener('DOMContentLoaded', () => {
             data.adminCoeff = value;
         }
 
-        // Add history for coach change
         if (!data.history) data.history = [];
         data.history.push({
             time: new Date().toLocaleString('vi-VN'),
             user: getCurrentUser(),
-            action: `Cập nhật Hệ số Admin: ${value}`
+            action: `Cập nhật Hệ số Admin (Global): ${value || 'Bỏ'}`
         });
 
         localStorage.setItem(key, JSON.stringify(data));
+
+        // 3. Phản hồi trực quan
+        const row = document.querySelector(`#summary-body tr[data-name="${upperName}"]`);
+        if (row) {
+            const input = row.querySelector('.coeff-input');
+            if (input) {
+                input.style.borderColor = 'var(--save)';
+                setTimeout(() => input.style.borderColor = '', 1000);
+            }
+        }
+
         renderSummaryTable();
+    };
+
+    // Hàm cập nhật tổng cộng ngay lúc đang gõ
+    window.liveUpdateTotal = (input, name) => {
+        const row = input.closest('tr');
+        if (!row) return;
+
+        const regStr = row.querySelector('.summary-reg').textContent;
+        const ovtStr = row.querySelector('.summary-ovt').textContent;
+        const allCell = row.querySelector('.summary-all');
+
+        // Parse hours from strings like "8 giờ 30 phút"
+        const parseHours = (str) => {
+            if (!str || str === '-') return 0;
+            const hMatch = str.match(/(\d+)\s*giờ/);
+            const mMatch = str.match(/(\d+)\s*phút/);
+            const h = hMatch ? parseInt(hMatch[1]) : 0;
+            const m = mMatch ? parseInt(mMatch[1]) : 0;
+            return h + (m / 60);
+        };
+
+        const regTotal = parseHours(regStr);
+        const ovtTotal = parseHours(ovtStr);
+        const coeff = parseFloat(input.value) || 1.0;
+
+        if (allCell) {
+            allCell.textContent = formatHoursToTime((regTotal * coeff) + ovtTotal);
+        }
     };
 
     const toggleDutyRowVisibility = () => {
@@ -690,7 +739,9 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (duty.value === 'TRỰC NGOÀI Ở NHÀ VÔ') ovtTotal += 1.0;
         });
 
-        const coeff = parseFloat(data.adminCoeff) || 1;
+        const globalCoeff = localStorage.getItem(`coeff_global_${(data.name || '').toUpperCase()}`);
+        const coeff = parseFloat(globalCoeff) || parseFloat(data.adminCoeff) || 1;
+
         return {
             regStr: formatHoursToTime(regTotal),
             ovtStr: formatHoursToTime(ovtTotal),

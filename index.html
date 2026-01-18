@@ -32,8 +32,31 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
-                    .then(reg => console.log('Service Worker registered'))
+                    .then(reg => {
+                        console.log('Service Worker registered');
+
+                        // Check for updates
+                        reg.addEventListener('updatefound', () => {
+                            const newWorker = reg.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // New content is available, force reload
+                                    console.log('New content available, reloading...');
+                                    window.location.reload();
+                                }
+                            });
+                        });
+                    })
                     .catch(err => console.log('Service Worker registration failed', err));
+            });
+
+            // Ensure the page reloads if the service worker takes control
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                    window.location.reload();
+                    refreshing = true;
+                }
             });
         }
     </script>
@@ -186,7 +209,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.0 (Updated: 21.01.2026)</p>
+                <p class="version-info">Version 3.2 (Updated: 18.01.2026)</p>
             </div>
         </footer>
 
