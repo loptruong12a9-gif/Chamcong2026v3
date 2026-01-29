@@ -375,10 +375,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     regDebounce = setTimeout(triggerSave, 1000);
                 });
 
-                // Immediate save on blur/change
-                inputReg.addEventListener('change', () => {
-                    clearTimeout(regDebounce);
-                    triggerSave();
+                // Immediate save on blur/change/focusout
+                ['change', 'focusout'].forEach(evt => {
+                    inputReg.addEventListener(evt, () => {
+                        clearTimeout(regDebounce);
+                        triggerSave();
+                    });
                 });
 
                 tdReg.appendChild(inputReg);
@@ -1009,7 +1011,42 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(`attendance_${monthPicker.value}_${name}`, JSON.stringify(currentData));
         calculateTotals();
         renderSummaryTable();
+        showSaveNotification();
     };
+
+    // Visual Save Notification
+    const showSaveNotification = () => {
+        let toast = document.getElementById('save-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'save-toast';
+            toast.style.cssText = `
+                position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+                background: rgba(0,0,0,0.8); color: white; padding: 10px 20px; border-radius: 20px;
+                font-family: 'Inter', sans-serif; font-size: 14px; z-index: 9999;
+                display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+            `;
+            toast.innerHTML = '<span>✅</span> Đã lưu dữ liệu';
+            document.body.appendChild(toast);
+        }
+
+        toast.style.opacity = '1';
+        clearTimeout(window.saveToastTimer);
+        window.saveToastTimer = setTimeout(() => {
+            toast.style.opacity = '0';
+        }, 1500);
+    };
+
+    // Force save on app exit/hide (Mobile optimize)
+    ['visibilitychange', 'pagehide'].forEach(evt => {
+        window.addEventListener(evt, () => {
+            if (document.visibilityState === 'hidden') {
+                const name = document.getElementById('employee-name')?.value;
+                if (name) saveData();
+            }
+        });
+    });
 
     const loadData = () => {
         const name = document.getElementById('employee-name').value.trim();
