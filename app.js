@@ -352,21 +352,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputReg.max = '8';
                 inputReg.dataset.type = 'regular';
                 inputReg.dataset.date = yyyymmdd;
+                if (highlightClass) {
+                    tdReg.classList.add(highlightClass);
+                    inputReg.classList.add(highlightClass);
+                }
+
+                // Auto-save logic
+                let regDebounce;
+                const triggerSave = () => {
+                    saveData();
+                };
+
                 inputReg.addEventListener('input', (e) => {
                     if (parseFloat(e.target.value) > 8) {
                         e.target.value = 8;
                         alert('Giờ trong ca tối đa là 8 tiếng!');
                     }
                     calculateTotals();
+
+                    // Debounce save on input (1 second)
+                    clearTimeout(regDebounce);
+                    regDebounce = setTimeout(triggerSave, 1000);
                 });
-                if (highlightClass) {
-                    tdReg.classList.add(highlightClass);
-                    inputReg.classList.add(highlightClass);
-                }
-                // Auto-save on change (blur) for regular inputs
+
+                // Immediate save on blur/change
                 inputReg.addEventListener('change', () => {
-                    saveData();
+                    clearTimeout(regDebounce);
+                    triggerSave();
                 });
+
                 tdReg.appendChild(inputReg);
 
                 // --- Ngoài giờ (Textarea cho nhiều dòng) ---
@@ -614,13 +628,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('history-modal').classList.remove('active');
     };
 
-    let coeffDebounceTimer;
+    // Remove debounce, save immediately for reliability
     window.handleCoeffInput = (input, name) => {
         window.liveUpdateTotal(input, name); // Immediate visual update
-        clearTimeout(coeffDebounceTimer);
-        coeffDebounceTimer = setTimeout(() => {
-            window.updateAdminCoeff(name, input.value, true); // true = skip full re-render
-        }, 500); // 500ms debounce
+        window.updateAdminCoeff(name, input.value, true); // Immediate save, skip render
     };
 
     window.updateAdminCoeff = (name, value, skipRender = false) => {
