@@ -363,6 +363,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     tdReg.classList.add(highlightClass);
                     inputReg.classList.add(highlightClass);
                 }
+                // Auto-save on change (blur) for regular inputs
+                inputReg.addEventListener('change', () => {
+                    saveData();
+                });
                 tdReg.appendChild(inputReg);
 
                 // --- Ngoài giờ (Textarea cho nhiều dòng) ---
@@ -518,8 +522,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     `<input type="number" step="0.1" value="${displayCoeff}" 
                             class="coeff-input" 
                             style="width: 50px; text-align: center; border: 1px solid var(--border); border-radius: 4px;"
-                            oninput="window.liveUpdateTotal(this, '${name}')"
-                            onchange="updateAdminCoeff('${name}', this.value)">` :
+                            oninput="window.handleCoeffInput(this, '${name}')">` :
                     `<span style="font-weight: 700; color: var(--accent);">${displayCoeff || '-'}</span>`
                 }
                 </td>
@@ -611,12 +614,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('history-modal').classList.remove('active');
     };
 
-    window.updateAdminCoeff = (name, value) => {
+    let coeffDebounceTimer;
+    window.handleCoeffInput = (input, name) => {
+        window.liveUpdateTotal(input, name); // Immediate visual update
+        clearTimeout(coeffDebounceTimer);
+        coeffDebounceTimer = setTimeout(() => {
+            window.updateAdminCoeff(name, input.value, true); // true = skip full re-render
+        }, 500); // 500ms debounce
+    };
+
+    window.updateAdminCoeff = (name, value, skipRender = false) => {
         const upperName = name.toUpperCase();
-        // 1. Lưu vào bộ nhớ chung (Global) để các tháng khác đều nhận được
+
+        // 1. Lưu vào bộ nhớ chung (Global)
         localStorage.setItem(`coeff_global_${upperName}`, value);
 
-        // 2. Cập nhật vào bản ghi tháng hiện tại để lưu lịch sử
+        // 2. Cập nhật vào bản ghi tháng hiện tại
         const currentMonth = monthPicker.value;
         const key = `attendance_${currentMonth}_${upperName}`;
         let data = {
@@ -644,17 +657,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem(key, JSON.stringify(data));
 
-        // 3. Phản hồi trực quan
-        const row = document.querySelector(`#summary-body tr[data-name="${upperName}"]`);
-        if (row) {
-            const input = row.querySelector('.coeff-input');
-            if (input) {
-                input.style.borderColor = 'var(--save)';
-                setTimeout(() => input.style.borderColor = '', 1000);
+        // 3. Phản hồi hành động
+        if (!skipRender) {
+            renderSummaryTable();
+        } else {
+            // Chỉ hiện hiệu ứng đã lưu nếu không render lại
+            const row = document.querySelector(`#summary-body tr[data-name="${upperName}"]`);
+            if (row) {
+                const input = row.querySelector('.coeff-input');
+                if (input) {
+                    input.style.borderColor = 'var(--save)';
+                    setTimeout(() => input.style.borderColor = '', 1000);
+                }
             }
         }
-
-        renderSummaryTable();
     };
 
     // Hàm cập nhật tổng cộng ngay lúc đang gõ
