@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:01:16.860Z",
+    "lastUpdate": "2026-02-05T15:01:30.857Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -928,7 +928,13 @@
       "name": "HOÀNG SỸ HUY",
       "position": "ĐIỀU DƯỠNG DỤNG CỤ",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
         {
@@ -939,6 +945,16 @@
         {
           "time": "21:13:49 5/2/2026",
           "user": "HUY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:01:29 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:01:29 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
@@ -1171,11 +1187,6 @@
       ],
       "history": [
         {
-          "time": "21:38:32 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 04: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
           "time": "21:38:53 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16H30-20H00\n21H40-23H20]"
@@ -1259,6 +1270,11 @@
           "time": "22:01:13 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 12: Trong giờ [8] ➔ [Bỏ]"
+        },
+        {
+          "time": "22:01:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         },
         {
           "time": "22:01:15 5/2/2026",
