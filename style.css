@@ -1119,28 +1119,37 @@ td.sunday-holiday {
 
 /* Mobile Optimization (iPhone & Smartphones) */
 @media (max-width: 768px) {
+
+    html,
     body {
         padding: 0;
         margin: 0;
         overflow-x: hidden;
         width: 100%;
+        position: relative;
+    }
+
+    body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-height: 100dvh;
     }
 
     .app-container {
         padding: 10px;
-        padding-top: max(10px, env(safe-area-inset-top));
+        padding-top: max(15px, env(safe-area-inset-top));
         padding-left: max(10px, env(safe-area-inset-left));
         padding-right: max(10px, env(safe-area-inset-right));
-        padding-bottom: max(20px, env(safe-area-inset-bottom));
+        padding-bottom: max(30px, env(safe-area-inset-bottom));
         border-radius: 0;
-        /* Full width on very small screens feels better */
         width: 100%;
-        max-width: 100vw;
+        max-width: 100%;
         border: none;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     /* Prevent iOS Auto-zoom on inputs */
@@ -1148,6 +1157,15 @@ td.sunday-holiday {
     select,
     textarea {
         font-size: 16px !important;
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 8px;
+    }
+
+    footer {
+        padding-bottom: max(40px, env(safe-area-inset-bottom));
+        width: 100%;
+        text-align: center;
     }
 
     header {
@@ -1244,27 +1262,29 @@ td.sunday-holiday {
     }
 
     .table-wrapper {
-        margin: 0 -10px;
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
+        margin: 0;
+        border-radius: 12px;
+        border: 1px solid var(--border);
         box-shadow: none;
         -webkit-overflow-scrolling: touch;
-        /* Extra smooth inertia scrolling on iOS */
         scroll-snap-type: x proximity;
         overflow-x: auto;
+        position: relative;
+        /* Stability for sticky */
+        width: 100%;
     }
 
     .summary-sticky-stt {
         position: sticky;
         left: 0;
-        z-index: 20;
+        z-index: 21;
         background: var(--bg-card) !important;
         width: 40px;
         min-width: 40px;
         max-width: 40px;
         text-align: center;
         padding: 4px !important;
+        border-right: 1px solid var(--border);
     }
 
     .summary-sticky-name {
@@ -1513,9 +1533,13 @@ td.sunday-holiday {
 .sync-status-text {
     color: var(--text-dim);
     max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.sync-status-container:has(.synced) .sync-status-text {
+    color: #22c55e !important;
+    font-weight: 700;
 }
 
 /* GitHub Config Modal Specifics */

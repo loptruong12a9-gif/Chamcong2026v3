@@ -384,8 +384,14 @@ const GitHubSync = (function () {
             case 'synced':
                 indicator.className = 'sync-status-indicator synced';
                 indicator.innerHTML = '☁️';
-                const timeStr = lastSyncTime ? new Date(lastSyncTime).toLocaleTimeString('vi-VN') : '';
-                text.textContent = `Đã đồng bộ ${timeStr}`;
+                if (lastSyncTime) {
+                    const dateObj = new Date(lastSyncTime);
+                    const timePart = dateObj.toLocaleTimeString('vi-VN');
+                    const datePart = dateObj.toLocaleDateString('vi-VN');
+                    text.innerHTML = `Đã đồng bộ ${timePart}<br>${datePart}`;
+                } else {
+                    text.textContent = 'Đã đồng bộ';
+                }
                 break;
             case 'error':
                 indicator.className = 'sync-status-indicator error';
