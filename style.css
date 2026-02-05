@@ -1349,9 +1349,8 @@ td.sunday-holiday {
         font-size: 0.65rem;
         opacity: 0.8;
         white-space: nowrap !important;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        flex: 1;
+        flex: 0 0 auto;
+        /* Ensure it takes full width needed */
     }
 
     .sync-status-indicator {
