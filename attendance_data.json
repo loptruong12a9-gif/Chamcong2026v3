@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:01:09.142Z",
+    "lastUpdate": "2026-02-05T15:01:13.127Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1103,16 +1103,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-02-12",
           "type": "regular",
           "value": "8"
@@ -1185,26 +1175,6 @@
         }
       ],
       "history": [
-        {
-          "time": "21:37:34 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "21:37:39 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "21:37:56 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [04H35-06H55]"
-        },
-        {
-          "time": "21:37:58 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 01: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
-        },
         {
           "time": "21:38:13 5/2/2026",
           "user": "TÂN",
@@ -1282,6 +1252,26 @@
         },
         {
           "time": "22:01:09 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:01:10 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 10: Trong giờ [8] ➔ [Bỏ]"
+        },
+        {
+          "time": "22:01:10 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:01:11 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 11: Trong giờ [8] ➔ [Bỏ]"
+        },
+        {
+          "time": "22:01:11 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
