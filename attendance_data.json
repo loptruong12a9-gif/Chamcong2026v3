@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:17:29.072Z",
+    "lastUpdate": "2026-02-05T15:17:42.453Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2945,7 +2945,12 @@
       "position": "KTV GÂY MÊ",
       "month": "2026-02",
       "entries": [],
-      "duties": [],
+      "duties": [
+        {
+          "date": "2026-01-26",
+          "value": "TRỰC CHÍNH"
+        }
+      ],
       "history": [
         {
           "time": "19:54:07 29/1/2026",
@@ -3021,6 +3026,11 @@
           "time": "19:54:12 29/1/2026",
           "user": "TÂN",
           "action": "Cập nhật Hệ số Admin (Global): 1.45"
+        },
+        {
+          "time": "22:17:40 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC CHÍNH]"
         }
       ],
       "adminCoeff": "1.45"
