@@ -1230,14 +1230,73 @@ td.sunday-holiday {
         max-width: 100%;
     }
 
-    .user-info-group,
-    .controls-group {
+    .user-info-group {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 12px;
+        max-width: 100%;
+        background: var(--bg-card);
+        padding: 15px;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .user-meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .user-name {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .sync-status-container {
+        width: auto !important;
+        min-width: 160px;
+        justify-content: center;
+        padding: 6px 12px;
+        border-radius: 12px;
+        background: var(--input-bg);
+    }
+
+    .user-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .user-actions .help-button {
+        width: 44px;
+        height: 44px;
+        margin: 0;
+    }
+
+    .btn-logout {
+        margin: 0 !important;
+        padding: 8px 16px !important;
+        font-size: 0.85rem !important;
+        border-radius: 10px !important;
+        background: rgba(239, 68, 68, 0.1) !important;
+        color: #ef4444 !important;
+        border: 1px solid rgba(239, 68, 68, 0.2) !important;
+    }
+
+    .controls-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
         max-width: 100%;
     }
 
