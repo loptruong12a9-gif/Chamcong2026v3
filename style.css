@@ -1763,8 +1763,7 @@ td.sunday-holiday {
     }
 
     .sync-status-text {
-        max-width: 100px;
-        font-size: 0.75rem;
+        white-space: nowrap;
     }
 
     #github-config-modal .modal-content {
