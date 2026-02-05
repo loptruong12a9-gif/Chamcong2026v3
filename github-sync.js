@@ -388,7 +388,7 @@ const GitHubSync = (function () {
                     const dateObj = new Date(lastSyncTime);
                     const timePart = dateObj.toLocaleTimeString('vi-VN');
                     const datePart = dateObj.toLocaleDateString('vi-VN');
-                    text.innerHTML = `Đã đồng bộ ${timePart}<br>${datePart}`;
+                    text.innerHTML = `Đã đồng bộ ${timePart} - ${datePart}`;
                 } else {
                     text.textContent = 'Đã đồng bộ';
                 }
