@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:03:53.901Z",
+    "lastUpdate": "2026-02-05T15:04:15.545Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1733,11 +1733,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-02-09",
           "type": "regular",
           "value": "8"
@@ -1771,16 +1766,6 @@
         }
       ],
       "history": [
-        {
-          "time": "21:46:21 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "21:46:21 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "21:46:22 5/2/2026",
           "user": "TÂN",
@@ -1868,6 +1853,16 @@
         },
         {
           "time": "21:59:16 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:04:14 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [8] ➔ [Bỏ]"
+        },
+        {
+          "time": "22:04:14 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -3121,11 +3116,6 @@
       ],
       "history": [
         {
-          "time": "21:41:52 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "21:41:53 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
@@ -3214,6 +3204,11 @@
           "time": "22:03:52 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:03:52 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         },
         {
           "time": "22:03:52 5/2/2026",
