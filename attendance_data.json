@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:17:46.307Z",
+    "lastUpdate": "2026-02-05T15:17:50.218Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2959,6 +2959,26 @@
           "date": "2026-01-28",
           "type": "regular",
           "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
         }
       ],
       "duties": [
@@ -2968,41 +2988,6 @@
         }
       ],
       "history": [
-        {
-          "time": "19:54:07 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.3"
-        },
-        {
-          "time": "19:54:07 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.4"
-        },
-        {
-          "time": "19:54:07 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.5"
-        },
-        {
-          "time": "19:54:08 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.6"
-        },
-        {
-          "time": "19:54:08 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.7"
-        },
-        {
-          "time": "19:54:08 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.8"
-        },
-        {
-          "time": "19:54:08 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.9"
-        },
         {
           "time": "19:54:08 29/1/2026",
           "user": "TÂN",
@@ -3067,6 +3052,41 @@
           "time": "22:17:44 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:17:45 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:45 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:17:46 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:46 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:17:47 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:47 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:17:49 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
         }
       ],
       "adminCoeff": "1.45"
