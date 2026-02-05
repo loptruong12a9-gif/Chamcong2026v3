@@ -1330,21 +1330,32 @@ td.sunday-holiday {
     }
 
     .sync-status-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 6px !important;
         width: 100% !important;
         min-width: unset;
-        padding: 2px 4px;
-        /* Ultra thin */
+        padding: 4px 6px !important;
         font-size: 0.65rem;
         justify-content: flex-start;
         background: transparent;
         border: none;
+        overflow: hidden;
     }
 
     .sync-status-text {
         font-size: 0.65rem;
         opacity: 0.8;
-        white-space: nowrap;
-        /* Force one line */
+        white-space: nowrap !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: 1;
+    }
+
+    .sync-status-indicator {
+        flex-shrink: 0;
     }
 
     .controls-group {
@@ -1758,13 +1769,7 @@ td.sunday-holiday {
 
 /* Mobile specific for GitHub UI */
 @media (max-width: 768px) {
-    .sync-status-container {
-        padding: 4px 8px;
-    }
-
-    .sync-status-text {
-        white-space: nowrap;
-    }
+    /* Synced styles handled above */
 
     #github-config-modal .modal-content {
         padding: 20px;
