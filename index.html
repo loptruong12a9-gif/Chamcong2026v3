@@ -72,26 +72,27 @@
 
             <div class="header-right">
                 <div class="user-info-group">
-                    <div class="user-meta">
-                        <div id="status-indicator" class="status-indicator online" title="Đang trực tuyến"></div>
-                        <span id="current-user-display" class="user-name"></span>
+                    <div class="user-meta-row">
+                        <div class="user-meta">
+                            <div id="status-indicator" class="status-indicator online" title="Đang trực tuyến"></div>
+                            <span id="current-user-display" class="user-name"></span>
+                        </div>
+                        <div class="user-actions">
+                            <button id="github-config-btn" class="help-button" title="Cấu hình GitHub"
+                                style="display: none;">
+                                <span class="help-icon">☁️</span>
+                            </button>
+                            <button id="help-btn" class="help-button" title="Hướng dẫn sử dụng">
+                                <span class="help-icon">?</span>
+                            </button>
+                            <button id="logout-btn" class="btn btn-logout" style="display:none;">Đăng xuất</button>
+                        </div>
                     </div>
 
-                    <!-- GitHub Sync Status -->
+                    <!-- GitHub Sync Status (Thin Row Below) -->
                     <div id="sync-status-area" class="sync-status-container" title="Trạng thái đồng bộ GitHub">
                         <span id="sync-status-indicator" class="sync-status-indicator disabled">○</span>
                         <span id="sync-status-text" class="sync-status-text">Chưa cấu hình</span>
-                    </div>
-
-                    <div class="user-actions">
-                        <button id="github-config-btn" class="help-button" title="Cấu hình GitHub"
-                            style="display: none;">
-                            <span class="help-icon">☁️</span>
-                        </button>
-                        <button id="help-btn" class="help-button" title="Hướng dẫn sử dụng">
-                            <span class="help-icon">?</span>
-                        </button>
-                        <button id="logout-btn" class="btn btn-logout" style="display:none;">Đăng xuất</button>
                     </div>
                 </div>
 
@@ -224,7 +225,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.23 (Updated: 06.02.2026 - Presidential Elite Edition)</p>
+                <p class="version-info">Version 3.24 (Updated: 06.02.2026 - Presidential Elite - Ultra Compact)</p>
             </div>
         </footer>
 

@@ -1227,7 +1227,8 @@ td.sunday-holiday {
 
     .header-right {
         width: 100%;
-        gap: 6px;
+        gap: 4px;
+        /* Tiny gap */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1237,19 +1238,30 @@ td.sunday-holiday {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 8px;
+        align-items: stretch;
+        /* Stretch to fill */
+        gap: 4px;
+        /* Tiny gap */
         background: var(--bg-card);
-        padding: 10px;
-        border-radius: 12px;
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+    }
+
+    .user-meta-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 8px;
     }
 
     .user-meta {
         display: flex;
         align-items: center;
         gap: 6px;
-        justify-content: center;
-        width: 100%;
+        flex: 1;
+        overflow: hidden;
     }
 
     .user-name {
@@ -1258,44 +1270,62 @@ td.sunday-holiday {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 150px;
-        /* Protect against very long names on narrow screens */
-    }
-
-    .sync-status-container {
-        width: auto !important;
-        min-width: unset;
-        padding: 4px 10px;
-        font-size: 0.7rem;
-        justify-content: center;
-        border-radius: 12px;
-        background: var(--input-bg);
     }
 
     .user-actions {
         display: flex;
         align-items: center;
-        gap: 8px;
-        justify-content: center;
-        width: 100%;
+        gap: 6px;
+        width: auto;
     }
 
     .user-actions .help-button {
-        width: 38px;
-        height: 38px;
+        width: 32px;
+        /* Smaller */
+        height: 32px;
         padding: 0;
         margin: 0;
+        box-shadow: none;
     }
 
     .btn-logout {
         margin: 0 !important;
-        padding: 6px 12px !important;
-        font-size: 0.75rem !important;
-        border-radius: 10px !important;
+        padding: 0 !important;
+        width: 32px !important;
+        /* Icon-only style */
+        height: 32px !important;
+        min-height: 32px !important;
+        border-radius: 50% !important;
         background: rgba(239, 68, 68, 0.1) !important;
         color: #ef4444 !important;
         border: 1px solid rgba(239, 68, 68, 0.2) !important;
-        min-height: 38px;
+        font-size: 0 !important;
+        /* Hide text */
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-logout::before {
+        content: '🚪';
+        /* Icon representation */
+        font-size: 1rem;
+    }
+
+    .sync-status-container {
+        width: 100% !important;
+        min-width: unset;
+        padding: 2px 4px;
+        /* Ultra thin */
+        font-size: 0.65rem;
+        justify-content: flex-start;
+        background: transparent;
+        border: none;
+    }
+
+    .sync-status-text {
+        font-size: 0.65rem;
+        opacity: 0.8;
     }
 
     .controls-group {
@@ -1304,7 +1334,7 @@ td.sunday-holiday {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
         max-width: 100%;
     }
 
