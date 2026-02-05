@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:10:51.713Z",
+    "lastUpdate": "2026-02-05T15:10:54.968Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2662,6 +2662,21 @@
           "date": "2026-01-30",
           "type": "regular",
           "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
         }
       ],
       "duties": [
@@ -2671,31 +2686,6 @@
         }
       ],
       "history": [
-        {
-          "time": "19:56:17 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.5"
-        },
-        {
-          "time": "19:56:17 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.6"
-        },
-        {
-          "time": "19:56:18 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.7"
-        },
-        {
-          "time": "19:56:18 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.8"
-        },
-        {
-          "time": "19:56:18 29/1/2026",
-          "user": "TÂN",
-          "action": "Cập nhật Hệ số Admin (Global): 0.9"
-        },
         {
           "time": "19:56:18 29/1/2026",
           "user": "TÂN",
@@ -2770,6 +2760,31 @@
           "time": "22:10:50 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:51 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:10:51 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:52 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:10:52 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:53 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
         }
       ],
       "adminCoeff": "1.03"
