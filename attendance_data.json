@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:05:03.998Z",
+    "lastUpdate": "2026-02-05T15:05:14.877Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2083,7 +2083,14 @@
       "name": "DƯƠNG HOÀNG TUYẾT NGA",
       "position": "KTV GÂY MÊ",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "15H30-16H20",
+          "multiplier": "1.5"
+        }
+      ],
       "duties": [
         {
           "date": "2026-01-28",
@@ -2160,6 +2167,16 @@
           "time": "22:05:02 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:05:13 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [15H30-16H20]"
+        },
+        {
+          "time": "22:05:13 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.25"
