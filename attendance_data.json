@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:10:46.052Z",
+    "lastUpdate": "2026-02-05T15:10:48.516Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2637,7 +2637,13 @@
       "name": "NGUYỄN KIM NGỌC",
       "position": "KTV GÂY MÊ",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [
         {
           "date": "2026-01-26",
@@ -2714,6 +2720,16 @@
           "time": "22:10:44 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 26: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "22:10:47 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:10:47 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.03"
