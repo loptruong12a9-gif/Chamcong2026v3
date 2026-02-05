@@ -47,7 +47,7 @@ Nếu sau này anh muốn đổi sang một kho GitHub khác, anh mới cần l�
 
 1. Mở App Chấm Công của bạn lên.
 2. Bấm vào nút hình đám mây **☁️** ở góc trên bên phải.
-3. **Ô Token**: Dán cái dãy mã dài `ghp_...` (ở Bước 1) vào đây.
+3. **Ô Token**: Dán cái dãy mã bí mật vừa copy (ở Bước 1) vào đây.
 4. **Ô Repository**: Nhập theo đúng định dạng: `tên-của-bạn/tên-kho-vừa-tạo`.
    * Ví dụ: Nếu tên GitHub của bạn là `tannguyen` và bạn tạo kho là `du-lieu-cham-cong`, thì nhập là: `tannguyen/du-lieu-cham-cong`
 5. **Ô Branch**: Để nguyên là `main`.

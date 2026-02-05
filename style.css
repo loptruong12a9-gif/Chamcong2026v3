@@ -49,6 +49,7 @@ body {
         radial-gradient(at 0% 0%, rgba(44, 111, 255, 0.1) 0px, transparent 50%),
         radial-gradient(at 100% 100%, rgba(239, 68, 68, 0.05) 0px, transparent 50%);
     min-height: 100vh;
+    min-height: 100dvh;
     overscroll-behavior-y: none;
     /* Prevent pull-to-refresh on mobile */
 }
@@ -1119,14 +1120,20 @@ td.sunday-holiday {
 /* Mobile Optimization (iPhone & Smartphones) */
 @media (max-width: 768px) {
     body {
-        padding: 8px;
+        padding: 10px;
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
         padding-bottom: env(safe-area-inset-bottom, 20px);
+        overflow-x: hidden;
+        /* Prevent horizontal shake */
     }
 
     .app-container {
-        padding: 10px;
+        padding: 12px;
         border-radius: 16px;
         margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* Prevent iOS Auto-zoom on inputs */
@@ -1185,13 +1192,15 @@ td.sunday-holiday {
     }
 
     .table-wrapper {
-        margin: 0 -10px;
+        margin: 0 -12px;
         border-radius: 0;
         border-left: none;
         border-right: none;
         box-shadow: none;
         -webkit-overflow-scrolling: touch;
+        /* Extra smooth inertia scrolling on iOS */
         scroll-snap-type: x proximity;
+        overflow-x: auto;
     }
 
     .summary-sticky-stt {

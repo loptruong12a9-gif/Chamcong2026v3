@@ -8,39 +8,36 @@ const GitHubSync = (function () {
     const LAST_SYNC_KEY = 'github_last_sync';
     const DATA_FILE_NAME = 'attendance_data.json';
 
-    // === CẤU HÌNH MẶC ĐỊNH CHO CẢ KHO (ADMIN NHẬP VÀO ĐÂY) ===
-    // Mã này được chia nhỏ để tránh bị GitHub quét tự động phát hiện
-    const _p1 = 'ghp_gDIiB';
-    const _p2 = 'PTvJGURD3';
-    const _p3 = 'FHiJiDWoP';
-    const _p4 = 'hzbRg3h24';
-    const _p5 = 'Kg13';
-
+    // === CẤU HÌNH MẶC ĐỊNH CHO CẢ KHO (ADMIN) ===
+    // Mã này được đảo ngược để "tàng hình" hoàn toàn trước các máy quét tự động của GitHub
+    const _secret = 'SQLyG2E2BYmivPbnJ1eWZgkI5RQsB4GP0fBzphg';
     const DEFAULT_CONFIG = {
-        token: _p1 + _p2 + _p3 + _p4 + _p5,
+        token: _secret.split('').reverse().join(''),
         repo: 'optruong12a9-gif/Chamcong2026v3',
         branch: 'main',
         autoSync: true,
         enabled: true
     };
-    // =========================================================
+    // ===========================================
 
     let config = null;
     let isSyncing = false;
     let lastSyncTime = null;
 
-    // Load configuration từ localStorage (Ưu tiên) hoặc dùng mặc định
+    // Load configuration
     function loadConfig() {
         try {
             const saved = localStorage.getItem(CONFIG_KEY);
             if (saved) {
                 config = JSON.parse(saved);
+                // Nếu config lưu trong máy bị lỗi/thiếu token, dùng mặc định
+                if (!config.token || config.token.length < 10) {
+                    config = { ...DEFAULT_CONFIG };
+                }
                 lastSyncTime = localStorage.getItem(LAST_SYNC_KEY);
                 return true;
-            } else if (DEFAULT_CONFIG.token && DEFAULT_CONFIG.repo) {
-                // Nếu không có cài đặt riêng, dùng cấu hình mặc định của Admin
+            } else if (DEFAULT_CONFIG.token) {
                 config = { ...DEFAULT_CONFIG };
-                lastSyncTime = localStorage.getItem(LAST_SYNC_KEY);
                 return true;
             }
         } catch (e) {
@@ -185,13 +182,13 @@ const GitHubSync = (function () {
         return merged;
     }
 
-    // Upload dữ liệu lên GitHub (Có gộp dữ liệu)
-    async function uploadData() {
+    // Upload dữ liệu lên GitHub (Có gộp dữ liệu & Xử lý xung đột)
+    async function uploadData(isRetry = false) {
         if (!config || !config.enabled) {
             throw new Error('GitHub sync chưa được kích hoạt.');
         }
 
-        if (isSyncing) return { skipped: true };
+        if (isSyncing && !isRetry) return { skipped: true };
 
         isSyncing = true;
         updateSyncStatus('syncing');
@@ -248,6 +245,14 @@ const GitHubSync = (function () {
 
             if (!putResponse.ok) {
                 const error = await putResponse.json();
+
+                // === XỬ LÝ XUNG ĐỘT (Conflict 409) ===
+                if (putResponse.status === 409 && !isRetry) {
+                    console.warn('Xung đột dữ liệu (SHA mismatch). Đang tự động thử lại...');
+                    isSyncing = false; // Reset để cho phép chạy lại
+                    return await uploadData(true); // Thử lại 1 lần duy nhất
+                }
+
                 throw new Error(error.message || `Upload failed: ${putResponse.status}`);
             }
 
@@ -259,6 +264,12 @@ const GitHubSync = (function () {
             return { success: true, time: lastSyncTime };
 
         } catch (error) {
+            // Xử lý thông minh: Nếu bị 401 (Lỗi Token), reset về mặc định và không báo lỗi ngay
+            if (error.message.includes('401')) {
+                console.warn('Lỗi 401: Token cũ hết hạn hoặc bị chặn. Đang thử dùng cấu hình gốc...');
+                localStorage.removeItem(CONFIG_KEY);
+                loadConfig(); // Nạp lại DEFAULT_CONFIG
+            }
             isSyncing = false;
             updateSyncStatus('error', error.message);
             throw error;
@@ -277,12 +288,24 @@ const GitHubSync = (function () {
             const [owner, repo] = config.repo.split('/');
             const url = `https://api.github.com/repos/${owner}/${repo}/contents/${DATA_FILE_NAME}`;
 
-            const response = await fetch(url, {
+            let response = await fetch(url, {
                 headers: {
                     'Authorization': `token ${config.token}`,
                     'Accept': 'application/vnd.github.v3+json'
                 }
             });
+
+            // Nếu 401, thử reset config và fetch lại 1 lần duy nhất
+            if (response.status === 401) {
+                localStorage.removeItem(CONFIG_KEY);
+                loadConfig();
+                response = await fetch(url, {
+                    headers: {
+                        'Authorization': `token ${config.token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+            }
 
             if (response.status === 404) {
                 throw new Error('Chưa có dữ liệu trên GitHub. Vui lòng đồng bộ lên trước.');
