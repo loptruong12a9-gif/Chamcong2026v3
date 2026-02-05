@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "exportTime": "2026-02-05T13:58:53.321Z",
+    "exportTime": "2026-02-05T13:59:13.959Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS"
   },
@@ -147,11 +147,6 @@
       "duties": [],
       "history": [
         {
-          "time": "20:35:08 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu dữ liệu"
-        },
-        {
           "time": "20:36:01 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
@@ -238,6 +233,16 @@
         },
         {
           "time": "20:58:53 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:59:05 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:59:13 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
