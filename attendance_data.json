@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:12:53.105Z",
+    "lastUpdate": "2026-02-05T15:14:10.634Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -3995,79 +3995,175 @@
           "date": "2026-01-31",
           "type": "regular",
           "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-26",
+          "type": "overtime",
+          "value": "16H30-16H45",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "overtime",
+          "value": "16H30-19H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "16H30-19H45",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "overtime",
+          "value": "16H30-18H10\n19H30-23H00",
+          "multiplier": "1.5"
         }
       ],
-      "duties": [],
+      "duties": [
+        {
+          "date": "2026-01-26",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-27",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-30",
+          "value": "TRỰC CHÍNH"
+        }
+      ],
       "history": [
         {
-          "time": "22:12:38 5/2/2026",
+          "time": "22:12:52 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu dữ liệu"
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "22:12:45 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:12:45 5/2/2026",
+          "time": "22:12:54 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "22:12:46 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 27: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:12:46 5/2/2026",
+          "time": "22:12:54 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "22:12:46 5/2/2026",
+          "time": "22:12:55 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 28: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "22:12:48 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 28: Trong giờ [0] ➔ [8]"
-        },
-        {
-          "time": "22:12:48 5/2/2026",
+          "time": "22:12:55 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "22:12:49 5/2/2026",
+          "time": "22:12:56 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 29: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "22:12:49 5/2/2026",
+          "time": "22:12:56 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "22:12:50 5/2/2026",
+          "time": "22:12:57 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 30: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "22:12:50 5/2/2026",
+          "time": "22:12:57 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "22:12:51 5/2/2026",
+          "time": "22:12:58 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "22:12:51 5/2/2026",
+          "time": "22:13:06 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:13:06 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:13:14 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [16H30-16H45]"
+        },
+        {
+          "time": "22:13:16 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:13:22 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:13:31 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-19H00]"
+        },
+        {
+          "time": "22:13:39 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-19H45]"
+        },
+        {
+          "time": "22:13:40 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:13:46 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "22:14:10 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-18H10\n19H30-23H00]"
         }
       ]
     }
