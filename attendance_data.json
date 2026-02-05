@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T14:25:54.192Z",
+    "lastUpdate": "2026-02-05T14:54:36.468Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -145,19 +145,15 @@
       "name": "NGUYỄN VĂN TÂN",
       "position": "ĐIỀU DƯỠNG DỤNG CỤ",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
-        {
-          "time": "20:56:15 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:56:57 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "20:57:07 5/2/2026",
           "user": "TÂN",
@@ -245,6 +241,16 @@
         },
         {
           "time": "21:25:52 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:54:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:54:36 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -805,9 +811,2417 @@
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
+    },
+    "attendance_2026-01_PHẠM THỊ A NHỊ": {
+      "name": "PHẠM THỊ A NHỊ",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:58:07 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.75"
+        }
+      ],
+      "adminCoeff": "0.75"
+    },
+    "attendance_2026-02_KHƯƠNG THỊ THANH": {
+      "name": "KHƯƠNG THỊ THANH",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:55:33 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:55:34 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.95"
+        }
+      ],
+      "adminCoeff": "0.95"
+    },
+    "attendance_2026-02_ADMIN": {
+      "name": "ADMIN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:32:07 5/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "21:32:11 5/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:32:37 5/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:32:41 5/2/2026",
+          "user": null,
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ]
+    },
+    "attendance_2026-02_ĐẶNG THỊ MỸ LỆ": {
+      "name": "ĐẶNG THỊ MỸ LỆ",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-07",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-09",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-10",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-11",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-12",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "16H30-21H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "overtime",
+          "value": "04H35-06H55",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-01",
+          "type": "overtime",
+          "value": "15H30-17H00",
+          "multiplier": "2"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "overtime",
+          "value": "16H30-18H30",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "overtime",
+          "value": "16H30-20H00\n21H40-23H20",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "overtime",
+          "value": "04H50-06H10",
+          "multiplier": "1.5"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-29",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-01-30",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-01",
+          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
+        },
+        {
+          "date": "2026-02-02",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-04",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-05",
+          "value": "TRỰC CHÍNH"
+        }
+      ],
+      "history": [
+        {
+          "time": "21:37:07 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:37:07 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:37:07 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:37:25 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-21H00]"
+        },
+        {
+          "time": "21:37:27 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:37:34 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:37:39 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:37:56 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [04H35-06H55]"
+        },
+        {
+          "time": "21:37:58 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "21:38:13 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Ngoài giờ [Trống] ➔ [15H30-17H00]"
+        },
+        {
+          "time": "21:38:17 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:38:31 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [16H30-18H30]"
+        },
+        {
+          "time": "21:38:32 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:38:53 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16H30-20H00\n21H40-23H20]"
+        },
+        {
+          "time": "21:38:57 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:39:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [04H50-06H10]"
+        },
+        {
+          "time": "21:40:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:40:20 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở LẠI] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "21:40:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:41:38 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ],
+      "adminCoeff": "1"
+    },
+    "attendance_2026-02_PHẠM NGỌC ĐÀI": {
+      "name": "PHẠM NGỌC ĐÀI",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "overtime",
+          "value": "16H30-17H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "16H30-19H45",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "overtime",
+          "value": "16H30-23H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "overtime",
+          "value": "20H30-21H45",
+          "multiplier": "1.5"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2026-01-27",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-30",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-03",
+          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
+        }
+      ],
+      "history": [
+        {
+          "time": "21:50:14 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:14 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:15 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:50:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:16 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:50:16 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:16 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:50:27 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:27 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:50:28 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:50:39 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-17H00]"
+        },
+        {
+          "time": "21:50:41 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:50:57 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-19H45]"
+        },
+        {
+          "time": "21:50:59 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:51:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-23H00]"
+        },
+        {
+          "time": "21:51:23 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "21:51:39 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [20H30-21H45]"
+        },
+        {
+          "time": "21:51:55 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:51:58 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ],
+      "adminCoeff": "1.05"
+    },
+    "attendance_2026-02_NGUYỄN VĂN ĐÔNG": {
+      "name": "NGUYỄN VĂN ĐÔNG",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "overtime",
+          "value": "16H30-19H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "05H00-07H00",
+          "multiplier": "1.5"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2026-01-27",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC CHÍNH"
+        }
+      ],
+      "history": [
+        {
+          "time": "21:46:17 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:17 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:18 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:19 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:19 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:20 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:21 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:21 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:22 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:22 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:23 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:23 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:46:26 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:26 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:46:32 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:46:45 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-19H00]"
+        },
+        {
+          "time": "21:46:47 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:47:00 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [05H00-07H00]"
+        }
+      ],
+      "adminCoeff": "1.6"
+    },
+    "attendance_2026-02_HAN LÊ BẢO NGỌC": {
+      "name": "HAN LÊ BẢO NGỌC",
+      "position": "HỘ LÝ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:30 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        }
+      ],
+      "adminCoeff": "0.5"
+    },
+    "attendance_2026-01_NGUYỄN HỮU TRUNG HIẾU": {
+      "name": "NGUYỄN HỮU TRUNG HIẾU",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:55:51 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.05"
+        }
+      ],
+      "adminCoeff": "1.05"
+    },
+    "attendance_2026-02_LÊ THỊ THU THẢO": {
+      "name": "LÊ THỊ THU THẢO",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:57:14 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:57:14 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:57:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:57:16 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:57:16 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:57:17 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:57:18 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.15"
+        }
+      ],
+      "adminCoeff": "1.15"
+    },
+    "attendance_2026-02_HUỲNH THỊ THẢO": {
+      "name": "HUỲNH THỊ THẢO",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:35 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:35 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:43 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.75"
+        }
+      ],
+      "adminCoeff": "0.75"
+    },
+    "attendance_2026-01_LƯU THỊ MAI THƯƠNG": {
+      "name": "LƯU THỊ MAI THƯƠNG",
+      "position": "THƯ KÍ Y KHOA",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:58:21 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.9"
+        }
+      ],
+      "adminCoeff": "0.9"
+    },
+    "attendance_2026-01_NGUYỄN THỊ HIỀN TÂM THẢO": {
+      "name": "NGUYỄN THỊ HIỀN TÂM THẢO",
+      "position": "HỘ LÝ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:58:55 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.1"
+        },
+        {
+          "time": "21:58:55 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.2"
+        },
+        {
+          "time": "21:58:55 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.3"
+        },
+        {
+          "time": "21:58:56 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.4"
+        },
+        {
+          "time": "21:58:56 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.5"
+        }
+      ],
+      "adminCoeff": "0.5"
+    },
+    "attendance_2026-02_DƯƠNG HOÀNG TUYẾT NGA": {
+      "name": "DƯƠNG HOÀNG TUYẾT NGA",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:53:20 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:53:20 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:53:20 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:53:20 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:53:21 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:53:21 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:53:21 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:53:21 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:53:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:53:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:53:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:53:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.2"
+        },
+        {
+          "time": "19:53:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.25"
+        }
+      ],
+      "adminCoeff": "1.25"
+    },
+    "attendance_2026-01_PHẠM THỊ LINH": {
+      "name": "PHẠM THỊ LINH",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:56:25 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.5"
+        },
+        {
+          "time": "19:37:10 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.6"
+        },
+        {
+          "time": "19:37:12 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.5"
+        },
+        {
+          "time": "19:37:12 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.4"
+        },
+        {
+          "time": "19:37:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.5"
+        },
+        {
+          "time": "19:37:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.4"
+        },
+        {
+          "time": "19:37:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.45"
+        }
+      ],
+      "adminCoeff": "1.45"
+    },
+    "attendance_2026-02_TRẦN LÊ CẨM MY": {
+      "name": "TRẦN LÊ CẨM MY",
+      "position": "THƯ KÍ Y KHOA",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:56 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:56 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:56 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:56 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:57 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:57 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:57 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:58 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:55:58 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:55:58 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        }
+      ],
+      "adminCoeff": "1"
+    },
+    "attendance_2026-02_HỒ HOÀNG TÍN": {
+      "name": "HỒ HOÀNG TÍN",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:55:27 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:55:28 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.95"
+        }
+      ],
+      "adminCoeff": "0.95"
+    },
+    "attendance_2026-02_LƯU THỊ MAI THƯƠNG": {
+      "name": "LƯU THỊ MAI THƯƠNG",
+      "position": "THƯ KÍ Y KHOA",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:52 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:52 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:52 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:52 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:53 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:53 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:53 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:54 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:55:55 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        }
+      ],
+      "adminCoeff": "0.9"
+    },
+    "attendance_2026-01_VŨ NGỌC THÁI": {
+      "name": "VŨ NGỌC THÁI",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:56:57 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.45"
+        }
+      ],
+      "adminCoeff": "1.45"
+    },
+    "attendance_2026-01_VÕ VĂN TUẤN": {
+      "name": "VÕ VĂN TUẤN",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:56:49 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.35"
+        }
+      ],
+      "adminCoeff": "1.35"
+    },
+    "attendance_2026-02_NGUYỄN KIM NGỌC": {
+      "name": "NGUYỄN KIM NGỌC",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:56:16 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:56:16 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:56:17 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:56:17 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:56:17 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:56:17 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:56:18 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:56:18 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:56:18 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:56:18 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:56:19 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:56:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.0"
+        },
+        {
+          "time": "19:56:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.03"
+        }
+      ],
+      "adminCoeff": "1.03"
+    },
+    "attendance_2026-02_NGUYỄN THỊ ĐỨC KHUYÊN": {
+      "name": "NGUYỄN THỊ ĐỨC KHUYÊN",
+      "position": "HỘ LÝ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:28 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:28 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:28 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:29 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:29 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        }
+      ],
+      "adminCoeff": "0.5"
+    },
+    "attendance_2026-02_NGUYỄN THỊ HẬU": {
+      "name": "NGUYỄN THỊ HẬU",
+      "position": "HỘ LÝ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:24 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:25 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:54:26 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        }
+      ],
+      "adminCoeff": "0.6"
+    },
+    "attendance_2026-01_PHẠM NGỌC ĐÀI": {
+      "name": "PHẠM NGỌC ĐÀI",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:54:45 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.05"
+        },
+        {
+          "time": "23:12:07 17/1/2026",
+          "user": "ĐÀI",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]\n- Ngày 26: Ngoài giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "23:12:09 17/1/2026",
+          "user": "ĐÀI",
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "23:12:16 17/1/2026",
+          "user": "ĐÀI",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:33:46 18/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ],
+      "adminCoeff": "1.05"
+    },
+    "attendance_2026-02_VŨ NGỌC THÁI": {
+      "name": "VŨ NGỌC THÁI",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:54:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:54:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:54:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:54:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:54:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:54:09 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:54:09 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.2"
+        },
+        {
+          "time": "19:54:10 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.3"
+        },
+        {
+          "time": "19:54:10 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.4"
+        },
+        {
+          "time": "19:54:12 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.45"
+        }
+      ],
+      "adminCoeff": "1.45"
+    },
+    "attendance_2026-02_NGUYỄN VĂN THANH": {
+      "name": "NGUYỄN VĂN THANH",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-07",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "16H30-22H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "overtime",
+          "value": "04H45-07H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "overtime",
+          "value": "16H30-20H05",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "overtime",
+          "value": "16H30-22H05",
+          "multiplier": "1.5"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-01-29",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-01-30",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-03",
+          "value": "TRỰC CHÍNH"
+        }
+      ],
+      "history": [
+        {
+          "time": "21:47:22 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:23 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:47:23 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:47:25 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:25 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:27 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:47:40 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:40 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:47:41 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:47:55 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-22H00]"
+        },
+        {
+          "time": "21:47:56 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:48:09 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Ngoài giờ [Trống] ➔ [04H45-07H00]"
+        },
+        {
+          "time": "21:48:11 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:48:27 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-20H05]"
+        },
+        {
+          "time": "21:48:28 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:48:49 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16H30-22H05]"
+        },
+        {
+          "time": "21:49:08 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:49:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:49:33 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ],
+      "adminCoeff": "1.3"
+    },
+    "attendance_2026-01_HUỲNH THỊ THẢO": {
+      "name": "HUỲNH THỊ THẢO",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:57:35 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.75"
+        }
+      ],
+      "adminCoeff": "0.75"
+    },
+    "attendance_2026-02_NGUYỄN HỮU TRUNG HIẾU": {
+      "name": "NGUYỄN HỮU TRUNG HIẾU",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:56:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:56:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:56:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:56:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:56:31 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:56:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:56:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:56:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:56:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:56:32 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:56:35 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:56:36 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:56:37 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.0"
+        },
+        {
+          "time": "19:56:37 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.05"
+        }
+      ],
+      "adminCoeff": "1.05"
+    },
+    "attendance_2026-01_LÊ THỊ THU THẢO": {
+      "name": "LÊ THỊ THU THẢO",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:55:36 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.15"
+        }
+      ],
+      "adminCoeff": "1.15"
+    },
+    "attendance_2026-01_HÀ THỊ HỒNG": {
+      "name": "HÀ THỊ HỒNG",
+      "position": "PHỤ TRÁCH KHO",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:57:14 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.8"
+        }
+      ],
+      "adminCoeff": "0.8"
+    },
+    "attendance_2026-02_ĐỖ THỊ HẰNG NGA": {
+      "name": "ĐỖ THỊ HẰNG NGA",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-29",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-30",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-05",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-28",
+          "type": "overtime",
+          "value": "16H30-22H00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "overtime",
+          "value": "20H45-22H20\n06H40-07H55",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-04",
+          "type": "overtime",
+          "value": "16H30-17H30",
+          "multiplier": "1.5"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-01-31",
+          "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-04",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        }
+      ],
+      "history": [
+        {
+          "time": "21:41:51 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:41:52 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:41:52 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:41:53 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:41:53 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:41:56 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:41:58 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:41:58 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:41:58 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:41:58 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:42:00 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:42:01 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:42:01 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:42:19 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-22H00]"
+        },
+        {
+          "time": "21:42:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:42:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:42:51 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [Trống] ➔ [20H45-22H20]"
+        },
+        {
+          "time": "21:43:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [20H45-22H20] ➔ [20H45-22H20\n06H40-07H55]"
+        },
+        {
+          "time": "21:43:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:43:50 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16H30-17H30]"
+        }
+      ],
+      "adminCoeff": "1.2"
+    },
+    "attendance_2026-02_VÕ VĂN TUẤN": {
+      "name": "VÕ VĂN TUẤN",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:55:04 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:55:04 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:55:04 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:55:04 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        },
+        {
+          "time": "19:55:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        },
+        {
+          "time": "19:55:06 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "19:55:06 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.2"
+        },
+        {
+          "time": "19:55:06 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.3"
+        },
+        {
+          "time": "19:55:08 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.35"
+        }
+      ],
+      "adminCoeff": "1.35"
+    },
+    "attendance_2026-02_NGUYỄN THỊ HIỀN TÂM THẢO": {
+      "name": "NGUYỄN THỊ HIỀN TÂM THẢO",
+      "position": "HỘ LÝ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:22 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:23 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        }
+      ],
+      "adminCoeff": "0.5"
+    },
+    "attendance_2026-01_NGUYỄN THỊ ĐỨC KHUYÊN": {
+      "name": "NGUYỄN THỊ ĐỨC KHUYÊN",
+      "position": "HỘ LÝ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:58:49 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.1"
+        },
+        {
+          "time": "21:58:49 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.2"
+        },
+        {
+          "time": "21:58:49 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.3"
+        },
+        {
+          "time": "21:58:49 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.4"
+        },
+        {
+          "time": "21:58:50 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.5"
+        }
+      ],
+      "adminCoeff": "0.5"
+    },
+    "attendance_2026-02_HÀ THỊ HỒNG": {
+      "name": "HÀ THỊ HỒNG",
+      "position": "PHỤ TRÁCH KHO",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:54:12 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:54:14 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:54:14 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.8"
+        },
+        {
+          "time": "19:54:15 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.9"
+        }
+      ],
+      "adminCoeff": "0.9"
+    },
+    "attendance_2026-01_HỒ HOÀNG TÍN": {
+      "name": "HỒ HOÀNG TÍN",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:57:23 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 0.95"
+        }
+      ],
+      "adminCoeff": "0.95"
+    },
+    "attendance_2026-02_PHẠM THỊ A NHỊ": {
+      "name": "PHẠM THỊ A NHỊ",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:56:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.1"
+        },
+        {
+          "time": "19:56:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.2"
+        },
+        {
+          "time": "19:56:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.3"
+        },
+        {
+          "time": "19:56:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.4"
+        },
+        {
+          "time": "19:56:05 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.5"
+        },
+        {
+          "time": "19:56:06 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.6"
+        },
+        {
+          "time": "19:56:06 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.7"
+        },
+        {
+          "time": "19:56:07 29/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin (Global): 0.75"
+        }
+      ],
+      "adminCoeff": "0.75"
+    },
+    "attendance_2026-01_DƯƠNG HOÀNG TUYẾT NGA": {
+      "name": "DƯƠNG HOÀNG TUYẾT NGA",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:54:57 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.25"
+        }
+      ],
+      "adminCoeff": "1.25"
     }
   },
   "coefficients": {
-    "coeff_global_ĐẶNG THỊ MỸ LỆ": "1"
+    "coeff_global_ĐẶNG THỊ MỸ LỆ": "1",
+    "coeff_global_TRẦN LÊ CẨM MY": "1",
+    "coeff_global_NGUYỄN THỊ ĐỨC KHUYÊN": "0.5",
+    "coeff_global_VŨ NGỌC THÁI": "1.45",
+    "coeff_global_DƯƠNG HOÀNG TUYẾT NGA": "1.25",
+    "coeff_global_NGUYỄN VĂN THANH": "1.3",
+    "coeff_global_PHẠM NGỌC ĐÀI": "1.05",
+    "coeff_global_NGUYỄN VĂN ĐÔNG": "1.6",
+    "coeff_global_HUỲNH THỊ THẢO": "0.75",
+    "coeff_global_HÀ THỊ HỒNG": "0.9",
+    "coeff_global_NGUYỄN THỊ HIỀN TÂM THẢO": "0.5",
+    "coeff_global_KHƯƠNG THỊ THANH": "0.95",
+    "coeff_global_NGUYỄN KIM NGỌC": "1.03",
+    "coeff_global_PHẠM THỊ LINH": "1.45",
+    "coeff_global_NGUYỄN HỮU TRUNG HIẾU": "1.05",
+    "coeff_global_HAN LÊ BẢO NGỌC": "0.5",
+    "coeff_global_PHẠM THỊ A NHỊ": "0.75",
+    "coeff_global_LƯU THỊ MAI THƯƠNG": "0.9",
+    "coeff_global_NGUYỄN THỊ HOA": "1.65",
+    "coeff_global_ĐỖ THỊ HẰNG NGA": "1.2",
+    "coeff_global_NGUYỄN THỊ HẬU": "0.6",
+    "coeff_global_NGUYỄN VĂN TÂN": "1.4",
+    "coeff_global_VÕ VĂN TUẤN": "1.35",
+    "coeff_global_HOÀNG SỸ HUY": "0.9",
+    "coeff_global_LÊ THỊ THU THẢO": "1.15",
+    "coeff_global_HỒ HOÀNG TÍN": "0.95"
   }
 }
