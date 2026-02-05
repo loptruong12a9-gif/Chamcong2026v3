@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:04:30.482Z",
+    "lastUpdate": "2026-02-05T15:05:03.998Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1762,11 +1762,6 @@
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:46:26 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "21:46:32 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 27: Trực [-] ➔ [TRỰC CHÍNH]"
@@ -1845,6 +1840,11 @@
           "time": "22:04:16 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 10: Trong giờ [8] ➔ [Bỏ]"
+        },
+        {
+          "time": "22:04:29 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         },
         {
           "time": "22:04:29 5/2/2026",
@@ -2084,7 +2084,12 @@
       "position": "KTV GÂY MÊ",
       "month": "2026-02",
       "entries": [],
-      "duties": [],
+      "duties": [
+        {
+          "date": "2026-01-28",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        }
+      ],
       "history": [
         {
           "time": "19:53:20 29/1/2026",
@@ -2150,6 +2155,11 @@
           "time": "19:53:25 29/1/2026",
           "user": "TÂN",
           "action": "Cập nhật Hệ số Admin (Global): 1.25"
+        },
+        {
+          "time": "22:05:02 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         }
       ],
       "adminCoeff": "1.25"
