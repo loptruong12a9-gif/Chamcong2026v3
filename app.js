@@ -195,6 +195,12 @@ document.addEventListener('DOMContentLoaded', () => {
             userDisplay.textContent = isAdmin() ? `👤 ${displayName} (Admin)` : `👤 ${displayName}`;
             logoutBtn.style.display = 'inline-block';
 
+            // Chỉ hiện nút Cấu hình GitHub cho Admin
+            const githubConfigBtn = document.getElementById('github-config-btn');
+            if (githubConfigBtn) {
+                githubConfigBtn.style.display = isAdmin() ? 'flex' : 'none';
+            }
+
             // Auto-load data for the current user if not already set
             if (employeeNameInput && !employeeNameInput.value) {
                 const fullName = SHORTNAME_TO_FULLNAME[user] || user;
@@ -247,7 +253,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (success) {
             hideLoginModal();
             updateUIForUser();
-            generateTable();
+
+            // Tự động tải dữ liệu từ GitHub khi đăng nhập thành công
+            if (typeof GitHubSync !== 'undefined' && GitHubSync.isConfigured()) {
+                GitHubSync.restoreFromGitHub()
+                    .then(() => {
+                        generateTable();
+                        renderSummaryTable();
+                    })
+                    .catch(err => console.error('Auto-restore failed:', err));
+            } else {
+                generateTable();
+                renderSummaryTable();
+            }
             alert(`Đăng nhập thành công! Chào mừng ${getCurrentUser()}`);
         } else {
             alert('Tên đăng nhập hoặc mật khẩu không đúng!');
@@ -1012,6 +1030,13 @@ document.addEventListener('DOMContentLoaded', () => {
         calculateTotals();
         renderSummaryTable();
         showSaveNotification();
+
+        // --- GITHUB AUTO-SYNC ---
+        if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled()) {
+            GitHubSync.uploadData().catch(err => {
+                console.error('GitHub Auto-sync failed:', err);
+            });
+        }
     };
 
     // Visual Save Notification
@@ -1110,6 +1135,141 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.getElementById('refresh-summary')) {
         document.getElementById('refresh-summary').addEventListener('click', renderSummaryTable);
+    }
+
+    // === GITHUB SYNC UI HANDLERS ===
+    const githubConfigModal = document.getElementById('github-config-modal');
+    const githubConfigBtn = document.getElementById('github-config-btn');
+    const githubTestBtn = document.getElementById('github-test-btn');
+    const githubSaveConfigBtn = document.getElementById('github-save-config-btn');
+    const githubSyncNowBtn = document.getElementById('github-sync-now-btn');
+    const githubRestoreBtn = document.getElementById('github-restore-btn');
+    const githubStatusMsg = document.getElementById('github-status-message');
+
+    window.hideGitHubConfigModal = () => {
+        githubConfigModal.classList.remove('active');
+        githubStatusMsg.textContent = '';
+        githubStatusMsg.className = 'status-message';
+    };
+
+    if (githubConfigBtn) {
+        githubConfigBtn.addEventListener('click', () => {
+            // Fill current config if exists
+            const savedConfig = localStorage.getItem('github_sync_config');
+            if (savedConfig) {
+                const config = JSON.parse(savedConfig);
+                document.getElementById('github-token').value = config.token || '';
+                document.getElementById('github-repo').value = config.repo || '';
+                document.getElementById('github-branch').value = config.branch || 'main';
+                document.getElementById('github-auto-sync').checked = config.autoSync !== false;
+            }
+            githubConfigModal.classList.add('active');
+        });
+    }
+
+    if (githubTestBtn) {
+        githubTestBtn.addEventListener('click', async () => {
+            const token = document.getElementById('github-token').value.trim();
+            const repo = document.getElementById('github-repo').value.trim();
+            const branch = document.getElementById('github-branch').value.trim() || 'main';
+
+            githubStatusMsg.textContent = '⏳ Đang kiểm tra kết nối...';
+            githubStatusMsg.className = 'status-message info';
+
+            // Temporarily set config to test
+            const originalConfig = localStorage.getItem('github_sync_config');
+            GitHubSync.configure(token, repo, branch);
+
+            try {
+                await GitHubSync.testConnection();
+                githubStatusMsg.textContent = '✅ Kết nối thành công!';
+                githubStatusMsg.className = 'status-message success';
+            } catch (error) {
+                githubStatusMsg.textContent = '❌ Lỗi: ' + error.message;
+                githubStatusMsg.className = 'status-message error';
+            } finally {
+                // Restore original config if we don't save
+                if (originalConfig) {
+                    const c = JSON.parse(originalConfig);
+                    GitHubSync.configure(c.token, c.repo, c.branch, c.autoSync);
+                }
+            }
+        });
+    }
+
+    if (githubSaveConfigBtn) {
+        githubSaveConfigBtn.addEventListener('click', () => {
+            const token = document.getElementById('github-token').value.trim();
+            const repo = document.getElementById('github-repo').value.trim();
+            const branch = document.getElementById('github-branch').value.trim() || 'main';
+            const autoSync = document.getElementById('github-auto-sync').checked;
+
+            if (!token || !repo) {
+                alert('Vui lòng nhập Token và Repository!');
+                return;
+            }
+
+            GitHubSync.configure(token, repo, branch, autoSync);
+            githubStatusMsg.textContent = '✅ Đã lưu cấu hình!';
+            githubStatusMsg.className = 'status-message success';
+
+            setTimeout(() => {
+                hideGitHubConfigModal();
+                alert('Cấu hình GitHub đã được lưu thành công!');
+            }, 1000);
+        });
+    }
+
+    if (githubSyncNowBtn) {
+        githubSyncNowBtn.addEventListener('click', async () => {
+            if (!GitHubSync.isConfigured()) {
+                alert('Vui lòng cấu hình GitHub trước!');
+                return;
+            }
+
+            githubStatusMsg.textContent = '⏳ Đang đồng bộ...';
+            githubStatusMsg.className = 'status-message info';
+
+            try {
+                const result = await GitHubSync.uploadData();
+                githubStatusMsg.textContent = '✅ Đồng bộ thành công!';
+                githubStatusMsg.className = 'status-message success';
+                alert('Dữ liệu đã được đồng bộ lên GitHub!');
+            } catch (error) {
+                githubStatusMsg.textContent = '❌ Lỗi: ' + error.message;
+                githubStatusMsg.className = 'status-message error';
+                alert('Đồng bộ thất bại: ' + error.message);
+            }
+        });
+    }
+
+    if (githubRestoreBtn) {
+        githubRestoreBtn.addEventListener('click', async () => {
+            if (!GitHubSync.isConfigured()) {
+                alert('Vui lòng cấu hình GitHub trước!');
+                return;
+            }
+
+            if (!confirm('⚠️ CẢNH BÁO: Hành động này sẽ ghi đè toàn bộ dữ liệu hiện tại bằng dữ liệu từ GitHub. Bạn có chắc chắn muốn tiếp tục?')) {
+                return;
+            }
+
+            githubStatusMsg.textContent = '⏳ Đang tải dữ liệu...';
+            githubStatusMsg.className = 'status-message info';
+
+            try {
+                const result = await GitHubSync.restoreFromGitHub();
+                githubStatusMsg.textContent = `✅ Đã khôi phục ${result.recordsRestored} bản ghi!`;
+                githubStatusMsg.className = 'status-message success';
+
+                alert(`Khôi phục thành công! Hệ thống đã tải ${result.recordsRestored} bản ghi dữ liệu.\n\nTrang web sẽ tự động tải lại để cập nhật dữ liệu mới.`);
+                location.reload();
+            } catch (error) {
+                githubStatusMsg.textContent = '❌ Lỗi: ' + error.message;
+                githubStatusMsg.className = 'status-message error';
+                alert('Khôi phục thất bại: ' + error.message);
+            }
+        });
     }
 
     function exportToExcel() {
@@ -1316,5 +1476,20 @@ document.addEventListener('DOMContentLoaded', () => {
         showLoginModal();
     } else {
         updateUIForUser();
+
+        // Tự động tải dữ liệu từ GitHub khi khởi động ứng dụng (nếu đã đăng nhập)
+        if (typeof GitHubSync !== 'undefined' && GitHubSync.isConfigured()) {
+            GitHubSync.restoreFromGitHub()
+                .then(() => {
+                    generateTable();
+                    renderSummaryTable();
+                })
+                .catch(err => {
+                    console.error('Initial auto-restore failed:', err);
+                    renderSummaryTable();
+                });
+        } else {
+            renderSummaryTable();
+        }
     }
 });

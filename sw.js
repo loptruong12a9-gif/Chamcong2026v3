@@ -1,9 +1,10 @@
-const CACHE_NAME = 'cham-cong-v35';
+const CACHE_NAME = 'cham-cong-v3.8';
 const ASSETS = [
     './',
     './index.html',
     './style.css',
     './app.js',
+    './github-sync.js',
     './logo.jpg',
     './manifest.json',
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700&display=swap'

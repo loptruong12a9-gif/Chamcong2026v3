@@ -74,6 +74,16 @@
                 <div class="user-info-group">
                     <div id="status-indicator" class="status-indicator online" title="Đang trực tuyến"></div>
                     <span id="current-user-display" class="user-name"></span>
+
+                    <!-- GitHub Sync Status -->
+                    <div class="sync-status-container" title="Trạng thái đồng bộ GitHub">
+                        <span id="sync-status-indicator" class="sync-status-indicator disabled">○</span>
+                        <span id="sync-status-text" class="sync-status-text">Chưa cấu hình</span>
+                    </div>
+
+                    <button id="github-config-btn" class="help-button" title="Cấu hình GitHub" style="display: none;">
+                        <span class="help-icon">☁️</span>
+                    </button>
                     <button id="help-btn" class="help-button" title="Hướng dẫn sử dụng">
                         <span class="help-icon">?</span>
                     </button>
@@ -209,7 +219,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.5 (Updated: 29.01.2026)</p>
+                <p class="version-info">Version 3.8 (Updated: 05.02.2026 - iOS Optimized)</p>
             </div>
         </footer>
 
@@ -265,6 +275,17 @@
                     <p>⚠️ Quan trọng: Sau khi nhập xong, anh/chị nhớ bấm nút màu xanh <strong>"Lưu dữ liệu"</strong> ở
                         trên cùng nhé.</p>
                     <p>Nếu không bấm Lưu, dữ liệu sẽ bị mất!</p>
+                </section>
+
+                <section>
+                    <h3>Bước 5: LƯU ONLINE (GITHUB) ☁️</h3>
+                    <p>Để lưu dữ liệu lên mạng (mọi người xem được ngay):</p>
+                    <ul>
+                        <li>👉 Bấm vào nút đám mây ☁️ ở góc trên bên phải.</li>
+                        <li>👉 Nhập <strong>Token</strong> và <strong>Repository</strong> (Xem hướng dẫn chi tiết trong
+                            file <code>HUONG_DAN_GITHUB_SYNC.md</code>).</li>
+                        <li>👉 Từ giờ, mỗi lần bấm <strong>Lưu</strong>, dữ liệu sẽ tự động đẩy lên mạng.</li>
+                    </ul>
                 </section>
 
                 <section>
@@ -324,7 +345,60 @@
                 <p class="login-hint">ID: TÊN viết HOA (Trùng tên: ĐỦ HỌ TÊN CÓ DẤU) | MK: 123456</p>
             </div>
         </div>
+
+        <!-- GitHub Config Modal -->
+        <div id="github-config-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>⚙️ Cấu hình đồng bộ GitHub</h2>
+                    <button class="close-modal-btn" onclick="hideGitHubConfigModal()">✕</button>
+                </div>
+
+                <div class="github-config-content">
+                    <div class="info-box">
+                        <p><strong>📌 Lưu ý:</strong> Dữ liệu sẽ tự động đồng bộ lên GitHub sau mỗi lần lưu, giúp mọi
+                            người có thể xem ngay.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>GitHub Personal Access Token: <span class="required">*</span></label>
+                        <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
+                            autocomplete="off">
+                        <small class="help-text">Tạo token tại: <a href="https://github.com/settings/tokens"
+                                target="_blank">github.com/settings/tokens</a> (cần quyền <code>repo</code>)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Repository: <span class="required">*</span></label>
+                        <input type="text" id="github-repo" placeholder="username/repo-name" autocomplete="off">
+                        <small class="help-text">Ví dụ: <code>tannguyen/cham-cong-data</code></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Branch:</label>
+                        <input type="text" id="github-branch" value="main" placeholder="main">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="github-auto-sync" checked>
+                            Tự động đồng bộ sau mỗi lần lưu
+                        </label>
+                    </div>
+
+                    <div id="github-status-message" class="status-message"></div>
+                </div>
+
+                <div class="modal-actions">
+                    <button id="github-test-btn" class="btn btn-print">🔍 Kiểm tra kết nối</button>
+                    <button id="github-save-config-btn" class="btn btn-save">💾 Lưu cấu hình</button>
+                    <button id="github-sync-now-btn" class="btn btn-export">☁️ Đồng bộ ngay</button>
+                    <button id="github-restore-btn" class="btn btn-restore">📥 Khôi phục từ GitHub</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="github-sync.js"></script>
     <script src="app.js"></script>
 </body>
 
