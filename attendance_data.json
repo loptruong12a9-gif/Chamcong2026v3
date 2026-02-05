@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:14:10.634Z",
+    "lastUpdate": "2026-02-05T15:14:45.690Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -4164,6 +4164,31 @@
           "time": "22:14:10 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-18H10\n19H30-23H00]"
+        }
+      ]
+    },
+    "attendance_2026-02_PHẠM THỊ LINH": {
+      "name": "PHẠM THỊ LINH",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
+      "duties": [],
+      "history": [
+        {
+          "time": "22:14:44 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:14:44 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ]
     }
