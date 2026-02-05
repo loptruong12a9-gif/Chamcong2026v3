@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T17:37:38.525Z",
+    "lastUpdate": "2026-02-05T17:39:12.468Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -336,21 +336,6 @@
       ],
       "history": [
         {
-          "time": "23:47:49 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "23:48:03 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "23:48:18 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "23:52:20 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
@@ -426,12 +411,27 @@
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "00:29:28 6/2/2026",
+          "time": "00:31:04 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "00:37:36 6/2/2026",
+          "time": "00:31:41 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "00:32:42 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "00:37:57 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "00:39:10 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
