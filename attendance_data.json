@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:06:59.136Z",
+    "lastUpdate": "2026-02-05T15:07:26.069Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1980,6 +1980,12 @@
           "type": "overtime",
           "value": "04H45-07H00",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-01",
+          "type": "overtime",
+          "value": "15H30-17H00",
+          "multiplier": "2"
         }
       ],
       "duties": [
@@ -1990,19 +1996,13 @@
         {
           "date": "2026-01-29",
           "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-01",
+          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
         }
       ],
       "history": [
-        {
-          "time": "22:06:12 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 30: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:06:12 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "22:06:13 5/2/2026",
           "user": "TÂN",
@@ -2092,6 +2092,16 @@
           "time": "22:06:58 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 29: Ngoài giờ [Trống] ➔ [04H45-07H00]"
+        },
+        {
+          "time": "22:06:59 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "22:07:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Ngoài giờ [Trống] ➔ [15H30-17H00]"
         }
       ],
       "adminCoeff": "1.15"
