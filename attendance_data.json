@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T16:18:52.607Z",
-    "updatedBy": "TÂN"
+    "lastUpdate": "2026-02-05T16:21:57.147Z",
+    "updatedBy": "MY"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -2482,7 +2482,18 @@
       "name": "TRẦN LÊ CẨM MY",
       "position": "THƯ KÍ Y KHOA",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-01-27",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
         {
@@ -2537,6 +2548,31 @@
         },
         {
           "time": "22:36:00 5/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "23:21:53 5/2/2026",
+          "user": "MY",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "23:21:53 5/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "23:21:55 5/2/2026",
+          "user": "MY",
+          "action": "- Ngày 27: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "23:21:55 5/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "23:21:55 5/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         }
