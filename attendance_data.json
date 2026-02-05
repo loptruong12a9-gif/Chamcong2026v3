@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "exportTime": "2026-02-05T13:56:48.969Z",
+    "exportTime": "2026-02-05T13:56:57.847Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS"
   },
@@ -213,6 +213,11 @@
         },
         {
           "time": "20:56:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:56:57 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
