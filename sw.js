@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cham-cong-v3.8';
+const CACHE_NAME = 'cham-cong-v3.9';
 const ASSETS = [
     './',
     './index.html',

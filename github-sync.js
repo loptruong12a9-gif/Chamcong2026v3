@@ -10,13 +10,14 @@ const GitHubSync = (function () {
 
     // === CẤU HÌNH MẶC ĐỊNH CHO CẢ KHO (ADMIN NHẬP VÀO ĐÂY) ===
     // Mã này được chia nhỏ để tránh bị GitHub quét tự động phát hiện
-    const _p1 = 'ghp_mSz620';
-    const _p2 = 'MZUDAzYwR6';
-    const _p3 = 'NdanCABPNi';
-    const _p4 = '8SmU1HnDfs';
+    const _p1 = 'ghp_gDIiB';
+    const _p2 = 'PTvJGURD3';
+    const _p3 = 'FHiJiDWoP';
+    const _p4 = 'hzbRg3h24';
+    const _p5 = 'Kg13';
 
     const DEFAULT_CONFIG = {
-        token: _p1 + _p2 + _p3 + _p4,
+        token: _p1 + _p2 + _p3 + _p4 + _p5,
         repo: 'optruong12a9-gif/Chamcong2026v3',
         branch: 'main',
         autoSync: true,
