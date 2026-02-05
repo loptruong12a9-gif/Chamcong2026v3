@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:46:37.437Z",
+    "lastUpdate": "2026-02-05T15:46:42.089Z",
     "updatedBy": "MY"
   },
   "attendance": {
@@ -2492,6 +2492,11 @@
         },
         {
           "time": "22:46:35 5/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:46:41 5/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         }
