@@ -1,0 +1,757 @@
+{
+  "metadata": {
+    "exportTime": "2026-02-05T13:56:06.121Z",
+    "version": "3.5",
+    "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS"
+  },
+  "attendance": {
+    "attendance_2026-01_NGUYỄN VĂN TÂN": {
+      "name": "NGUYỄN VĂN TÂN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:51:07 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.7"
+        },
+        {
+          "time": "18:51:07 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.8"
+        },
+        {
+          "time": "18:51:07 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.9"
+        },
+        {
+          "time": "18:51:07 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1"
+        },
+        {
+          "time": "18:51:07 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.1"
+        },
+        {
+          "time": "21:32:28 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: "
+        },
+        {
+          "time": "21:32:44 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.9"
+        },
+        {
+          "time": "21:37:55 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "21:38:17 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "21:38:21 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: "
+        },
+        {
+          "time": "21:39:03 17/1/2026",
+          "user": "ADMIN",
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [2]"
+        },
+        {
+          "time": "21:40:12 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "22:23:50 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.5"
+        },
+        {
+          "time": "22:23:51 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.4"
+        },
+        {
+          "time": "22:23:52 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.3"
+        },
+        {
+          "time": "22:23:52 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.2"
+        },
+        {
+          "time": "22:24:01 17/1/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [6]\n- Ngày 26: Ngoài giờ [Trống] ➔ [6]"
+        },
+        {
+          "time": "22:24:03 17/1/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:24:04 17/1/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:24:11 17/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ],
+      "adminCoeff": "1.2"
+    },
+    "attendance_2026-01_HAN LÊ BẢO NGỌC": {
+      "name": "HAN LÊ BẢO NGỌC",
+      "position": "HỘ LÝ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:39:50 17/1/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "18:40:11 17/1/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "21:38:34 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ]
+    },
+    "attendance_2026-02_NGUYỄN VĂN TÂN": {
+      "name": "NGUYỄN VĂN TÂN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "20:35:08 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "20:36:01 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:36:03 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:38:07 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:38:22 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:38:57 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:39:00 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:42:59 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:44:33 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:55:14 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:55:19 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:55:55 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:56:05 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ]
+    },
+    "attendance_2026-01_TRẦN LÊ CẨM MY": {
+      "name": "TRẦN LÊ CẨM MY",
+      "position": "THƯ KÍ Y KHOA",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "21:36:16 17/1/2026",
+          "user": "MY",
+          "action": "Lưu dữ liệu"
+        }
+      ]
+    },
+    "attendance_2026-01_ĐẶNG THỊ MỸ LỆ": {
+      "name": "ĐẶNG THỊ MỸ LỆ",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:21:52 17/1/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "18:23:44 17/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "18:50:36 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.1"
+        },
+        {
+          "time": "18:50:36 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.2"
+        },
+        {
+          "time": "18:50:36 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.3"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.4"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.5"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.6"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.7"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.8"
+        },
+        {
+          "time": "18:50:37 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.9"
+        },
+        {
+          "time": "18:50:38 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1"
+        },
+        {
+          "time": "18:50:38 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 1.1"
+        },
+        {
+          "time": "21:32:31 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 2.2"
+        },
+        {
+          "time": "21:32:33 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: "
+        },
+        {
+          "time": "08:49:59 18/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.2"
+        },
+        {
+          "time": "08:50:00 18/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin (Global): 1.1"
+        },
+        {
+          "time": "08:50:00 18/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin (Global): 1"
+        }
+      ],
+      "adminCoeff": "1"
+    },
+    "attendance_2026-01_ĐỖ THỊ HẰNG NGA": {
+      "name": "ĐỖ THỊ HẰNG NGA",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:23:46 17/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "18:50:40 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.1"
+        },
+        {
+          "time": "18:50:40 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.2"
+        },
+        {
+          "time": "18:50:41 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.3"
+        },
+        {
+          "time": "18:50:41 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.4"
+        },
+        {
+          "time": "18:50:41 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.5"
+        },
+        {
+          "time": "18:50:41 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.6"
+        },
+        {
+          "time": "18:50:41 17/1/2026",
+          "user": "TÂN",
+          "action": "Cập nhật Hệ số Admin: 0.7"
+        },
+        {
+          "time": "21:32:36 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: "
+        }
+      ],
+      "adminCoeff": ""
+    },
+    "attendance_2026-01_KHƯƠNG THỊ THANH": {
+      "name": "KHƯƠNG THỊ THANH",
+      "position": "ĐIỀU DƯỠNG HỒI SỨC",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "08:36:45 18/1/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        }
+      ]
+    },
+    "attendance_2026-01_NGUYỄN KIM NGỌC": {
+      "name": "NGUYỄN KIM NGỌC",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:15:11 17/1/2026",
+          "user": "NGỌC",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:15:13 17/1/2026",
+          "user": "NGỌC",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "21:38:25 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "22:15:53 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ]
+    },
+    "attendance_2026-01": {
+      "name": "NGUYỄN VĂN TÂN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [
+        {
+          "date": "2025-12-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2025-12-26",
+          "type": "overtime",
+          "value": "16H30-17H30"
+        }
+      ],
+      "duties": [
+        {
+          "date": "2025-12-26",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        }
+      ]
+    },
+    "attendance_2026-01_NGUYỄN VĂN THANH": {
+      "name": "NGUYỄN VĂN THANH",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "22:13:38 17/1/2026",
+          "user": "ADMIN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [2]\n- Ngày 26: Ngoài giờ [Trống] ➔ [2]"
+        },
+        {
+          "time": "22:13:40 17/1/2026",
+          "user": "ADMIN",
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:13:52 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:14:17 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.5"
+        },
+        {
+          "time": "22:14:21 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.4"
+        },
+        {
+          "time": "22:14:22 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: 1.3"
+        },
+        {
+          "time": "22:15:20 17/1/2026",
+          "user": "ADMIN",
+          "action": "- Ngày 26: Trong giờ [2] ➔ [Bỏ]\n- Ngày 26: Ngoài giờ [2] ➔ [Bỏ]\n- Ngày 26: Trực [TRỰC NGOÀI Ở LẠI] ➔ [-]"
+        },
+        {
+          "time": "22:15:25 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:15:33 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: -1.2"
+        },
+        {
+          "time": "22:15:37 17/1/2026",
+          "user": "ADMIN",
+          "action": "Cập nhật Hệ số Admin: "
+        }
+      ],
+      "adminCoeff": ""
+    },
+    "attendance_2026-01_NGUYỄN THỊ HOA": {
+      "name": "NGUYỄN THỊ HOA",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "17:58:50 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:17 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:19 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:29 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:33 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:35 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:07:39 17/1/2026",
+          "user": "HOA",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "21:38:26 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ]
+    },
+    "attendance_2026-01_ADMIN": {
+      "name": "ADMIN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "17:54:16 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "17:58:07 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "17:58:11 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "17:58:13 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "17:58:26 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "21:33:05 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:37:59 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:38:10 17/1/2026",
+          "user": "ADMIN",
+          "action": "- Ngày 26: Ngoài giờ [10h00-10h25] ➔ [Bỏ]\n- Ngày 26: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [-]"
+        },
+        {
+          "time": "22:15:39 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:15:44 17/1/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ]
+    },
+    "attendance_2026-01_HOÀNG SỸ HUY": {
+      "name": "HOÀNG SỸ HUY",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:23:48 17/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        },
+        {
+          "time": "19:31:39 17/1/2026",
+          "user": "HUY",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "22:07:06 17/1/2026",
+          "user": "HUY",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]\n- Ngày 26: Ngoài giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:12:20 17/1/2026",
+          "user": "HUY",
+          "action": "- Ngày 26: Trong giờ [8] ➔ [Bỏ]\n- Ngày 26: Ngoài giờ [8] ➔ [Bỏ]"
+        }
+      ]
+    },
+    "attendance_2026-02": {
+      "name": "NGUYỄN VĂN TÂN",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [
+        {
+          "date": "2026-01-25",
+          "value": "TRỰC CHÍNH"
+        }
+      ]
+    },
+    "attendance_2026-01_NGUYỄN THỊ HẬU": {
+      "name": "NGUYỄN THỊ HẬU",
+      "position": "HỘ LÝ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "19:57:56 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:58:00 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:58:02 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:58:06 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:58:08 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "19:59:58 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "20:00:05 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "20:03:02 17/1/2026",
+          "user": "HẬU",
+          "action": "Lưu dữ liệu"
+        },
+        {
+          "time": "20:17:21 17/1/2026",
+          "user": "HẬU",
+          "action": "- Ngày 27: Trong giờ [Trống] ➔ [3]\n- Ngày 27: Ngoài giờ [Trống] ➔ [1]"
+        },
+        {
+          "time": "20:17:25 17/1/2026",
+          "user": "HẬU",
+          "action": "- Ngày 29: Trong giờ [Trống] ➔ [3]\n- Ngày 29: Ngoài giờ [Trống] ➔ [1]"
+        },
+        {
+          "time": "20:17:29 17/1/2026",
+          "user": "HẬU",
+          "action": "- Ngày 29: Ngoài giờ [1] ➔ [Bỏ]"
+        },
+        {
+          "time": "20:17:34 17/1/2026",
+          "user": "HẬU",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [9]"
+        },
+        {
+          "time": "20:17:37 17/1/2026",
+          "user": "HẬU",
+          "action": "- Ngày 30: Ngoài giờ [9] ➔ [Bỏ]"
+        },
+        {
+          "time": "21:38:32 17/1/2026",
+          "user": "ADMIN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ]
+    },
+    "attendance_2026-01_NGUYỄN VĂN ĐÔNG": {
+      "name": "NGUYỄN VĂN ĐÔNG",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-01",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "18:23:49 17/1/2026",
+          "user": "TÂN",
+          "action": "Xóa toàn bộ dữ liệu tháng"
+        }
+      ]
+    }
+  },
+  "coefficients": {
+    "coeff_global_ĐẶNG THỊ MỸ LỆ": "1"
+  }
+}
