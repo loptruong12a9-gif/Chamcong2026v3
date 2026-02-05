@@ -1120,19 +1120,26 @@ td.sunday-holiday {
 /* Mobile Optimization (iPhone & Smartphones) */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
-        padding-left: max(10px, env(safe-area-inset-left));
-        padding-right: max(10px, env(safe-area-inset-right));
-        padding-bottom: env(safe-area-inset-bottom, 20px);
+        padding: 0;
+        margin: 0;
         overflow-x: hidden;
-        /* Prevent horizontal shake */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .app-container {
-        padding: 12px;
-        border-radius: 16px;
-        margin-bottom: 20px;
+        padding: 10px;
+        padding-top: max(10px, env(safe-area-inset-top));
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+        border-radius: 0;
+        /* Full width on very small screens feels better */
         width: 100%;
+        max-width: 100vw;
+        border: none;
         box-sizing: border-box;
     }
 
@@ -1145,25 +1152,67 @@ td.sunday-holiday {
 
     header {
         padding: 12px;
-        padding-top: calc(env(safe-area-inset-top, 0px) + 12px);
-        gap: 12px;
+        padding-top: calc(env(safe-area-inset-top, 0px) + 15px);
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
     }
 
     .app-logo {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
     }
 
     .app-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         white-space: normal;
-        line-height: 1.2;
+        line-height: 1.3;
+        text-align: center;
+        width: 100%;
+        display: block;
     }
 
     .header-right {
         width: 100%;
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .user-info-group,
+    .controls-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Keep buttons in a centered wrapping row instead of a long column */
+    .user-info-group>button,
+    .user-info-group>.sync-status-container {
+        width: auto;
+        justify-content: center;
+    }
+
+    .user-info-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .sync-status-container {
+        width: 100% !important;
+        justify-content: center;
     }
 
     .btn-group {
@@ -1177,6 +1226,9 @@ td.sunday-holiday {
         width: 100%;
         padding: 12px 8px;
         font-size: 0.85rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .info-group-row {
@@ -1192,7 +1244,7 @@ td.sunday-holiday {
     }
 
     .table-wrapper {
-        margin: 0 -12px;
+        margin: 0 -10px;
         border-radius: 0;
         border-left: none;
         border-right: none;
@@ -1208,7 +1260,11 @@ td.sunday-holiday {
         left: 0;
         z-index: 20;
         background: var(--bg-card) !important;
+        width: 40px;
         min-width: 40px;
+        max-width: 40px;
+        text-align: center;
+        padding: 4px !important;
     }
 
     .summary-sticky-name {
@@ -1247,15 +1303,41 @@ td.sunday-holiday {
     }
 
     .totals-section {
-        gap: 8px;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
     }
 
     .total-card {
         padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .total-value {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
+    }
+
+    .info-group {
+        background: var(--bg-card);
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .info-group input,
+    .info-group select {
+        width: 100% !important;
+        text-align: center;
     }
 }
 
