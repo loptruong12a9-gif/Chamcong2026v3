@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-05T15:12:29.975Z",
+    "lastUpdate": "2026-02-05T15:12:39.792Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -3960,6 +3960,20 @@
         }
       ],
       "adminCoeff": "1.25"
+    },
+    "attendance_2026-02_NGUYỄN THỊ HOA": {
+      "name": "NGUYỄN THỊ HOA",
+      "position": "KTV GÂY MÊ",
+      "month": "2026-02",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "22:12:38 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
+        }
+      ]
     }
   },
   "coefficients": {
