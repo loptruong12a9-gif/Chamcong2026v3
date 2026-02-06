@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T03:20:27.305Z",
+    "lastUpdate": "2026-02-06T03:21:00.179Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1209,7 +1209,13 @@
       "name": "KHƯƠNG THỊ THANH",
       "position": "ĐIỀU DƯỠNG HỒI SỨC",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
         {
@@ -1261,6 +1267,11 @@
           "time": "19:55:34 29/1/2026",
           "user": "TÂN",
           "action": "Cập nhật Hệ số Admin (Global): 0.95"
+        },
+        {
+          "time": "10:20:58 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
         }
       ],
       "adminCoeff": "0.95"
