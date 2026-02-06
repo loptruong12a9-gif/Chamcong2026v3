@@ -1324,18 +1324,32 @@ document.addEventListener('DOMContentLoaded', () => {
             const autoSync = document.getElementById('github-auto-sync').checked;
 
             if (!token || !repo) {
-                alert('Vui lòng nhập Token và Repository!');
+                showToast('Vui lòng nhập Token và Repository!', 'warning');
                 return;
             }
 
             GitHubSync.configure(token, repo, branch, autoSync);
-            githubStatusMsg.textContent = '✅ Đã lưu cấu hình!';
-            githubStatusMsg.className = 'status-message success';
+            showToast('Đã lưu cấu hình GitHub');
 
             setTimeout(() => {
                 hideGitHubConfigModal();
-                alert('Cấu hình GitHub đã được lưu thành công!');
             }, 1000);
+        });
+    }
+
+    // Add immediate save for Auto-Sync checkbox (Premium UX)
+    const autoSyncCheck = document.getElementById('github-auto-sync');
+    if (autoSyncCheck) {
+        autoSyncCheck.addEventListener('change', () => {
+            const token = document.getElementById('github-token').value.trim();
+            const repo = document.getElementById('github-repo').value.trim();
+            const branch = document.getElementById('github-branch').value.trim() || 'main';
+            const autoSync = autoSyncCheck.checked;
+
+            if (token && repo) {
+                GitHubSync.configure(token, repo, branch, autoSync);
+                showToast(autoSync ? 'Đã bật Tự động đồng bộ' : 'Đã tắt Tự động đồng bộ');
+            }
         });
     }
 
