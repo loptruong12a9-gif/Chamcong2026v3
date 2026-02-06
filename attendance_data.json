@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T03:18:40.265Z",
+    "lastUpdate": "2026-02-06T03:20:22.332Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2318,7 +2318,7 @@
         },
         {
           "date": "2026-02-03",
-          "value": "TRỰC CHÍNH"
+          "value": "TRỰC NGOÀI Ở LẠI"
         },
         {
           "date": "2026-02-04",
@@ -2330,21 +2330,6 @@
         }
       ],
       "history": [
-        {
-          "time": "10:16:10 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "10:16:26 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16h30-23h00]"
-        },
-        {
-          "time": "10:16:27 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
-        },
         {
           "time": "10:16:27 6/2/2026",
           "user": "TÂN",
@@ -2427,6 +2412,21 @@
         },
         {
           "time": "10:18:38 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:19:05 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:19:54 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "10:20:07 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
