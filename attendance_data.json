@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T03:07:08.972Z",
+    "lastUpdate": "2026-02-06T03:07:55.456Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2746,6 +2746,12 @@
           "type": "overtime",
           "value": "04h50-06h20",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-01-31",
+          "type": "overtime",
+          "value": "16h30-18h55",
+          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -2767,21 +2773,6 @@
         }
       ],
       "history": [
-        {
-          "time": "10:04:50 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "10:04:51 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "10:04:51 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "10:05:10 6/2/2026",
           "user": "TÂN",
@@ -2866,6 +2857,21 @@
           "time": "10:07:07 6/2/2026",
           "user": "TÂN",
           "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:07:08 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:07:08 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:07:53 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [Trống] ➔ [16h30-18h55]"
         }
       ],
       "adminCoeff": "0.95"
