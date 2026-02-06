@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T11:26:24.317Z",
+    "lastUpdate": "2026-02-06T11:27:33.090Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -350,21 +350,6 @@
       ],
       "history": [
         {
-          "time": "18:09:01 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Ngoài giờ [Trống] ➔ [16H30-17H15]"
-        },
-        {
-          "time": "18:09:03 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "18:09:05 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "18:09:06 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
@@ -448,6 +433,21 @@
           "time": "18:19:06 6/2/2026",
           "user": "TÂN",
           "action": "- Ngày 07: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "18:25:06 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:26:35 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:27:15 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ]
     },
@@ -3123,11 +3123,6 @@
         {
           "time": "10:08:50 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "10:08:50 6/2/2026",
-          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
@@ -3217,6 +3212,11 @@
         },
         {
           "time": "18:23:49 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:24:57 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
