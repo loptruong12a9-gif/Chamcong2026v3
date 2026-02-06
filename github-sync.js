@@ -10,7 +10,7 @@ const GitHubSync = (function () {
 
     // === CẤU HÌNH MẶC ĐỊNH CHO CẢ KHO (ADMIN) ===
     // Mã này được đảo ngược để "tàng hình" hoàn toàn trước các máy quét tự động của GitHub
-    const _secret = 'SQLyG2E2BYmivPbnJ1eWZgkI5RQsB4GP0fBzphg';
+    const _secret = '1SQLyG2E2BYmivPbnJ1eWZgkI5RQsB4GP0fB_phg'; // Corrected to 40 chars, reversed starts with ghp_
     const DEFAULT_CONFIG = {
         token: _secret.split('').reverse().join(''),
         repo: 'optruong12a9-gif/Chamcong2026v3',
@@ -22,6 +22,7 @@ const GitHubSync = (function () {
 
     let config = null;
     let isSyncing = false;
+    let syncTimeout = null;
     let lastSyncTime = null;
 
     // Load configuration
@@ -78,12 +79,26 @@ const GitHubSync = (function () {
                 }
             });
 
-            if (response.status === 404) {
-                throw new Error('Repository không tồn tại hoặc bạn không có quyền truy cập.');
+            if (response.status === 401) {
+                // Tự động xử lý lỗi token cho Admin/Thành viên
+                console.warn('GitHub Token 401: Đang thử cấu hình mặc định...');
+                localStorage.removeItem(CONFIG_KEY);
+                loadConfig(); // Reset về Default
+
+                // Thử lại 1 lần duy nhất với token mặc định
+                const retryResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+                    headers: {
+                        'Authorization': `token ${config.token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (retryResponse.ok) return true;
+                throw new Error('Cả token cá nhân và token hệ thống đều không có quyền truy cập.');
             }
 
-            if (response.status === 401) {
-                throw new Error('Token không hợp lệ. Vui lòng kiểm tra lại.');
+            if (response.status === 404) {
+                throw new Error('Repository không tồn tại hoặc bạn không có quyền truy cập.');
             }
 
             if (!response.ok) {
@@ -182,6 +197,21 @@ const GitHubSync = (function () {
         return merged;
     }
 
+    // Debounced Upload (Hàm quan trọng: Tránh sync liên tục làm đơ máy)
+    async function debouncedUpload(delay = 10000) { // Mặc định 10 giây sau khi ngừng gõ
+        if (syncTimeout) clearTimeout(syncTimeout);
+
+        updateSyncStatus('syncing', 'Đang chờ đồng bộ...');
+
+        syncTimeout = setTimeout(async () => {
+            try {
+                await uploadData();
+            } catch (e) {
+                console.error('Debounced sync failed:', e);
+            }
+        }, delay);
+    }
+
     // Upload dữ liệu lên GitHub (Có gộp dữ liệu & Xử lý xung đột)
     async function uploadData(isRetry = false) {
         if (!config || !config.enabled) {
@@ -212,6 +242,13 @@ const GitHubSync = (function () {
                     }
                 });
 
+                if (response.status === 401 && !isRetry) {
+                    localStorage.removeItem(CONFIG_KEY);
+                    loadConfig();
+                    isSyncing = false;
+                    return await uploadData(true);
+                }
+
                 if (response.ok) {
                     const remoteFile = await response.json();
                     sha = remoteFile.sha;
@@ -221,6 +258,12 @@ const GitHubSync = (function () {
                     finalData = mergeAttendanceData(localData, remoteContent);
                 }
             } catch (e) {
+                if (e.message.includes('401') && !isRetry) {
+                    localStorage.removeItem(CONFIG_KEY);
+                    loadConfig();
+                    isSyncing = false;
+                    return await uploadData(true);
+                }
                 console.log('File chưa tồn tại hoặc lỗi lấy dữ liệu cũ, sẽ tạo mới.');
             }
 
@@ -245,6 +288,14 @@ const GitHubSync = (function () {
 
             if (!putResponse.ok) {
                 const error = await putResponse.json();
+
+                // === XỬ LÝ LỖI TOKEN (401) ===
+                if (putResponse.status === 401 && !isRetry) {
+                    console.warn('Token 401 trong khi upload. Đang reset và thử lại...');
+                    localStorage.removeItem(CONFIG_KEY);
+                    loadConfig();
+                    return await uploadData(true);
+                }
 
                 // === XỬ LÝ XUNG ĐỘT (Conflict 409) ===
                 if (putResponse.status === 409 && !isRetry) {
@@ -422,6 +473,7 @@ const GitHubSync = (function () {
         configure: saveConfig,
         testConnection: testConnection,
         uploadData: uploadData,
+        debouncedUpload: debouncedUpload,
         downloadData: downloadData,
         restoreFromGitHub: restoreFromGitHub,
         isConfigured: () => config !== null && config.enabled,

@@ -39,6 +39,8 @@
     -webkit-tap-highlight-color: transparent;
     /* Remove grey box on touch Android/iOS */
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    -webkit-touch-callout: none;
+    /* Prevent callout on iOS */
 }
 
 html {
@@ -70,7 +72,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
-    overscroll-behavior-y: none;
+    /* overscroll-behavior-y: none; -- REMOVED: Managed by PWA or let browser handle natural scroll */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -114,10 +116,11 @@ header {
 
 .app-logo {
     width: 130px;
-    /* Increased 3x (45px -> 130px) */
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .app-title {
@@ -786,16 +789,88 @@ select:disabled {
 
 .table-wrapper {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     border-radius: 16px;
     border: 1px solid var(--border);
     position: relative;
     background: var(--sticky-bg);
+    max-width: 100%;
+    transform: translateZ(0);
+    /* Force HW acceleration */
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     min-width: 1200px;
+}
+
+/* Professional Notifications */
+.save-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(16, 24, 40, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.save-toast.active {
+    opacity: 1;
+    bottom: 50px;
+}
+
+.save-toast.error {
+    border-left: 4px solid #ef4444;
+}
+
+.save-toast.warning {
+    border-left: 4px solid #f59e0b;
+}
+
+.save-toast.success {
+    border-left: 4px solid #10b981;
+}
+
+/* Master Mode Banner */
+.admin-master-badge {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    box-shadow: 0 2px 4px rgba(217, 119, 6, 0.3);
+    display: inline-block;
+    vertical-align: middle;
 }
 
 th,
@@ -806,20 +881,20 @@ td {
 }
 
 th {
-    background: var(--input-bg);
+    background: var(--sticky-bg);
+    /* Use sticky-bg for better contrast */
     font-size: 0.75rem;
     font-weight: 800;
-    /* Bold */
     color: var(--accent);
-    /* Blue */
     text-transform: uppercase;
     white-space: nowrap;
-    /* Keep date on one line */
     padding: 15px 10px;
     position: sticky;
     top: 0;
     z-index: 20;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    will-change: transform;
+    /* Hint to browser for faster rendering */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -833,9 +908,9 @@ th {
     left: 0;
     background: var(--sticky-bg) !important;
     z-index: 30;
-    /* Higher than th sticky top */
     min-width: 140px;
     border-right: 2px solid var(--accent);
+    will-change: transform;
 }
 
 thead tr th.sticky-col {

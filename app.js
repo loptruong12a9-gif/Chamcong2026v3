@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalOvertimeEl = document.getElementById('total-overtime');
     const totalAllEl = document.getElementById('total-all');
 
-    const EMPLOYEE_MAP = {
+    // --- DYNAMIC EMPLOYEE LOADING ---
+    let EMPLOYEE_MAP = {
         "NGUYỄN VĂN TÂN": "ĐIỀU DƯỠNG DỤNG CỤ",
         "NGUYỄN VĂN THANH": "ĐIỀU DƯỠNG DỤNG CỤ",
         "NGUYỄN VĂN ĐÔNG": "ĐIỀU DƯỠNG DỤNG CỤ",
@@ -37,6 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
         "NGUYỄN THỊ HẬU": "HỘ LÝ",
         "NGUYỄN THỊ ĐỨC KHUYÊN": "HỘ LÝ"
     };
+
+    function syncEmployeeMap() {
+        // Find any data in localStorage that isn't in EMPLOYEE_MAP
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key.startsWith('attendance_')) {
+                try {
+                    const data = JSON.parse(localStorage.getItem(key));
+                    const upperName = (data.name || '').toUpperCase();
+                    if (upperName && data.position && upperName !== 'ADMIN' && !EMPLOYEE_MAP[upperName]) {
+                        EMPLOYEE_MAP[upperName] = data.position;
+                    }
+                } catch (e) { }
+            }
+        }
+        updateNameSuggestions();
+    }
 
     // === AUTHENTICATION SYSTEM ===
 
@@ -107,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Authentication functions
     const getCurrentUser = () => sessionStorage.getItem('currentUser');
     const isAdmin = () => {
-        const user = getCurrentUser();
+        const user = (getCurrentUser() || '').trim().toUpperCase();
         return user === 'ADMIN' || user === 'TÂN';
     };
     const canEdit = (employeeName) => {
@@ -138,7 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const autoFillPosition = (name) => {
         const upperName = name.trim().toUpperCase();
         if (EMPLOYEE_MAP[upperName]) {
-            document.getElementById('employee-position').value = EMPLOYEE_MAP[upperName];
+            const posInput = document.getElementById('employee-position');
+            // If user is admin, don't overwrite if they already typed something different
+            if (isAdmin() && posInput.value && posInput.value !== EMPLOYEE_MAP[upperName]) {
+                // Keep admin's manual entry
+                return;
+            }
+            posInput.value = EMPLOYEE_MAP[upperName];
             toggleDutyRowVisibility();
         }
     };
@@ -171,13 +195,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Populate name autocomplete suggestions
     const nameDatalist = document.getElementById('employee-names-list');
-    if (nameDatalist) {
-        Object.keys(EMPLOYEE_MAP).forEach(name => {
-            const option = document.createElement('option');
-            option.value = name;
-            nameDatalist.appendChild(option);
-        });
+    function updateNameSuggestions() {
+        if (nameDatalist) {
+            nameDatalist.innerHTML = '';
+            Object.keys(EMPLOYEE_MAP).sort().forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                nameDatalist.appendChild(option);
+            });
+        }
     }
+    updateNameSuggestions();
+    syncEmployeeMap();
 
     // === LOGIN FLOW & ACCESS CONTROL ===
 
@@ -192,7 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const words = fullName.split(' ');
             const displayName = words.length >= 2 ? words.slice(-2).join(' ') : fullName;
 
-            userDisplay.textContent = isAdmin() ? `👤 ${displayName} (Admin)` : `👤 ${displayName}`;
+            userDisplay.textContent = `👤 ${displayName}`;
+            if (isAdmin()) {
+                const badge = document.createElement('span');
+                badge.className = 'admin-master-badge';
+                badge.textContent = 'MASTER';
+                userDisplay.appendChild(badge);
+            }
             logoutBtn.style.display = 'inline-block';
 
             // Chỉ hiện nút Cấu hình GitHub cho Admin
@@ -201,16 +236,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 githubConfigBtn.style.display = isAdmin() ? 'flex' : 'none';
             }
 
-            // Auto-load data for the current user if not already set
+            // Auto-load data for the current user if not already set (Don't auto-load for ADMIN)
             if (employeeNameInput && !employeeNameInput.value) {
                 const fullName = SHORTNAME_TO_FULLNAME[user] || user;
-                employeeNameInput.value = fullName;
-                loadData();
+                if (fullName.toUpperCase() !== 'ADMIN') {
+                    employeeNameInput.value = fullName;
+                    loadData();
+                }
             }
         }
     }
 
     function lockInputsBasedOnPermission() {
+        if (isAdmin()) {
+            // Absolute power: Unlock everything immediately
+            document.querySelectorAll('.attendance-input, .ovt-textarea, .duty-select').forEach(input => {
+                input.disabled = false;
+            });
+            document.getElementById('employee-name').disabled = false;
+            document.getElementById('employee-position').disabled = false;
+            document.getElementById('save-btn').disabled = false;
+            document.getElementById('clear-btn').disabled = false;
+            return;
+        }
+
         const currentName = document.getElementById('employee-name').value.trim().toUpperCase();
         const canEditCurrent = canEdit(currentName);
 
@@ -309,6 +358,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- DEBOUNCE UTILITY ---
+    const debounce = (func, wait) => {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    };
+
+    const debouncedRenderSummary = debounce(() => {
+        syncEmployeeMap();
+        renderSummaryTable();
+    }, 500);
+
     const generateTable = () => {
         const [year, month] = monthPicker.value.split('-').map(Number);
 
@@ -384,7 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputReg.addEventListener('input', (e) => {
                     if (parseFloat(e.target.value) > 8) {
                         e.target.value = 8;
-                        alert('Giờ trong ca tối đa là 8 tiếng!');
+                        showToast('Giờ hành chính tối đa là 8 tiếng', 'warning');
                     }
                     calculateTotals();
 
@@ -419,12 +486,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 areaOvt.addEventListener('change', (e) => {
                     if (e.target.value !== originalValue) {
-                        if (confirm(`Bạn có muốn sửa các thông tin ngoài giờ này và lưu lại không?`)) {
-                            saveData();
-                        } else {
-                            areaOvt.value = originalValue;
-                            calculateTotals();
-                        }
+                        // Silent Save for Premium experience
+                        saveData();
                     }
                 });
 
@@ -473,7 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadData();
         updateSignatureDate();
         toggleDutyRowVisibility();
-        renderSummaryTable();
+        debouncedRenderSummary(); // Optimization: use debounced version
     };
 
 
@@ -501,18 +564,20 @@ document.addEventListener('DOMContentLoaded', () => {
             "HỘ LÝ"
         ];
 
-        const allStaffNames = Object.keys(EMPLOYEE_MAP).sort((a, b) => {
-            if (a === "NGUYỄN VĂN TÂN") return -1;
-            if (b === "NGUYỄN VĂN TÂN") return 1;
+        const allStaffNames = Object.keys(EMPLOYEE_MAP)
+            .filter(name => name.toUpperCase() !== 'ADMIN') // Strictly exclude ADMIN
+            .sort((a, b) => {
+                if (a === "NGUYỄN VĂN TÂN") return -1;
+                if (b === "NGUYỄN VĂN TÂN") return 1;
 
-            const posA = EMPLOYEE_MAP[a];
-            const posB = EMPLOYEE_MAP[b];
-            const orderA = POSITION_ORDER.indexOf(posA);
-            const orderB = POSITION_ORDER.indexOf(posB);
+                const posA = EMPLOYEE_MAP[a];
+                const posB = EMPLOYEE_MAP[b];
+                const orderA = POSITION_ORDER.indexOf(posA);
+                const orderB = POSITION_ORDER.indexOf(posB);
 
-            if (orderA !== orderB) return orderA - orderB;
-            return a.localeCompare(b);
-        });
+                if (orderA !== orderB) return orderA - orderB;
+                return a.localeCompare(b);
+            });
 
         // Load all saved data for the month
         const savedDataMap = {};
@@ -526,6 +591,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        const frag = document.createDocumentFragment();
         allStaffNames.forEach((name, index) => {
             const data = savedDataMap[name] || {
                 name: name,
@@ -537,7 +603,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const totals = calculateDataTotals(data);
             const isNoData = !savedDataMap[name];
 
-            const currentMonth = monthPicker.value;
             const globalCoeff = localStorage.getItem(`coeff_global_${name.toUpperCase()}`) || data.adminCoeff || '';
             const displayCoeff = globalCoeff || '';
 
@@ -567,8 +632,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </td>
                 ` : ''}
             `;
-            summaryBody.appendChild(tr);
+            frag.appendChild(tr);
         });
+        summaryBody.appendChild(frag);
     };
 
     // Hàm load người cụ thể khi click từ summary
@@ -798,10 +864,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSignatureDate = () => {
         const [year, month] = monthPicker.value.split('-').map(Number);
-        const sigDate = new Date(year, month - 1, 26); // Ngày 26 của tháng được chọn
+        const sigDateStr = `Ngày 26 tháng ${month} năm ${year}`;
         const sigDateEl = document.getElementById('display-sig-date');
         if (sigDateEl) {
-            sigDateEl.textContent = `Ngày 26 tháng ${month} năm ${year}`;
+            if (isAdmin()) {
+                sigDateEl.contentEditable = "true";
+                // Only set if field is currently empty to avoid overwriting manual edits
+                if (!sigDateEl.textContent.trim()) {
+                    sigDateEl.textContent = sigDateStr;
+                }
+            } else {
+                sigDateEl.textContent = sigDateStr;
+                sigDateEl.contentEditable = "false";
+            }
         }
     };
 
@@ -887,12 +962,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Calculate total sum from the consolidated map
         ovtTotal = Object.values(dailyTotalsMap).reduce((sum, val) => sum + val, 0);
 
+        // Lấy hệ số cho người hiện tại
+        const currentName = document.getElementById('employee-name').value.trim().toUpperCase();
+        let currentCoeff = 1.0;
+        if (currentName) {
+            const globalCoeff = localStorage.getItem(`coeff_global_${currentName}`);
+            const saved = localStorage.getItem(`attendance_${monthPicker.value}_${currentName}`);
+            if (globalCoeff) {
+                currentCoeff = parseFloat(globalCoeff) || 1.0;
+            } else if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    currentCoeff = parseFloat(data.adminCoeff) || 1.0;
+                } catch (e) { }
+            }
+        }
+
         totalRegularEl.textContent = formatHoursToTime(regTotal);
         totalOvertimeEl.textContent = formatHoursToTime(ovtTotal);
-        totalAllEl.textContent = formatHoursToTime(regTotal + ovtTotal);
+        totalAllEl.textContent = formatHoursToTime((regTotal * currentCoeff) + ovtTotal);
 
         // --- CẬP NHẬT TỨC THÌ VÀO BẢNG TỔNG HỢP ---
-        const currentName = document.getElementById('employee-name').value.trim().toUpperCase();
         if (currentName) {
             const summaryRow = document.querySelector(`#summary-body tr[data-name="${currentName}"]`);
             if (summaryRow) {
@@ -934,6 +1024,12 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Only block members from saving as ADMIN, but allow ADMIN user to do anything
+        if (name.toUpperCase() === 'ADMIN' && !isAdmin()) {
+            alert('Tên "ADMIN" chỉ dành cho quản trị. Vui lòng nhập đúng tên của bạn.');
+            return;
+        }
+
         const currentData = {
             name: name,
             position: document.getElementById('employee-position').value,
@@ -963,11 +1059,22 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldData = { entries: [], duties: [], history: [] };
         if (saved) {
             try {
-                oldData = JSON.parse(saved);
-                currentData.history = oldData.history || [];
+                const parsed = JSON.parse(saved);
+                oldData = {
+                    entries: Array.isArray(parsed.entries) ? parsed.entries : [],
+                    duties: Array.isArray(parsed.duties) ? parsed.duties : [],
+                    history: Array.isArray(parsed.history) ? parsed.history : [],
+                    adminCoeff: parsed.adminCoeff
+                };
+                currentData.history = oldData.history;
                 currentData.adminCoeff = oldData.adminCoeff; // Bảo lưu hệ số admin
             } catch (e) { }
         }
+
+        // Ensure currentData arrays are initialized
+        if (!Array.isArray(currentData.entries)) currentData.entries = [];
+        if (!Array.isArray(currentData.duties)) currentData.duties = [];
+        if (!Array.isArray(currentData.history)) currentData.history = [];
 
         // Deep Comparison for History
         const changes = [];
@@ -1026,42 +1133,40 @@ document.addEventListener('DOMContentLoaded', () => {
         // Limit history to last 20 entries
         if (currentData.history.length > 20) currentData.history = currentData.history.slice(-20);
 
-        localStorage.setItem(`attendance_${monthPicker.value}_${name}`, JSON.stringify(currentData));
+        // FINAL SAVE TO LOCALSTORAGE
+        const saveKey = `attendance_${monthPicker.value}_${name}`;
+        localStorage.setItem(saveKey, JSON.stringify(currentData));
         calculateTotals();
-        renderSummaryTable();
+        debouncedRenderSummary(); // Use debounced render
         showSaveNotification();
 
-        // --- GITHUB AUTO-SYNC ---
+        // --- GITHUB AUTO-SYNC (Optimize: Use Debounced Upload) ---
         if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled()) {
-            GitHubSync.uploadData().catch(err => {
-                console.error('GitHub Auto-sync failed:', err);
-            });
+            GitHubSync.debouncedUpload(15000); // Wait 15s after last save to sync
         }
     };
 
-    // Visual Save Notification
-    const showSaveNotification = () => {
+    // Unified Notification System (Gold Standard)
+    const showToast = (message, type = 'success') => {
         let toast = document.getElementById('save-toast');
         if (!toast) {
             toast = document.createElement('div');
             toast.id = 'save-toast';
-            toast.style.cssText = `
-                position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-                background: rgba(0,0,0,0.8); color: white; padding: 10px 20px; border-radius: 20px;
-                font-family: 'Inter', sans-serif; font-size: 14px; z-index: 9999;
-                display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-                opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
-            `;
-            toast.innerHTML = '<span>✅</span> Đã lưu dữ liệu';
+            toast.className = 'save-toast';
             document.body.appendChild(toast);
         }
 
-        toast.style.opacity = '1';
+        const icon = type === 'success' ? '✅' : (type === 'error' ? '❌' : '⚠️');
+        toast.className = `save-toast active ${type}`;
+        toast.innerHTML = `<span>${icon}</span> ${message}`;
+
         clearTimeout(window.saveToastTimer);
         window.saveToastTimer = setTimeout(() => {
-            toast.style.opacity = '0';
-        }, 1500);
+            toast.classList.remove('active');
+        }, 3000);
     };
+
+    const showSaveNotification = () => showToast('Đã lưu dữ liệu');
 
     // Force save on app exit/hide (Mobile optimize)
     ['visibilitychange', 'pagehide'].forEach(evt => {
@@ -1103,12 +1208,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('save-btn').addEventListener('click', () => {
-        saveData();
-        alert('Đã lưu dữ liệu thành công!');
+        try {
+            saveData();
+            showToast('Đã lưu dữ liệu thành công!', 'success');
+        } catch (e) {
+            showToast('Lỗi khi lưu dữ liệu!', 'error');
+            console.error(e);
+        }
     });
 
     document.getElementById('employee-name').addEventListener('input', (e) => {
-        const val = e.target.value;
+        const val = e.target.value.trim();
+        const isCurrentlyAdmin = isAdmin();
+
+        if (val.toUpperCase() === 'ADMIN' && !isCurrentlyAdmin) {
+            // Clear or warn if regular member tries to type ADMIN
+            if (document.getElementById('signature-name')) document.getElementById('signature-name').textContent = '';
+            loadData();
+            return;
+        }
+
         if (document.getElementById('signature-name')) {
             document.getElementById('signature-name').textContent = val.toUpperCase();
         }
@@ -1411,7 +1530,7 @@ document.addEventListener('DOMContentLoaded', () => {
         a.download = `Sao_Luu_Cham_Cong_${timestamp}.json`;
         a.click();
         URL.revokeObjectURL(url);
-        alert('Đã tải về file sao lưu dữ liệu!');
+        showToast('Đã tải về file sao lưu dữ liệu!', 'success');
     };
 
     const restoreData = (file) => {
@@ -1423,7 +1542,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     Object.keys(data).forEach(key => {
                         localStorage.setItem(key, data[key]);
                     });
-                    alert('Khôi phục dữ liệu thành công! Ứng dụng sẽ tự động tải lại.');
+                    showToast('Khôi phục thành công! Trang sẽ tải lại...', 'success');
                     location.reload();
                 }
             } catch (err) {

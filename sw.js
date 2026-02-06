@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cham-cong-v3.26';
+const CACHE_NAME = 'cham-cong-v3.30';
 const ASSETS = [
     './',
     './index.html',
@@ -36,26 +36,25 @@ self.addEventListener('activate', (event) => {
     self.clients.claim();
 });
 
-// Fetch Strategy: Network First for main files, Cache First for static assets
+// Fetch Strategy: Stale-While-Revalidate for core files
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
-
-    // Check if it's one of our core files
     const isCoreFile = ASSETS.some(asset => event.request.url.includes(asset.replace('./', '')));
 
-    if (isCoreFile && !url.href.includes('fonts.googleapis.com')) {
-        // Network First for main logic/layout
+    if (isCoreFile) {
         event.respondWith(
-            fetch(event.request)
-                .then(response => {
-                    const clonedResponse = response.clone();
-                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, clonedResponse));
-                    return response;
-                })
-                .catch(() => caches.match(event.request))
+            caches.match(event.request).then((cachedResponse) => {
+                const fetchPromise = fetch(event.request).then((networkResponse) => {
+                    caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, networkResponse.clone());
+                    });
+                    return networkResponse;
+                });
+                return cachedResponse || fetchPromise;
+            })
         );
     } else {
-        // Cache First for fonts, images, etc.
+        // Cache First for external resources / fonts
         event.respondWith(
             caches.match(event.request).then((response) => {
                 return response || fetch(event.request).then(fetchResponse => {
