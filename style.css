@@ -1260,13 +1260,25 @@ td.sunday-holiday {
     }
 
     /* Prevent iOS Auto-zoom on inputs */
-    input,
+    /* Prevent iOS Auto-zoom on inputs, but keep checkboxes native or styled */
+    input:not([type="checkbox"]),
     select,
     textarea {
         font-size: 16px !important;
         -webkit-appearance: none;
         appearance: none;
         border-radius: 8px;
+    }
+
+    input[type="checkbox"] {
+        width: 24px !important;
+        /* Larger touch target */
+        height: 24px !important;
+        -webkit-appearance: checkbox !important;
+        /* Restore native appearance */
+        appearance: checkbox !important;
+        margin-right: 10px;
+        cursor: pointer;
     }
 
     footer {
