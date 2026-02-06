@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T03:09:16.602Z",
+    "lastUpdate": "2026-02-06T03:09:34.203Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -4557,7 +4557,13 @@
       "name": "PHẠM THỊ A NHỊ",
       "position": "ĐIỀU DƯỠNG HỒI SỨC",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
         {
@@ -4599,6 +4605,11 @@
           "time": "19:56:07 29/1/2026",
           "user": "TÂN",
           "action": "Cập nhật Hệ số Admin (Global): 0.75"
+        },
+        {
+          "time": "10:09:32 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
         }
       ],
       "adminCoeff": "0.75"
