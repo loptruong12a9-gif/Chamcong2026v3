@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T11:12:44.424Z",
-    "updatedBy": "ADMIN"
+    "lastUpdate": "2026-02-06T11:19:23.087Z",
+    "updatedBy": "TÂN"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -342,24 +342,13 @@
         {
           "date": "2026-02-06",
           "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-07",
+          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
-        {
-          "time": "18:08:17 6/2/2026",
-          "user": "ADMIN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "18:08:41 6/2/2026",
-          "user": null,
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "18:08:55 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
         {
           "time": "18:09:01 6/2/2026",
           "user": "TÂN",
@@ -444,6 +433,21 @@
           "time": "18:12:26 6/2/2026",
           "user": "ADMIN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:13:58 6/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:18:54 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:19:06 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trực [-] ➔ [TRỰC CHÍNH]"
         }
       ]
     },
@@ -1099,11 +1103,6 @@
       ],
       "history": [
         {
-          "time": "22:01:39 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "22:01:40 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
@@ -1196,6 +1195,11 @@
         {
           "time": "09:54:56 6/2/2026",
           "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:18:40 6/2/2026",
+          "user": null,
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
