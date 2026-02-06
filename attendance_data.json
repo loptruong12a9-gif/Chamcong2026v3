@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T03:15:10.464Z",
+    "lastUpdate": "2026-02-06T03:15:25.861Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2210,7 +2210,13 @@
       "name": "HUỲNH THỊ THẢO",
       "position": "ĐIỀU DƯỠNG HỒI SỨC",
       "month": "2026-02",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-01-26",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [],
       "history": [
         {
@@ -2252,6 +2258,11 @@
           "time": "19:55:43 29/1/2026",
           "user": "TÂN",
           "action": "Cập nhật Hệ số Admin (Global): 0.75"
+        },
+        {
+          "time": "10:15:24 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
         }
       ],
       "adminCoeff": "0.75"
@@ -4331,11 +4342,6 @@
       ],
       "history": [
         {
-          "time": "22:16:16 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "22:16:17 5/2/2026",
           "user": "TÂN",
           "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
@@ -4429,6 +4435,11 @@
           "time": "10:15:08 6/2/2026",
           "user": "TÂN",
           "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [17h50-19h15]"
+        },
+        {
+          "time": "10:15:10 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.35"
