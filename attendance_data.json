@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-06T02:58:29.772Z",
+    "lastUpdate": "2026-02-06T02:58:55.739Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2896,6 +2896,18 @@
           "type": "overtime",
           "value": "16H30-18H55\n20H45-22H20\n06H40-07H55",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-02",
+          "type": "overtime",
+          "value": "16h30-18h00",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-03",
+          "type": "overtime",
+          "value": "16h30-19h30\n20h30-22h05",
+          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -2914,24 +2926,13 @@
         {
           "date": "2026-02-02",
           "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-03",
+          "value": "TRỰC NGOÀI Ở LẠI"
         }
       ],
       "history": [
-        {
-          "time": "22:10:51 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:10:51 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:10:52 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
-        },
         {
           "time": "22:10:52 5/2/2026",
           "user": "TÂN",
@@ -3016,6 +3017,21 @@
           "time": "09:57:49 6/2/2026",
           "user": "TÂN",
           "action": "- Ngày 02: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:58:07 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [16h30-18h00]"
+        },
+        {
+          "time": "09:58:08 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:58:53 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16h30-19h30\n20h30-22h05]"
         }
       ],
       "adminCoeff": "1.03"
