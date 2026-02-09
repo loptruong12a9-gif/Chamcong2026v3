@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-09T08:25:02.729Z",
+    "lastUpdate": "2026-02-09T08:25:37.904Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -5690,6 +5690,12 @@
           "type": "overtime",
           "value": "16h30-20h30",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-07",
+          "type": "overtime",
+          "value": "16h30-17h20",
+          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -5719,25 +5725,14 @@
         },
         {
           "date": "2026-02-07",
-          "value": "TRỰC CHÍNH"
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-08",
+          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
         }
       ],
       "history": [
-        {
-          "time": "22:12:58 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:13:06 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:13:06 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "22:13:14 5/2/2026",
           "user": "TÂN",
@@ -5822,6 +5817,21 @@
           "time": "15:24:46 9/2/2026",
           "user": "TÂN",
           "action": "- Ngày 07: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "15:25:02 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Ngoài giờ [Trống] ➔ [16h30-17h20]"
+        },
+        {
+          "time": "15:25:08 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "15:25:20 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 08: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
         }
       ]
     },
