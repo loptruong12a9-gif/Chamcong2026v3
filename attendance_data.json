@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-09T08:20:36.627Z",
+    "lastUpdate": "2026-02-09T08:21:17.901Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -3923,6 +3923,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-07",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-20H30",
@@ -3957,6 +3962,12 @@
           "type": "overtime",
           "value": "16h30-19h15",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-07",
+          "type": "overtime",
+          "value": "16h30-19h00",
+          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -3983,39 +3994,17 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-07",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-08",
+          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
-        {
-          "time": "22:17:52 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:17:52 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:17:53 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:17:53 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:17:55 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:17:57 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "22:17:57 5/2/2026",
           "user": "TÂN",
@@ -4085,6 +4074,36 @@
           "time": "10:04:14 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:20:41 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 08: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "15:20:45 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "15:20:48 9/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:20:48 9/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:20:49 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "15:21:01 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Ngoài giờ [Trống] ➔ [16h30-19h00]"
         }
       ],
       "adminCoeff": "1.45"
