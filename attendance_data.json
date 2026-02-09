@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-09T08:24:31.682Z",
+    "lastUpdate": "2026-02-09T08:25:02.729Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -5651,6 +5651,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-07",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-16H45",
@@ -5711,29 +5716,13 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-07",
+          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
-        {
-          "time": "22:12:56 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:12:56 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:12:57 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "22:12:57 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "22:12:58 5/2/2026",
           "user": "TÂN",
@@ -5813,6 +5802,26 @@
           "time": "10:03:27 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:24:45 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "15:24:45 9/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:24:45 9/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "15:24:46 9/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trực [-] ➔ [TRỰC CHÍNH]"
         }
       ]
     },
