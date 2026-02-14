@@ -183,7 +183,7 @@ const GitHubSync = (function () {
         const data = {
             metadata: {
                 exportTime: new Date().toISOString(),
-                version: '3.6',
+                version: '3.61',
                 source: 'BẢNG CHẤM CÔNG KHOA PT - GMHS'
             },
             attendance: {},

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cham-cong-v3.60-production';
+const CACHE_NAME = 'cham-cong-v3.61-production';
 const ASSETS = [
     './',
     './index.html',
@@ -39,10 +39,24 @@ self.addEventListener('activate', (event) => {
     self.clients.claim();
 });
 
-// Fetch Strategy: Stale-While-Revalidate for core files
+// Fetch Strategy
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
     const isCoreFile = ASSETS.some(asset => event.request.url.includes(asset.replace('./', '')));
+
+    // special case: index.html should be Network-First to ensure auto-update logic works
+    if (url.pathname.endsWith('index.html') || url.pathname === '/' || url.pathname.endsWith('./')) {
+        event.respondWith(
+            fetch(event.request)
+                .then(response => {
+                    const clonedResponse = response.clone();
+                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, clonedResponse));
+                    return response;
+                })
+                .catch(() => caches.match(event.request))
+        );
+        return;
+    }
 
     if (isCoreFile) {
         event.respondWith(

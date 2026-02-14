@@ -239,7 +239,10 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.60 PRODUCTION (Released: 14.02.2026 - Ultra Sync Speed)</p>
+                <p class="version-info">Version 3.61 PRODUCTION (Released: 14.02.2026 - Force Update Engine)</p>
+                <button onclick="forceUpdateApp()"
+                    style="background:none;border:none;color:var(--royal-gold);font-size:0.7rem;text-decoration:underline;cursor:pointer;padding:0;margin-top:5px;">Cập
+                    nhật bản mới nhất ⚡</button>
             </div>
         </footer>
 
@@ -443,11 +446,13 @@
         // Automatic update detection and refresh
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js').then(reg => {
+                // Force check for updates every time page is visited
+                reg.update();
+
                 reg.addEventListener('updatefound', () => {
                     const newWorker = reg.installing;
                     newWorker.addEventListener('statechange', () => {
                         if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                            // New version installed, reload to activate
                             console.log('New version found! Reloading...');
                             window.location.reload();
                         }
@@ -455,7 +460,6 @@
                 });
             });
 
-            // Handle controller change (manual skipWaiting)
             let refreshing = false;
             navigator.serviceWorker.addEventListener('controllerchange', () => {
                 if (!refreshing) {
@@ -463,6 +467,26 @@
                     refreshing = true;
                 }
             });
+        }
+
+        async function forceUpdateApp() {
+            if (confirm('App sẽ xóa dữ liệu cũ và cập nhật phiên bản mới nhất. Bạn có chắc chắn?')) {
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    for (let registration of registrations) {
+                        await registration.unregister();
+                    }
+                    if ('caches' in window) {
+                        const cacheNames = await caches.keys();
+                        for (let cacheName of cacheNames) {
+                            await caches.delete(cacheName);
+                        }
+                    }
+                    window.location.reload(true);
+                } else {
+                    window.location.reload(true);
+                }
+            }
         }
     </script>
 </body>
