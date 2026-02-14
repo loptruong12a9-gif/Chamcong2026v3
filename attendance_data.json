@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-14T14:06:22.725Z",
-    "updatedBy": "MY"
+    "lastUpdate": "2026-02-14T14:59:11.835Z",
+    "updatedBy": "ADMIN"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -336,103 +336,103 @@
       ],
       "history": [
         {
-          "time": "20:47:49 14/2/2026",
+          "time": "22:25:25 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:47:51 14/2/2026",
+          "time": "22:25:31 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:52:58 14/2/2026",
+          "time": "22:25:34 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:53:04 14/2/2026",
+          "time": "22:26:29 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:53:35 14/2/2026",
+          "time": "22:26:35 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:56:29 14/2/2026",
+          "time": "22:26:39 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:56:34 14/2/2026",
+          "time": "22:32:35 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:56:38 14/2/2026",
+          "time": "22:32:51 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:56:41 14/2/2026",
+          "time": "22:35:34 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:57:41 14/2/2026",
+          "time": "22:35:42 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:57:45 14/2/2026",
+          "time": "22:39:14 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:57:48 14/2/2026",
+          "time": "06:38:35 12/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:58:28 14/2/2026",
+          "time": "20:09:36 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:59:33 14/2/2026",
+          "time": "20:10:10 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:59:34 14/2/2026",
+          "time": "20:10:57 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:59:38 14/2/2026",
+          "time": "20:11:05 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:59:38 14/2/2026",
+          "time": "20:11:53 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:00:27 14/2/2026",
+          "time": "20:11:57 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:03:05 14/2/2026",
+          "time": "20:12:24 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:05:08 14/2/2026",
-          "user": "TÂN",
+          "time": "21:59:11 14/2/2026",
+          "user": "ADMIN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
