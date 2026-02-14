@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-14T13:12:28.687Z",
-    "updatedBy": "TÂN"
+    "lastUpdate": "2026-02-14T13:13:02.397Z",
+    "updatedBy": "MY"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -2885,41 +2885,6 @@
       "duties": [],
       "history": [
         {
-          "time": "23:22:07 5/2/2026",
-          "user": "MY",
-          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "23:22:07 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "23:22:09 5/2/2026",
-          "user": "MY",
-          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "23:22:09 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "23:22:09 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "23:22:11 5/2/2026",
-          "user": "MY",
-          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "23:22:12 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "23:22:12 5/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
@@ -2940,47 +2905,82 @@
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:51:56 14/2/2026",
+          "time": "19:49:18 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:51:59 14/2/2026",
+          "time": "19:49:22 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:52:02 14/2/2026",
+          "time": "19:50:23 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:52:22 14/2/2026",
+          "time": "19:52:08 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:52:36 14/2/2026",
+          "time": "19:52:28 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:52:48 14/2/2026",
+          "time": "19:52:45 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "19:53:37 14/2/2026",
+          "time": "19:53:42 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:03:18 14/2/2026",
+          "time": "19:53:48 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:03:23 14/2/2026",
+          "time": "19:59:07 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "19:59:16 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "19:59:20 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:00:11 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:00:18 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:11:58 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:12:13 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:12:22 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         }
