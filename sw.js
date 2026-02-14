@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cham-cong-v3.64-production';
+const CACHE_NAME = 'cham-cong-v3.65-production';
 const ASSETS = [
     './',
     './index.html',
@@ -6,9 +6,9 @@ const ASSETS = [
     './app.js',
     './github-sync.js',
     './logo.jpg',
-    './icons/icon-192.png',
-    './icons/icon-512.png',
-    './icons/icon-maskable-512.png',
+    './icon-192.png',
+    './icon-512.png',
+    './icon-maskable.png',
     './manifest.json',
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700&display=swap'
 ];
