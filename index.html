@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Presidential Edition v3.23</title>
+    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Production v3.57</title>
 
     <!-- PWA Settings -->
     <link rel="manifest" href="manifest.json">
@@ -16,10 +16,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Chấm Công">
-    <link rel="apple-touch-icon" href="logo.jpg">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-orientations" content="portrait-any">
+
+    <!-- iOS Splash Screens -->
+    <link rel="apple-touch-startup-image" href="icons/icon-512.png"
+        media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="icons/icon-512.png"
+        media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)">
+    <link rel="apple-touch-startup-image" href="icons/icon-512.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,10 +98,15 @@
                         </div>
                     </div>
 
-                    <!-- GitHub Sync Status (Thin Row Below) -->
+                    <!-- GitHub Sync Status (Royal / Presidential Style) -->
                     <div id="sync-status-area" class="sync-status-container" title="Trạng thái đồng bộ GitHub">
-                        <span id="sync-status-indicator" class="sync-status-indicator disabled">○</span>
-                        <span id="sync-status-text" class="sync-status-text">Chưa cấu hình</span>
+                        <div class="sync-main-row">
+                            <span class="sync-cloud-icon">☁️</span>
+                            <span class="sync-title-text">ĐỒNG BỘ GITHUB (CLOUD)</span>
+                            <span class="sync-dropdown-arrow">▼</span>
+                        </div>
+                        <span id="sync-status-text" class="sync-status-text">Đang kết nối...</span>
+                        <span id="sync-status-indicator" style="display: none;"></span>
                     </div>
                 </div>
 
@@ -225,7 +239,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.30 GOLDEN (Updated: 06.02.2026 - Final Master Polish)</p>
+                <p class="version-info">Version 3.57 PRODUCTION (Released: 14.02.2026 - Mobile Fit Royal UI)</p>
             </div>
         </footer>
 
@@ -354,51 +368,71 @@
 
         <!-- GitHub Config Modal -->
         <div id="github-config-modal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content github-premium-modal">
                 <div class="modal-header">
-                    <h2>⚙️ Cấu hình đồng bộ GitHub</h2>
+                    <div class="header-title-wrapper">
+                        <span class="header-icon">⚔️</span>
+                        <div class="header-text">
+                            <h2>CẤU HÌNH ĐỒNG BỘ</h2>
+                            <p class="modal-subtitle">Hệ thống lưu trữ Hoàng Gia Master v3.57</p>
+                        </div>
+                    </div>
                     <button class="close-modal-btn" onclick="hideGitHubConfigModal()">✕</button>
                 </div>
 
                 <div class="github-config-content">
-                    <div class="info-box">
-                        <p><strong>📌 Lưu ý:</strong> Dữ liệu sẽ tự động đồng bộ lên GitHub sau mỗi lần lưu, giúp mọi
-                            người có thể xem ngay.</p>
+                    <div class="premium-info-card">
+                        <div class="info-icon">🏰</div>
+                        <div class="info-text">
+                            Dữ liệu của bạn được bảo mật theo tiêu chuẩn cao cấp nhất.
+                            <strong>Mã hóa Master</strong> đảm bảo tính riêng tư tuyệt đối cho khoa.
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label>GitHub Personal Access Token: <span class="required">*</span></label>
-                        <input type="password" id="github-token" placeholder="********************" autocomplete="off">
-                        <small class="help-text">Tạo token tại: <a href="https://github.com/settings/tokens"
-                                target="_blank">github.com/settings/tokens</a> (cần quyền <code>repo</code>)</small>
-                    </div>
+                    <div class="config-grid">
+                        <div class="form-group">
+                            <label>Mã truy cập (Access Token)</label>
+                            <div class="input-wrapper">
+                                <input type="password" id="github-token" placeholder="Premium Token Active..."
+                                    autocomplete="off">
+                                <span class="input-badge">Royal Master</span>
+                            </div>
+                        </div>
 
-                    <div class="form-group">
-                        <label>Repository: <span class="required">*</span></label>
-                        <input type="text" id="github-repo" placeholder="username/repo-name" autocomplete="off">
-                        <small class="help-text">Ví dụ: <code>tannguyen/cham-cong-data</code></small>
-                    </div>
+                        <div class="form-group">
+                            <label>Hồ sơ lưu trữ (Repository)</label>
+                            <input type="text" id="github-repo" placeholder="username/repo-name" autocomplete="off">
+                        </div>
 
-                    <div class="form-group">
-                        <label>Branch:</label>
-                        <input type="text" id="github-branch" value="main" placeholder="main">
-                    </div>
+                        <div class="config-row">
+                            <div class="form-group">
+                                <label>Nhánh (Branch)</label>
+                                <input type="text" id="github-branch" value="main" placeholder="main">
+                            </div>
 
-                    <div class="form-group checkbox-group">
-                        <label>
-                            <input type="checkbox" id="github-auto-sync" checked>
-                            Tự động đồng bộ sau mỗi lần lưu
-                        </label>
+                            <div class="form-group toggle-group">
+                                <label class="switch-label">
+                                    <span>Tự động đồng bộ hóa</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="github-auto-sync" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </label>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="github-status-message" class="status-message"></div>
                 </div>
 
-                <div class="modal-actions">
-                    <button id="github-test-btn" class="btn btn-print">🔍 Kiểm tra kết nối</button>
-                    <button id="github-save-config-btn" class="btn btn-save">💾 Lưu cấu hình</button>
-                    <button id="github-sync-now-btn" class="btn btn-export">☁️ Đồng bộ ngay</button>
-                    <button id="github-restore-btn" class="btn btn-restore">📥 Khôi phục từ GitHub</button>
+                <div class="modal-actions-grid">
+                    <button id="github-test-btn" class="btn btn-outline" title="Kiểm tra kết nối">Kiểm tra kết
+                        nối</button>
+                    <button id="github-save-config-btn" class="btn btn-primary" title="Lưu cấu hình">Lưu cấu
+                        hình</button>
+                    <button id="github-sync-now-btn" class="btn btn-success" title="Đồng bộ ngay">Đồng bộ ngay</button>
+                    <button id="github-restore-btn" class="btn btn-warning" title="Khôi phục dữ liệu">Khôi phục dữ
+                        liệu</button>
                 </div>
             </div>
         </div>

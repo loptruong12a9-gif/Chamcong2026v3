@@ -1,21 +1,70 @@
 {
-  "name": "Chấm Công - Tân Nguyễn",
+  "name": "Chấm Công - Khoa Phẫu Thuật GMHS",
   "short_name": "Chấm Công",
-  "description": "Ứng dụng chấm công cá nhân cho Khoa Phẫu thuật - GMHS",
+  "description": "Ứng dụng chấm công chuyên nghiệp cho nhân viên Khoa Phẫu thuật - Bệnh viện Đa khoa Hồng Đức III. Quản lý giờ công, tính lương, đồng bộ GitHub.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#f8fafc",
   "theme_color": "#2563eb",
+  "categories": [
+    "productivity",
+    "business",
+    "utilities"
+  ],
   "icons": [
     {
-      "src": "logo.jpg",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "logo.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg"
+      "sizes": "200x200",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chấm công tháng này",
+      "short_name": "Chấm công",
+      "description": "Mở bảng chấm công tháng hiện tại",
+      "url": "./index.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Xem tổng hợp",
+      "short_name": "Tổng hợp",
+      "description": "Xem bảng tổng hợp toàn bộ nhân viên",
+      "url": "./index.html#summary",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

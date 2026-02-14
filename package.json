@@ -1,0 +1,15 @@
+{
+    "name": "cham-cong-production",
+    "version": "3.31.0",
+    "description": "Production build tools for attendance application",
+    "scripts": {
+        "build": "node build-production.js",
+        "test": "echo \"No tests configured\""
+    },
+    "devDependencies": {
+        "terser": "^5.16.0",
+        "cssnano": "^5.1.14",
+        "postcss-cli": "^10.1.0",
+        "postcss": "^8.4.21"
+    }
+}

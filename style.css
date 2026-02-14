@@ -1716,162 +1716,251 @@ td.sunday-holiday {
     }
 }
 
-/* GitHub Sync Styles */
+/* Royal / Presidential Style System */
+:root {
+    --royal-gold: #b8860b;
+    --royal-gold-light: #daa520;
+    --royal-cream: #fffdf5;
+    --royal-border: #d4af37;
+    --royal-text: #4a3728;
+    --royal-success: #2d5a27;
+    --royal-error: #8b0000;
+}
+
+/* Sync Area Trigger - Royal Button Style (Ultra Compact) */
 .sync-status-container {
+    background: var(--royal-cream);
+    border: 1px solid var(--royal-border);
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(184, 134, 11, 0.08);
+    transition: all 0.2s ease;
+    width: fit-content;
+    min-width: 180px;
+    margin-top: 4px;
+}
+
+.sync-status-container:hover {
+    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.12);
+    background: #fff;
+}
+
+.sync-main-row {
     display: flex;
     align-items: center;
     gap: 6px;
-    background: var(--input-bg);
-    padding: 6px 12px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    font-size: 0.8rem;
-    font-weight: 600;
+    width: 100%;
 }
 
-.sync-status-indicator {
-    font-size: 1rem;
-    line-height: 1;
+.sync-cloud-icon {
+    font-size: 0.9rem;
+    color: var(--royal-text);
 }
 
-.sync-status-indicator.synced {
-    color: #22c55e;
+.sync-title-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--royal-text);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
 }
 
-.sync-status-indicator.syncing {
-    color: var(--accent);
-    display: inline-block;
-    animation: rotate 1.5s linear infinite;
-}
-
-.sync-status-indicator.error {
-    color: #ef4444;
-}
-
-.sync-status-indicator.disabled {
-    color: var(--text-dim);
-    opacity: 0.5;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+.sync-dropdown-arrow {
+    margin-left: auto;
+    color: var(--royal-gold);
+    font-size: 0.65rem;
 }
 
 .sync-status-text {
-    color: var(--text-dim);
-    max-width: 150px;
-    white-space: normal;
-    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.75rem;
+    color: var(--royal-success);
+    margin-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
-.sync-status-container:has(.synced) .sync-status-text {
-    color: #22c55e !important;
-    font-weight: 700;
+/* Modal Styling - Royal Aesthetic */
+.github-premium-modal {
+    max-width: 520px;
+    border: 3px double var(--royal-border);
+    background: var(--royal-cream);
+    padding: 0;
 }
 
-/* GitHub Config Modal Specifics */
-.github-config-content {
+.github-premium-modal .modal-header {
+    border-bottom: 1px solid var(--royal-border);
+    padding: 20px 25px;
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.header-title-wrapper {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-icon {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--royal-text);
+    margin: 0;
+}
+
+.header-text .modal-subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--royal-gold);
+    margin: 2px 0 0 0;
+}
+
+.github-config-content {
+    padding: 25px;
+}
+
+.premium-info-card {
+    background: white;
+    border: 1px solid var(--royal-border);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.info-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    color: var(--royal-text);
+}
+
+.form-group label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--royal-text);
+    margin-bottom: 6px;
+}
+
+.input-wrapper input,
+.form-group input {
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-badge {
+    background: var(--royal-gold);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.65rem;
+}
+
+.config-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
 
-.info-box {
-    background: rgba(44, 111, 255, 0.1);
-    border-left: 4px solid var(--accent);
-    padding: 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    line-height: 1.5;
+.toggle-group {
+    background: white;
+    border: 1px solid #ccc;
+    height: 48px;
 }
 
-.help-text {
-    display: block;
-    margin-top: 5px;
-    font-size: 0.75rem;
-    color: var(--text-dim);
+.switch-label span {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
-.help-text a {
-    color: var(--accent);
-    text-decoration: none;
+input:checked+.slider {
+    background-color: var(--royal-gold);
 }
 
-.help-text a:hover {
-    text-decoration: underline;
+.modal-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 25px 25px 25px;
 }
 
-.required {
-    color: #ef4444;
+.modal-actions-grid .btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    height: 44px;
 }
 
-.checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    user-select: none;
+.btn-primary {
+    background: var(--royal-gold);
+    color: white;
+    border: none;
 }
 
-.checkbox-group input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
+.btn-outline {
+    background: white;
+    border: 1px solid var(--royal-border);
+    color: var(--royal-text);
 }
 
-.status-message {
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: none;
+.btn-success {
+    background: var(--royal-success);
+    color: white;
+    border: none;
 }
 
-.status-message:not(:empty) {
-    display: block;
+.btn-warning {
+    background: #8b4513;
+    color: white;
+    border: none;
 }
 
-.status-message.info {
-    background: rgba(44, 111, 255, 0.1);
-    color: var(--accent);
+.btn-primary:hover,
+.btn-success:hover,
+.btn-warning:hover {
+    filter: brightness(1.1);
 }
 
-.status-message.success {
-    background: rgba(34, 197, 94, 0.1);
-    color: #15803d;
-}
-
-.status-message.error {
-    background: rgba(239, 68, 68, 0.1);
-    color: #ef4444;
-}
-
-/* Mobile specific for GitHub UI */
-@media (max-width: 768px) {
-    /* Synced styles handled above */
-
-    #github-config-modal .modal-content {
-        padding: 20px;
-        max-width: 95%;
+@media (max-width: 480px) {
+    .sync-status-container {
+        min-width: unset;
+        width: fit-content;
+        margin: 4px auto;
+        padding: 4px 10px;
+        border-radius: 20px;
     }
 
-    #github-config-modal .modal-actions {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 8px !important;
+    .sync-title-text {
+        font-size: 0.65rem;
     }
 
-    #github-config-modal .modal-actions button {
-        margin: 0 !important;
-        font-size: 0.8rem !important;
-        padding: 8px 4px !important;
-        min-height: 40px !important;
+    .sync-status-text {
+        font-size: 0.65rem;
+    }
+
+    .config-row {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-actions-grid {
+        grid-template-columns: 1fr;
     }
 }

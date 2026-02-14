@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalOvertimeEl = document.getElementById('total-overtime');
     const totalAllEl = document.getElementById('total-all');
 
+    // Tracking modified keys for selective sync
+    const dirtyKeys = new Set();
+
     // --- DYNAMIC EMPLOYEE LOADING ---
     let EMPLOYEE_MAP = {
         "NGUYỄN VĂN TÂN": "ĐIỀU DƯỠNG DỤNG CỤ",
@@ -310,7 +313,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         generateTable();
                         renderSummaryTable();
                     })
-                    .catch(err => console.error('Auto-restore failed:', err));
+                    .catch(err => {
+                        console.error('Auto-restore failed:', err);
+                        if (err.message.includes('401')) {
+                            showToast('Lỗi đồng bộ: Token GitHub hết hạn hoặc không hợp lệ', 'error');
+                        }
+                    });
             } else {
                 generateTable();
                 renderSummaryTable();
@@ -390,7 +398,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const rowsToClear = [headerRow, regularRow, overtimeRow, calculatedOvertimeRow, dutyRow];
         rowsToClear.forEach(row => {
-            if (row) while (row.children.length > 1) row.removeChild(row.lastChild);
+            if (row) {
+                // MEMORY LEAK FIX: Remove all child nodes and their event listeners
+                while (row.children.length > 1) {
+                    const child = row.lastChild;
+                    // Remove all event listeners by cloning and replacing
+                    const clone = child.cloneNode(false);
+                    child.parentNode.replaceChild(clone, child);
+                    row.removeChild(clone);
+                }
+            }
         });
 
         const daysOfWeek = ['Chủ Nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
@@ -442,13 +459,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     inputReg.classList.add(highlightClass);
                 }
 
-                // Auto-save logic
+                // Auto-save logic with proper cleanup
                 let regDebounce;
                 const triggerSave = () => {
                     saveData();
                 };
 
-                inputReg.addEventListener('input', (e) => {
+                // MEMORY LEAK FIX: Use named functions that can be properly removed
+                const handleRegInput = (e) => {
                     if (parseFloat(e.target.value) > 8) {
                         e.target.value = 8;
                         showToast('Giờ hành chính tối đa là 8 tiếng', 'warning');
@@ -458,15 +476,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Debounce save on input (1 second)
                     clearTimeout(regDebounce);
                     regDebounce = setTimeout(triggerSave, 1000);
-                });
+                };
 
-                // Immediate save on blur/change/focusout
-                ['change', 'focusout'].forEach(evt => {
-                    inputReg.addEventListener(evt, () => {
-                        clearTimeout(regDebounce);
-                        triggerSave();
-                    });
-                });
+                const handleRegChange = () => {
+                    clearTimeout(regDebounce);
+                    triggerSave();
+                };
+
+                inputReg.addEventListener('input', handleRegInput);
+                inputReg.addEventListener('change', handleRegChange);
+                inputReg.addEventListener('focusout', handleRegChange);
 
                 tdReg.appendChild(inputReg);
 
@@ -479,17 +498,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 areaOvt.dataset.date = yyyymmdd;
 
                 let originalValue = '';
-                areaOvt.addEventListener('focus', (e) => originalValue = e.target.value);
-                areaOvt.addEventListener('input', () => {
+                const handleOvtFocus = (e) => originalValue = e.target.value;
+                const handleOvtInput = () => {
                     calculateTotals();
-                });
-
-                areaOvt.addEventListener('change', (e) => {
+                };
+                const handleOvtChange = (e) => {
                     if (e.target.value !== originalValue) {
                         // Silent Save for Premium experience
                         saveData();
                     }
-                });
+                };
+
+                areaOvt.addEventListener('focus', handleOvtFocus);
+                areaOvt.addEventListener('input', handleOvtInput);
+                areaOvt.addEventListener('change', handleOvtChange);
 
                 if (highlightClass) {
                     tdOvt.classList.add(highlightClass);
@@ -507,16 +529,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     o.value = opt.v; o.textContent = opt.t;
                     selectDuty.appendChild(o);
                 });
-                selectDuty.addEventListener('change', saveData);
+
+                const handleDutyChange = () => {
+                    saveData();
+                    calculateTotals();
+                };
+
+                selectDuty.addEventListener('change', handleDutyChange);
+
                 if (highlightClass) {
                     tdDuty.classList.add(highlightClass);
                     tdCalcOvt.classList.add(highlightClass);
                 }
                 tdCalcOvt.className += ' calc-ovt-cell';
                 tdCalcOvt.dataset.date = yyyymmdd;
-                selectDuty.addEventListener('change', () => {
-                    calculateTotals();
-                });
 
                 tdDuty.appendChild(selectDuty);
 
@@ -753,6 +779,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         localStorage.setItem(key, JSON.stringify(data));
+
+        // Track key for sync
+        dirtyKeys.add(key);
+        dirtyKeys.add(`coeff_global_${upperName}`);
 
         // 3. Phản hồi hành động
         if (!skipRender) {
@@ -1136,13 +1166,21 @@ document.addEventListener('DOMContentLoaded', () => {
         // FINAL SAVE TO LOCALSTORAGE
         const saveKey = `attendance_${monthPicker.value}_${name}`;
         localStorage.setItem(saveKey, JSON.stringify(currentData));
+
+        // Track key for sync
+        dirtyKeys.add(saveKey);
+
         calculateTotals();
         debouncedRenderSummary(); // Use debounced render
         showSaveNotification();
 
-        // --- GITHUB AUTO-SYNC (Optimize: Use Debounced Upload) ---
+        // --- GITHUB AUTO-SYNC (Optimize: Reduced delay and selective sync) ---
         if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled()) {
-            GitHubSync.debouncedUpload(15000); // Wait 15s after last save to sync
+            GitHubSync.debouncedUpload(3000, Array.from(dirtyKeys)); // Reduced to 3s
+            // Clear dirty keys after successful trigger (proxied by delay)
+            setTimeout(() => {
+                if (!GitHubSync.isSyncing()) dirtyKeys.clear();
+            }, 5000);
         }
     };
 
@@ -1173,7 +1211,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener(evt, () => {
             if (document.visibilityState === 'hidden') {
                 const name = document.getElementById('employee-name')?.value;
-                if (name) saveData();
+                if (name) {
+                    saveData();
+                    // Force immediate sync without debounce
+                    if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled() && dirtyKeys.size > 0) {
+                        GitHubSync.uploadData(false, Array.from(dirtyKeys)).catch(console.error);
+                        dirtyKeys.clear();
+                    }
+                }
             }
         });
     });
