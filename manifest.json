@@ -6,8 +6,8 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#f8fafc",
-  "theme_color": "#2563eb",
+  "background_color": "#fffdf5",
+  "theme_color": "#b8860b",
   "categories": [
     "productivity",
     "business",
@@ -31,12 +31,6 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },
-    {
-      "src": "logo.jpg",
-      "sizes": "200x200",
-      "type": "image/jpeg",
-      "purpose": "any"
     }
   ],
   "shortcuts": [
