@@ -2,17 +2,12 @@
   "name": "Chấm Công - Khoa Phẫu Thuật GMHS",
   "short_name": "Chấm Công",
   "description": "Ứng dụng chấm công chuyên nghiệp cho nhân viên Khoa Phẫu thuật - Bệnh viện Đa khoa Hồng Đức III. Quản lý giờ công, tính lương, đồng bộ GitHub.",
-  "start_url": "./index.html",
+  "start_url": "./index.html?v=3.63",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#fffdf5",
   "theme_color": "#b8860b",
-  "categories": [
-    "productivity",
-    "business",
-    "utilities"
-  ],
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -31,34 +26,16 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Chấm công tháng này",
-      "short_name": "Chấm công",
-      "description": "Mở bảng chấm công tháng hiện tại",
-      "url": "./index.html",
-      "icons": [
-        {
-          "src": "icons/icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
     },
     {
-      "name": "Xem tổng hợp",
-      "short_name": "Tổng hợp",
-      "description": "Xem bảng tổng hợp toàn bộ nhân viên",
-      "url": "./index.html#summary",
-      "icons": [
-        {
-          "src": "icons/icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
+      "src": "icons/icon-192.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "144x144",
+      "type": "image/png"
     }
   ]
 }
