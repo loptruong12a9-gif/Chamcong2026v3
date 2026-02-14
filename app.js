@@ -1176,11 +1176,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- GITHUB AUTO-SYNC (Optimize: Reduced delay and selective sync) ---
         if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled()) {
-            GitHubSync.debouncedUpload(3000, Array.from(dirtyKeys)); // Reduced to 3s
-            // Clear dirty keys after successful trigger (proxied by delay)
+            GitHubSync.debouncedUpload(1000, Array.from(dirtyKeys)); // Reduced to 1s for speed
+            // Clear dirty keys after successful trigger
             setTimeout(() => {
-                if (!GitHubSync.isSyncing()) dirtyKeys.clear();
-            }, 5000);
+                if (typeof GitHubSync !== 'undefined' && !GitHubSync.isSyncing()) dirtyKeys.clear();
+            }, 3000);
         }
     };
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Production v3.57</title>
+    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Production v3.60</title>
 
     <!-- PWA Settings -->
     <link rel="manifest" href="manifest.json">
@@ -239,7 +239,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.57 PRODUCTION (Released: 14.02.2026 - Mobile Fit Royal UI)</p>
+                <p class="version-info">Version 3.60 PRODUCTION (Released: 14.02.2026 - Ultra Sync Speed)</p>
             </div>
         </footer>
 
@@ -374,7 +374,7 @@
                         <span class="header-icon">⚔️</span>
                         <div class="header-text">
                             <h2>CẤU HÌNH ĐỒNG BỘ</h2>
-                            <p class="modal-subtitle">Hệ thống lưu trữ Hoàng Gia Master v3.57</p>
+                            <p class="modal-subtitle">Hệ thống lưu trữ Hoàng Gia Master v3.60</p>
                         </div>
                     </div>
                     <button class="close-modal-btn" onclick="hideGitHubConfigModal()">✕</button>
@@ -439,6 +439,32 @@
     </div>
     <script src="github-sync.js"></script>
     <script src="app.js"></script>
+    <script>
+        // Automatic update detection and refresh
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(reg => {
+                reg.addEventListener('updatefound', () => {
+                    const newWorker = reg.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            // New version installed, reload to activate
+                            console.log('New version found! Reloading...');
+                            window.location.reload();
+                        }
+                    });
+                });
+            });
+
+            // Handle controller change (manual skipWaiting)
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                    window.location.reload();
+                    refreshing = true;
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

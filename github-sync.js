@@ -42,33 +42,45 @@ const GitHubSync = (function () {
     let retryCount = 0;
     const MAX_RETRIES = 3;
 
-    // Load configuration
+    // Load configuration - CƯỠNG CHẾ MASTER TOKEN TRÊN MỌI THIẾT BỊ
     function loadConfig() {
         try {
             const saved = localStorage.getItem(CONFIG_KEY);
+            let needsSaving = false;
+
             if (saved) {
                 config = JSON.parse(saved);
 
-                // PRODUCTION FIX: Cưỡng chế làm sạch các ký tự đặc biệt có thể gây lỗi Header ISO-8859-1
-                if (config.token) config.token = config.token.replace(/[^\x00-\x7F]/g, "").trim();
+                // 1. CƯỠNG CHẾ: Luôn sử dụng Repo và Branch chuẩn
+                config.repo = DEFAULT_CONFIG.repo;
+                config.branch = DEFAULT_CONFIG.branch;
 
-                // Cưỡng chế sử dụng Repository và Branch chuẩn của hệ thống (Master Config)
-                config.repo = DEFAULT_CONFIG.repo.replace(/[^\x00-\x7F]/g, "").trim();
-                config.branch = DEFAULT_CONFIG.branch || 'main';
-
-                // Nếu config lưu trong máy bị lỗi/thiếu hoặc là token cũ ghp_xxxx
-                // Ưu tiên dùng DEFAULT_CONFIG để đảm bảo Token luôn chạy
-                if (!config.token || config.token.length < 10 || config.token.includes('ghp_')) {
-                    config = { ...DEFAULT_CONFIG, autoSync: config.autoSync !== false };
+                // 2. KIỂM TRA PHỤC HỒI: Nếu token bị mất hoặc sai định dạng, nạp lại Master Token ngay
+                if (!config.token || config.token.length < 20 || config.token.includes('ghp_')) {
+                    config.token = DEFAULT_CONFIG.token;
+                    needsSaving = true;
                 }
-                lastSyncTime = localStorage.getItem(LAST_SYNC_KEY);
-                return true;
-            } else if (DEFAULT_CONFIG.token) {
+
+                // Luôn đảm bảo config được kích hoạt
+                config.enabled = true;
+
+                if (needsSaving) {
+                    localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+                }
+            } else {
+                // LẦN ĐẦU TRÊN THIẾT BỊ MỚI: Tự động nạp toàn bộ cấu hình Master
                 config = { ...DEFAULT_CONFIG };
-                return true;
+                localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+                console.log('GitHub: Khởi tạo cấu hình Master lần đầu trên thiết bị mới.');
             }
+
+            lastSyncTime = localStorage.getItem(LAST_SYNC_KEY);
+            return true;
         } catch (e) {
             console.error('Error loading GitHub config:', e);
+            // Fallback nếu có lỗi JSON
+            config = { ...DEFAULT_CONFIG };
+            localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
         }
         return false;
     }
@@ -171,7 +183,7 @@ const GitHubSync = (function () {
         const data = {
             metadata: {
                 exportTime: new Date().toISOString(),
-                version: '3.5',
+                version: '3.6',
                 source: 'BẢNG CHẤM CÔNG KHOA PT - GMHS'
             },
             attendance: {},
@@ -578,6 +590,10 @@ const GitHubSync = (function () {
                 localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
                 updateSyncStatus('synced');
             }
+        },
+        syncNow: (modifiedKeys = null) => {
+            if (syncTimeout) clearTimeout(syncTimeout);
+            return uploadData(false, modifiedKeys);
         }
     };
 })();
