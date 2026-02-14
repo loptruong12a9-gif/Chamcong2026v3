@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-14T13:16:15.486Z",
-    "updatedBy": "TÂN"
+    "lastUpdate": "2026-02-14T13:16:17.746Z",
+    "updatedBy": "MY"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -2885,11 +2885,6 @@
       "duties": [],
       "history": [
         {
-          "time": "23:29:17 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "19:49:18 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
@@ -2981,6 +2976,11 @@
         },
         {
           "time": "20:13:57 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:16:15 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         }
