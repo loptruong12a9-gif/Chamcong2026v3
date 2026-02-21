@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T01:46:56.740Z",
+    "lastUpdate": "2026-02-21T01:46:59.365Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -2516,6 +2516,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-12",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-02-21",
           "type": "regular",
           "value": "8"
@@ -2594,16 +2599,6 @@
         }
       ],
       "history": [
-        {
-          "time": "10:01:34 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-20h00\n21h40-23h20]"
-        },
-        {
-          "time": "10:01:35 6/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
         {
           "time": "10:01:51 6/2/2026",
           "user": "TÂN",
@@ -2693,6 +2688,16 @@
           "time": "08:46:53 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 11: Ngoài giờ [Trống] ➔ [16h30-20h40]"
+        },
+        {
+          "time": "08:46:57 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:46:57 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.15"
