@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T01:11:54.456Z",
+    "lastUpdate": "2026-02-21T01:12:36.473Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1561,6 +1561,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-07",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-21H00",
@@ -1625,29 +1630,13 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-07",
+          "value": "TRỰC NGOÀI Ở LẠI"
         }
       ],
       "history": [
-        {
-          "time": "21:40:18 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
-          "time": "21:40:20 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở LẠI] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
-        },
-        {
-          "time": "21:40:21 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "21:41:38 5/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "21:59:41 5/2/2026",
           "user": "TÂN",
@@ -1727,6 +1716,26 @@
           "time": "22:03:46 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:12:32 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:12:33 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:12:33 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:12:33 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         }
       ],
       "adminCoeff": "1"
