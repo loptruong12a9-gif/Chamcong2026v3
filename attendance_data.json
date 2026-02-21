@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T01:21:03.758Z",
+    "lastUpdate": "2026-02-21T01:21:39.377Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -1912,6 +1912,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-21",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-27",
           "type": "overtime",
           "value": "16H30-17H00",
@@ -2036,26 +2041,6 @@
       ],
       "history": [
         {
-          "time": "08:17:18 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:17:18 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:17:24 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Ngoài giờ [Trống] ➔ [16h30-18h00]"
-        },
-        {
-          "time": "08:17:25 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
           "time": "08:17:35 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 13: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
@@ -2134,6 +2119,26 @@
           "time": "08:20:56 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 20: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "08:21:25 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:21:25 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:21:25 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:21:30 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.05"
