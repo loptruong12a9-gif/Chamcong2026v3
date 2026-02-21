@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T01:38:54.824Z",
+    "lastUpdate": "2026-02-21T01:38:58.038Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -4273,6 +4273,16 @@
           "value": "8"
         },
         {
+          "date": "2026-02-12",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-13",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-20H30",
@@ -4377,26 +4387,6 @@
       ],
       "history": [
         {
-          "time": "10:04:14 6/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:37:06 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:37:10 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:37:10 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "08:37:11 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 07: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
@@ -4475,6 +4465,26 @@
           "time": "08:38:52 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 11: Ngoài giờ [Trống] ➔ [16h30-18h10]"
+        },
+        {
+          "time": "08:38:53 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:38:53 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:38:55 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:38:55 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.45"
