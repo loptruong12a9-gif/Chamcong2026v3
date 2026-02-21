@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T01:49:13.374Z",
+    "lastUpdate": "2026-02-21T01:49:25.828Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -5566,6 +5566,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-09",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-27",
           "type": "overtime",
           "value": "16H30-19H40",
@@ -5600,6 +5605,12 @@
           "type": "overtime",
           "value": "16h30-19h50",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-08",
+          "type": "overtime",
+          "value": "08h00-11h20",
+          "multiplier": "2"
         }
       ],
       "duties": [
@@ -5633,21 +5644,6 @@
         }
       ],
       "history": [
-        {
-          "time": "22:16:45 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "22:16:58 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [04H50-06H20]"
-        },
-        {
-          "time": "22:17:00 5/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
         {
           "time": "22:17:18 5/2/2026",
           "user": "TÂN",
@@ -5732,6 +5728,21 @@
           "time": "08:49:08 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 08: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "08:49:22 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 08: Ngoài giờ [Trống] ➔ [08h00-11h20]"
+        },
+        {
+          "time": "08:49:23 21/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "08:49:23 21/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.35"
