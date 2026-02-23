@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-21T02:05:36.690Z",
-    "updatedBy": "TÂN"
+    "lastUpdate": "2026-02-23T05:56:39.430Z",
+    "updatedBy": "LÊ THỊ THU THẢO"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -2635,11 +2635,6 @@
       ],
       "history": [
         {
-          "time": "08:46:22 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "08:46:31 21/2/2026",
           "user": "TÂN",
           "action": "- Ngày 07: Ngoài giờ [Trống] ➔ [16h30-19h30]"
@@ -2732,6 +2727,11 @@
         {
           "time": "08:47:03 21/2/2026",
           "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "12:56:38 23/2/2026",
+          "user": "LÊ THỊ THU THẢO",
           "action": "Lưu lại (không có thay đổi)"
         }
       ],
