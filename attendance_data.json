@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-25T01:21:20.287Z",
-    "updatedBy": "TÂN"
+    "lastUpdate": "2026-02-25T01:21:43.587Z",
+    "updatedBy": "LÊ THỊ THU THẢO"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -2616,6 +2616,12 @@
           "type": "overtime",
           "value": "16h30-20h40",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-23",
+          "type": "overtime",
+          "value": "16h30-18h30",
+          "multiplier": "2"
         }
       ],
       "duties": [
@@ -2653,16 +2659,6 @@
         }
       ],
       "history": [
-        {
-          "time": "08:46:53 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Ngoài giờ [Trống] ➔ [16h30-20h40]"
-        },
-        {
-          "time": "08:46:57 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
         {
           "time": "08:46:57 21/2/2026",
           "user": "TÂN",
@@ -2752,6 +2748,16 @@
           "time": "08:21:10 25/2/2026",
           "user": "LÊ THỊ THU THẢO",
           "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "08:21:41 25/2/2026",
+          "user": "LÊ THỊ THU THẢO",
+          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-18h30]"
+        },
+        {
+          "time": "08:21:41 25/2/2026",
+          "user": "LÊ THỊ THU THẢO",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.15"
