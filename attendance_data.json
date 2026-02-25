@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-25T01:44:10.013Z",
-    "updatedBy": "LINH"
+    "lastUpdate": "2026-02-25T01:46:16.428Z",
+    "updatedBy": "NGUYỄN VĂN THANH"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -4953,6 +4953,12 @@
           "type": "overtime",
           "value": "16h30-19h25",
           "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-23",
+          "type": "overtime",
+          "value": "16h30-19h15",
+          "multiplier": "2"
         }
       ],
       "duties": [
@@ -4983,19 +4989,13 @@
         {
           "date": "2026-02-09",
           "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-23",
+          "value": "TRỰC NGOÀI Ở LẠI"
         }
       ],
       "history": [
-        {
-          "time": "08:28:31 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 08: Ngoài giờ [Trống] ➔ [09h05-11h00]"
-        },
-        {
-          "time": "08:28:44 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 07: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
         {
           "time": "08:28:54 21/2/2026",
           "user": "TÂN",
@@ -5085,6 +5085,16 @@
           "time": "08:29:15 25/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "08:45:44 25/2/2026",
+          "user": "NGUYỄN VĂN THANH",
+          "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "08:46:14 25/2/2026",
+          "user": "NGUYỄN VĂN THANH",
+          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-19h15]"
         }
       ],
       "adminCoeff": "1.3"
