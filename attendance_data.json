@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-25T07:44:33.724Z",
+    "lastUpdate": "2026-02-25T07:45:25.416Z",
     "updatedBy": "LINH"
   },
   "attendance": {
@@ -7005,6 +7005,11 @@
           "value": "8"
         },
         {
+          "date": "2026-02-24",
+          "type": "regular",
+          "value": "8"
+        },
+        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-18H00",
@@ -7069,6 +7074,12 @@
           "type": "overtime",
           "value": "16h30-19h45",
           "multiplier": "2"
+        },
+        {
+          "date": "2026-02-24",
+          "type": "overtime",
+          "value": "5h00-6h50",
+          "multiplier": "2"
         }
       ],
       "duties": [
@@ -7111,29 +7122,13 @@
         {
           "date": "2026-02-17",
           "value": "TRỰC CHÍNH"
+        },
+        {
+          "date": "2026-02-23",
+          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
-        {
-          "time": "08:48:19 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:48:19 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:48:20 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:48:20 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
         {
           "time": "08:48:22 21/2/2026",
           "user": "TÂN",
@@ -7213,6 +7208,26 @@
           "time": "14:44:31 25/2/2026",
           "user": "LINH",
           "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-19h45]"
+        },
+        {
+          "time": "14:44:32 25/2/2026",
+          "user": "LINH",
+          "action": "- Ngày 23: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "14:44:41 25/2/2026",
+          "user": "LINH",
+          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "14:44:41 25/2/2026",
+          "user": "LINH",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "14:45:24 25/2/2026",
+          "user": "LINH",
+          "action": "- Ngày 24: Ngoài giờ [Trống] ➔ [5h00-6h50]"
         }
       ]
     }
