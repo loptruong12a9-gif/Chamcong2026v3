@@ -3,8 +3,8 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-02-26T02:23:39.193Z",
-    "updatedBy": "HUY"
+    "lastUpdate": "2026-02-26T14:07:24.819Z",
+    "updatedBy": "TÂN"
   },
   "attendance": {
     "attendance_2026-01_NGUYỄN VĂN TÂN": {
@@ -277,7 +277,7 @@
         {
           "date": "2026-01-29",
           "type": "overtime",
-          "value": "16H30-17h45",
+          "value": "16H30-18H00",
           "multiplier": "1.5"
         },
         {
@@ -293,12 +293,6 @@
           "multiplier": "2"
         },
         {
-          "date": "2026-02-02",
-          "type": "overtime",
-          "value": "06h30-07h50",
-          "multiplier": "1.5"
-        },
-        {
           "date": "2026-02-04",
           "type": "overtime",
           "value": "16H30-19H10",
@@ -307,49 +301,7 @@
         {
           "date": "2026-02-05",
           "type": "overtime",
-          "value": "16H30-17H15",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-06",
-          "type": "overtime",
-          "value": "16h30-17h13",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-20h25",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "05h10-06h20",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-19",
-          "type": "overtime",
-          "value": "09h00-11h30",
-          "multiplier": "3"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "overtime",
-          "value": "16h30-19h45",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "overtime",
-          "value": "16h30-17h30",
+          "value": "16H30-17H10",
           "multiplier": "1.5"
         }
       ],
@@ -379,144 +331,112 @@
           "value": "TRỰC CHÍNH"
         },
         {
-          "date": "2026-02-02",
-          "value": "TRỰC CHÍNH"
-        },
-        {
           "date": "2026-02-04",
           "value": "TRỰC NGOÀI Ở LẠI"
         },
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-06",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-19",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-23",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-25",
-          "value": "TRỰC NGOÀI Ở LẠI"
         }
       ],
       "history": [
         {
-          "time": "08:27:37 25/2/2026",
+          "time": "22:26:39 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:27:42 25/2/2026",
+          "time": "22:32:35 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:27:50 25/2/2026",
+          "time": "22:32:51 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "07:43:39 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 29: Ngoài giờ [16H30-18H00] ➔ [16H30-17h45]"
-        },
-        {
-          "time": "07:44:22 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 02: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "07:44:30 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [06h30-07h50]"
-        },
-        {
-          "time": "07:44:58 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 05: Ngoài giờ [16H30-17H10] ➔ [16H30-17H15]"
-        },
-        {
-          "time": "07:45:33 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Ngoài giờ [16h10-17h15] ➔ [16h10-17h13]"
-        },
-        {
-          "time": "07:45:47 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 06: Ngoài giờ [16h10-17h13] ➔ [16h30-17h13]"
-        },
-        {
-          "time": "07:46:54 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 18: Ngoài giờ [09h00-11h20\n18h50-21h20] ➔ [Bỏ]"
-        },
-        {
-          "time": "07:46:55 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 18: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [-]"
-        },
-        {
-          "time": "07:47:06 26/2/2026",
+          "time": "22:35:34 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "07:47:55 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-19h45]"
-        },
-        {
-          "time": "07:47:56 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
-          "time": "07:48:14 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 25: Ngoài giờ [Trống] ➔ [16h30-17h30]"
-        },
-        {
-          "time": "07:48:15 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 25: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
-          "time": "07:49:28 26/2/2026",
+          "time": "22:35:42 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "07:50:34 26/2/2026",
+          "time": "22:39:14 10/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "07:50:41 26/2/2026",
+          "time": "06:38:35 12/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:26:40 26/2/2026",
+          "time": "20:09:36 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:10:10 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:10:57 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:11:05 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:11:53 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:11:57 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:12:24 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:59:11 14/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "12:27:02 15/2/2026",
+          "user": "ADMIN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:06:49 26/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:06:50 26/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:07:23 26/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:07:23 26/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
