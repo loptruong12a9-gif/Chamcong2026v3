@@ -1,10 +1,10 @@
 # 🏰 HỆ THỐNG QUẢN LÝ CHẤM CÔNG HOÀNG GIA (ROYAL ATTENDANCE MASTER)
 > **Khoa Phẫu Thuật - Gây Mê Hồi Sức (PT-GMHS)**
-> *Phiên bản v3.61 - Chuyên nghiệp, Tinh tế & Đẳng cấp*
+> *Phiên bản v3.75 - Chuyên nghiệp, Tinh tế & Đẳng cấp*
 
 ---
 
-![Version](https://img.shields.io/badge/Version-3.61_Production-gold?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-3.75_Production-gold?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
 ![UI](https://img.shields.io/badge/UI-Royal_Presidential-white?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/Tech-PWA_Cloud_Sync-blue?style=for-the-badge)
@@ -15,9 +15,14 @@
 ## ✨ TÍNH NĂNG NỔI BẬT
 
 ### 👑 Giao Diện Hoàng Gia (Presidential UI)
-- **Thiết kế tinh tế**: Sử dụng bảng màu Vàng Gold, Kem Royal và chữ chân phương (Times New Roman).
+- **Thiết kế tinh tế**: Sử dụng bảng màu Vàng Gold, Kem Royal và chữ chân phương (Times New Roman) với **Giao diện sáng (Light Mode)** mặc định, mang lại sự sạch sẽ và rõ nét.
 - **Trải nghiệm cao cấp**: Các hiệu ứng viền kép, đổ bóng tinh vi mang lại cảm giác chuyên nghiệp bậc nhất.
 - **Tối ưu di động**: Giao diện linh hoạt, tự động co giãn hoàn hảo trên mọi thiết bị cầm tay.
+
+### 👥 Quản Lý Nhân Sự Linh Hoạt
+- **Thêm nhân viên nhanh**: Admin có thể thêm nhân viên mới trực tiếp ngay trên giao diện mà không cần can thiệp vào mã nguồn.
+- **Danh sách động**: Danh sách nhân viên được lưu trữ thông minh, tự động cập nhật vào bảng gợi ý và báo cáo tổng hợp.
+- **Dễ dàng điều chỉnh**: Hỗ trợ xóa hoặc cập nhật chức vụ cho nhân sự cấp khoa một cách nhanh chóng.
 
 ### ☁️ Đồng Bộ Đám Mây Siêu Tốc (Ultra Cloud Sync)
 - **Auto-Sync ⚡**: Tự động đồng bộ dữ liệu lên GitHub Cloud chỉ sau 1 giây lưu trữ.
