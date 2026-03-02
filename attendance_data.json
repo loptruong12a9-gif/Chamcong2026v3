@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-03-02T13:51:45.211Z",
+    "lastUpdate": "2026-03-02T13:51:48.671Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -6061,6 +6061,51 @@
         },
         {
           "time": "20:51:42 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        }
+      ]
+    },
+    "attendance_2026-03_ĐỖ THỊ HẰNG NGA": {
+      "name": "ĐỖ THỊ HẰNG NGA",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-03",
+      "entries": [
+        {
+          "date": "2026-02-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-27",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
+      "duties": [],
+      "history": [
+        {
+          "time": "20:51:45 2/3/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "20:51:45 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:51:46 2/3/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "20:51:46 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:51:46 2/3/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
