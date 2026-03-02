@@ -68,7 +68,6 @@ const GitHubSync = (function () {
                     localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
                 }
             } else {
-                // LẦN ĐẦU TRÊN THIẾT BỊ MỚI: Tự động nạp toàn bộ cấu hình Master
                 config = { ...DEFAULT_CONFIG };
                 localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
                 console.log('GitHub: Khởi tạo cấu hình Master lần đầu trên thiết bị mới.');
@@ -180,31 +179,33 @@ const GitHubSync = (function () {
 
     // Thu thập tất cả dữ liệu attendance từ localStorage
     function getAllAttendanceData() {
-        const data = {
-            metadata: {
-                exportTime: new Date().toISOString(),
-                version: '3.64',
-                source: 'BẢNG CHẤM CÔNG KHOA PT - GMHS'
-            },
-            attendance: {},
-            coefficients: {}
-        };
+        const attendance = {};
+        const coefficients = {};
 
-        // Thu thập dữ liệu attendance
-        for (let i = 0; i < localStorage.length; i++) {
+        // Thu thập dữ liệu attendance hiệu quả hơn
+        for (let i = 0, len = localStorage.length; i < len; i++) {
             const key = localStorage.key(i);
+            if (!key) continue;
+
             if (key.startsWith('attendance_')) {
                 try {
-                    data.attendance[key] = JSON.parse(localStorage.getItem(key));
-                } catch (e) {
-                    console.warn(`Failed to parse ${key}:`, e);
-                }
+                    attendance[key] = JSON.parse(localStorage.getItem(key));
+                } catch (e) { }
             } else if (key.startsWith('coeff_global_')) {
-                data.coefficients[key] = localStorage.getItem(key);
+                coefficients[key] = localStorage.getItem(key);
             }
         }
 
-        return data;
+        return {
+            metadata: {
+                exportTime: new Date().toISOString(),
+                version: '3.75',
+                source: 'BẢNG CHẤM CÔNG KHOA PT - GMHS',
+                updatedBy: sessionStorage.getItem('currentUser') || 'Unknown'
+            },
+            attendance,
+            coefficients
+        };
     }
 
     // Lấy SHA của file hiện tại trên GitHub (cần cho update)
@@ -236,42 +237,32 @@ const GitHubSync = (function () {
     function mergeAttendanceData(localData, remoteData, modifiedKeys = null) {
         if (!remoteData || !remoteData.attendance) return localData;
 
+        // Clone remote data để giữ làm base
         const merged = {
-            metadata: {
-                ...remoteData.metadata,
-                lastUpdate: new Date().toISOString(),
-                updatedBy: sessionStorage.getItem('currentUser') || 'Unknown'
-            },
+            metadata: { ...remoteData.metadata, ...localData.metadata },
             attendance: { ...remoteData.attendance },
-            coefficients: { ...remoteData.coefficients }
+            coefficients: { ...remoteData.coefficients || {} }
         };
 
-        // Nếu có danh sách key thay đổi, chỉ gộp những key đó
-        // Nếu không (hoặc lần đầu sync), gộp tất cả keys hiện có trong local
+        // Chỉ gộp các keys có sự thay đổi (Nếu có modifiedKeys) hoặc gộp toàn bộ local
         const keysToMerge = modifiedKeys || Object.keys(localData.attendance);
-
-        keysToMerge.forEach(key => {
+        for (const key of keysToMerge) {
             if (localData.attendance[key]) {
                 merged.attendance[key] = localData.attendance[key];
             }
-        });
+        }
 
-        // Gộp hệ số (Tương tự, chỉ gộp nếu có thay đổi hoặc gộp hết nếu lần đầu)
-        const coeffKeysToMerge = modifiedKeys ?
-            modifiedKeys.filter(k => k.startsWith('coeff_global_')) :
-            Object.keys(localData.coefficients);
-
-        coeffKeysToMerge.forEach(key => {
-            if (localData.coefficients[key]) {
-                merged.coefficients[key] = localData.coefficients[key];
-            }
-        });
+        // Gộp hệ số
+        const localCoeffs = localData.coefficients;
+        for (const key in localCoeffs) {
+            merged.coefficients[key] = localCoeffs[key];
+        }
 
         return merged;
     }
 
-    // Debounced Upload (Hàm quan trọng: Tránh sync liên tục làm đơ máy)
-    async function debouncedUpload(delay = 10000, modifiedKeys = null) {
+    // Debounced Upload (Hàm quan trọng: Tránh sync liên tục)
+    async function debouncedUpload(delay = 3000, modifiedKeys = null) {
         if (syncTimeout) clearTimeout(syncTimeout);
 
         updateSyncStatus('syncing', 'Đang chờ đồng bộ...');
@@ -280,7 +271,7 @@ const GitHubSync = (function () {
             try {
                 await uploadData(false, modifiedKeys);
             } catch (e) {
-                console.error('Debounced sync failed:', e);
+                console.error('Đồng bộ (delay) thất bại:', e);
             }
         }, delay);
     }
@@ -288,12 +279,12 @@ const GitHubSync = (function () {
     // Upload dữ liệu lên GitHub (Có gộp dữ liệu & Xử lý xung đột)
     async function uploadData(isRetry = false, modifiedKeys = null) {
         if (!config || !config.enabled) {
-            console.warn('Sync ignored: GitHub sync not enabled.');
+            console.warn('Bỏ qua: Đồng bộ GitHub chưa được kích hoạt.');
             return { skipped: true };
         }
 
         if (isSyncing && !isRetry) {
-            console.log('Sync queued: Sync already in progress.');
+            console.log('Đang chờ: Một tiến trình đồng bộ khác đang chạy.');
             pendingUpload = modifiedKeys;
             return { queued: true };
         }
@@ -337,10 +328,10 @@ const GitHubSync = (function () {
                 console.log('File chưa tồn tại hoặc lỗi lấy dữ liệu cũ, sẽ tạo mới.');
             }
 
-            // 2. Encode và Push lên
-            const content = btoa(unescape(encodeURIComponent(JSON.stringify(finalData, null, 2))));
+            // 2. Encode và Push lên (Nén JSON để tăng tốc)
+            const content = btoa(unescape(encodeURIComponent(JSON.stringify(finalData))));
             const body = {
-                message: `Update via Mobile Fix by ${sessionStorage.getItem('currentUser') || 'User'} at ${new Date().toLocaleString('vi-VN')}`,
+                message: `⚡ FastSync by ${sessionStorage.getItem('currentUser') || 'User'} at ${new Date().toLocaleTimeString('vi-VN')}`,
                 content: content,
                 branch: config.branch || 'main',
                 sha: sha || undefined
@@ -399,13 +390,12 @@ const GitHubSync = (function () {
 
         } catch (error) {
             isSyncing = false;
-            console.error('Upload error:', error);
+            console.error('Lỗi tải lên (Upload error):', error);
 
-            // Tự động thử lại nếu lỗi mạng (không phải 4xx)
             if (!isRetry && retryCount < MAX_RETRIES && !error.message.includes('failed')) {
                 retryCount++;
                 const delay = retryCount * 5000;
-                console.log(`Retrying sync in ${delay}ms (Attempt ${retryCount})...`);
+                console.log(`Đang thử lại sau ${delay}ms (Lần ${retryCount})...`);
                 setTimeout(() => uploadData(true, modifiedKeys), delay);
             } else {
                 updateSyncStatus('error', error.message);
@@ -437,7 +427,7 @@ const GitHubSync = (function () {
             // === XỬ LÝ LỖI TOKEN (401) ===
             if (response.status === 401) {
                 if (!isRetry) {
-                    console.warn('Token 401 trong khi download. Đang reset về cấu hình mặc định và thử lại...');
+                    console.warn('Token 401 khi tải về. Đang khôi phục cấu hình Master và thử lại...');
                     localStorage.removeItem(CONFIG_KEY);
                     loadConfig(); // Nạp lại DEFAULT_CONFIG
                     return await downloadData(true);
