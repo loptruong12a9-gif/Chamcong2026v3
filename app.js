@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dirtyKeys = new Set();
 
     // --- DYNAMIC EMPLOYEE LOADING ---
-    let EMPLOYEE_MAP = {
+    const DEFAULT_EMPLOYEES = {
         "NGUYỄN VĂN TÂN": "ĐIỀU DƯỠNG DỤNG CỤ",
         "NGUYỄN VĂN THANH": "ĐIỀU DƯỠNG DỤNG CỤ",
         "NGUYỄN VĂN ĐÔNG": "ĐIỀU DƯỠNG DỤNG CỤ",
@@ -41,6 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "NGUYỄN THỊ HẬU": "HỘ LÝ",
         "NGUYỄN THỊ ĐỨC KHUYÊN": "HỘ LÝ"
     };
+
+    let EMPLOYEE_MAP = JSON.parse(localStorage.getItem('EMPLOYEE_MAP')) || DEFAULT_EMPLOYEES;
+
+    function saveEmployeeMap() {
+        localStorage.setItem('EMPLOYEE_MAP', JSON.stringify(EMPLOYEE_MAP));
+        updateNameSuggestions();
+        debouncedRenderSummary();
+        // Trigger generic sync if enabled
+        if (typeof GitHubSync !== 'undefined' && GitHubSync.isConfigured()) {
+            localStorage.setItem('LAST_MODIFIED_MAP', Date.now());
+        }
+    }
 
     function syncEmployeeMap() {
         // Find any data in localStorage that isn't in EMPLOYEE_MAP
@@ -156,13 +168,16 @@ document.addEventListener('DOMContentLoaded', () => {
         location.reload();
     }
 
-    const autoFillPosition = (name) => {
+    const autoFillPosition = (name, force = false) => {
         const upperName = name.trim().toUpperCase();
         if (EMPLOYEE_MAP[upperName]) {
             const posInput = document.getElementById('employee-position');
-            // If user is admin, don't overwrite if they already typed something different
-            if (isAdmin() && posInput.value && posInput.value !== EMPLOYEE_MAP[upperName]) {
-                // Keep admin's manual entry
+            // Nếu không force và đã có giá trị (do loadData nạp từ DB), thì không ghi đè
+            if (!force && posInput.value && posInput.value !== "") {
+                return;
+            }
+            // Nếu admin đang gõ và muốn đổi chức vụ thủ công, cho phép
+            if (isAdmin() && !force && posInput.value && posInput.value !== EMPLOYEE_MAP[upperName]) {
                 return;
             }
             posInput.value = EMPLOYEE_MAP[upperName];
@@ -237,6 +252,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const githubConfigBtn = document.getElementById('github-config-btn');
             if (githubConfigBtn) {
                 githubConfigBtn.style.display = isAdmin() ? 'flex' : 'none';
+            }
+
+            // Hiện các nút quản trị (Sao lưu, Khôi phục, Quản lý Nhân sự) cho Admin
+            const adminControls = document.getElementById('admin-data-controls');
+            if (adminControls) {
+                adminControls.style.display = isAdmin() ? 'flex' : 'none';
             }
 
             // Auto-load data for the current user if not already set (Don't auto-load for ADMIN)
@@ -357,6 +378,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeHelpBtn.addEventListener('click', () => {
         helpPanel.classList.remove('active');
+    });
+
+    // --- STAFF MANAGEMENT LOGIC ---
+    window.showStaffModal = () => {
+        if (!isAdmin()) {
+            alert('Chức năng này chỉ dành cho Admin!');
+            return;
+        }
+        renderStaffMgmtList();
+        document.getElementById('staff-modal').classList.add('active');
+    };
+
+    window.hideStaffModal = () => {
+        document.getElementById('staff-modal').classList.remove('active');
+    };
+
+    function renderStaffMgmtList() {
+        const listBody = document.getElementById('staff-mgmt-list');
+        listBody.innerHTML = '';
+
+        Object.keys(EMPLOYEE_MAP).sort().forEach(name => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td style="padding: 10px; border-bottom: 1px solid var(--border); font-weight: 600;">${name}</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--border); color: var(--text-dim); font-size: 0.85rem;">${EMPLOYEE_MAP[name]}</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--border); text-align: center;">
+                    <button class="btn-delete-small" onclick="deleteEmployeeFromMap('${name}')">✕</button>
+                </td>
+            `;
+            listBody.appendChild(tr);
+        });
+    }
+
+    window.deleteEmployeeFromMap = (name) => {
+        if (!isAdmin()) {
+            alert('Bạn không có quyền thực hiện thao tác này!');
+            return;
+        }
+        if (confirm(`Bạn có chắc muốn xóa nhân viên ${name} khỏi danh sách hệ thống?`)) {
+            delete EMPLOYEE_MAP[name];
+            saveEmployeeMap();
+            renderStaffMgmtList();
+            showToast(`Đã xóa ${name}`, 'success');
+        }
+    };
+
+    document.getElementById('manage-staff-btn').addEventListener('click', () => {
+        window.showStaffModal();
+    });
+
+    document.getElementById('add-staff-submit').addEventListener('click', () => {
+        if (!isAdmin()) {
+            alert('Bạn không có quyền thực hiện thao tác này!');
+            return;
+        }
+        const nameInput = document.getElementById('new-staff-name');
+        const posInput = document.getElementById('new-staff-position');
+        const name = nameInput.value.trim().toUpperCase();
+        const pos = posInput.value;
+
+        if (!name) {
+            alert('Vui lòng nhập tên nhân viên!');
+            return;
+        }
+
+        if (EMPLOYEE_MAP[name]) {
+            alert('Nhân viên này đã tồn tại!');
+            return;
+        }
+
+        EMPLOYEE_MAP[name] = pos;
+        saveEmployeeMap();
+        renderStaffMgmtList();
+        nameInput.value = '';
+        showToast(`Đã thêm ${name}`, 'success');
     });
 
     // Close help panel when clicking outside
@@ -1225,7 +1321,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = () => {
         const name = document.getElementById('employee-name').value.trim();
-        autoFillPosition(name);
         const saved = localStorage.getItem(`attendance_${monthPicker.value}_${name}`);
 
         // Clear board first
@@ -1235,6 +1330,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (saved) {
             const data = JSON.parse(saved);
             document.getElementById('employee-position').value = data.position || '';
+            toggleDutyRowVisibility(); // Cập nhật hiển thị hàng trực dựa trên chức vụ đã load
             if (document.getElementById('signature-name')) document.getElementById('signature-name').textContent = (data.name || '').toUpperCase();
             data.entries.forEach(entry => {
                 const input = document.querySelector(`[data-date="${entry.date}"][data-type="${entry.type}"]`);
@@ -1246,6 +1342,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (sel) sel.value = duty.value;
                 });
             }
+        } else {
+            // Nếu không có dữ liệu cũ, lúc này mới tự động điền chức vụ theo danh bạ
+            autoFillPosition(name, true);
         }
         updateSignatureDate();
         calculateTotals();
@@ -1276,7 +1375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.getElementById('signature-name')) {
             document.getElementById('signature-name').textContent = val.toUpperCase();
         }
-        autoFillPosition(val);
+        // Khi gõ tên, gọi loadData. loadData sẽ tự quyết định có autoFill chức vụ hay không.
         loadData();
         lockInputsBasedOnPermission(); // Apply access control when name changes
     });
