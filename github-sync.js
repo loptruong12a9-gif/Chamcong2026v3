@@ -29,7 +29,7 @@ const GitHubSync = (function () {
         token: _s(_v),
         repo: 'loptruong12a9-gif/Chamcong2026v3',
         branch: 'main',
-        autoSync: true,
+        autoSync: false,
         enabled: true
     };
     // ===========================================
@@ -61,8 +61,9 @@ const GitHubSync = (function () {
                     needsSaving = true;
                 }
 
-                // Luôn đảm bảo config được kích hoạt
+                // Luôn đảm bảo config được kích hoạt nhưng TẮT chế độ tự động đồng bộ theo yêu cầu mới
                 config.enabled = true;
+                config.autoSync = false;
 
                 if (needsSaving) {
                     localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
@@ -263,6 +264,8 @@ const GitHubSync = (function () {
 
     // Debounced Upload (Hàm quan trọng: Tránh sync liên tục)
     async function debouncedUpload(delay = 3000, modifiedKeys = null) {
+        if (!config || !config.autoSync) return; // Không tự động push nếu tắt autoSync
+
         if (syncTimeout) clearTimeout(syncTimeout);
 
         updateSyncStatus('syncing', 'Đang chờ đồng bộ...');
