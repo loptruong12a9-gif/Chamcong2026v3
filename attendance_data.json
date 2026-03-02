@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-03-02T13:52:58.357Z",
+    "lastUpdate": "2026-03-02T13:53:08.458Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -6603,6 +6603,20 @@
           "time": "20:52:52 2/3/2026",
           "user": "TÂN",
           "action": "- Ngày 01: Trực [-] ➔ [TRỰC CHÍNH]"
+        }
+      ]
+    },
+    "attendance_2026-03_NGUYỄN KIM NGỌC": {
+      "name": "NGUYỄN KIM NGỌC",
+      "position": "ĐIỀU DƯỠNG DỤNG CỤ",
+      "month": "2026-03",
+      "entries": [],
+      "duties": [],
+      "history": [
+        {
+          "time": "20:53:05 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu dữ liệu"
         }
       ]
     }
