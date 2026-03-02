@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-03-02T13:50:38.998Z",
+    "lastUpdate": "2026-03-02T13:50:45.947Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -5855,7 +5855,23 @@
       "name": "NGUYỄN VĂN TÂN",
       "position": "ĐIỀU DƯỠNG DỤNG CỤ",
       "month": "2026-03",
-      "entries": [],
+      "entries": [
+        {
+          "date": "2026-02-26",
+          "type": "regular",
+          "value": "8"
+        },
+        {
+          "date": "2026-02-27",
+          "type": "regular",
+          "value": "0.5"
+        },
+        {
+          "date": "2026-03-02",
+          "type": "regular",
+          "value": "8"
+        }
+      ],
       "duties": [
         {
           "date": "2026-03-01",
@@ -5917,6 +5933,31 @@
           "time": "20:50:36 2/3/2026",
           "user": "TÂN",
           "action": "- Ngày 01: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "20:50:42 2/3/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "20:50:42 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:50:43 2/3/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "20:50:43 2/3/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:50:43 2/3/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trong giờ [Trống] ➔ [0.5]"
         }
       ]
     }
