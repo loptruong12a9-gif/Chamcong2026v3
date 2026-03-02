@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Production v3.65</title>
+    <title>BẢNG CHẤM CÔNG KHOA PT - GMHS - Production v3.75</title>
 
     <!-- PWA Settings -->
     <link rel="manifest" href="manifest.json">
@@ -207,6 +207,10 @@
                         <button id="restore-btn" class="btn btn-restore" title="Khôi phục dữ liệu từ file .json">
                             📤 KHÔI PHỤC
                         </button>
+                        <button id="manage-staff-btn" class="btn btn-save" style="background: #8b5cf6 !important;"
+                            title="Quản lý danh sách nhân viên">
+                            👥 NHÂN VIÊN
+                        </button>
                         <input type="file" id="restore-input" style="display: none;" accept=".json">
                     </div>
                     <button id="refresh-summary" class="btn btn-print">Làm mới bảng</button>
@@ -233,6 +237,61 @@
             </div>
         </section>
 
+        <!-- Staff Management Modal -->
+        <div id="staff-modal" class="modal">
+            <div class="modal-content" style="max-width: 600px;">
+                <div class="modal-header">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5rem;">👥</span>
+                        <h2>QUẢN LÝ NHÂN VIÊN</h2>
+                    </div>
+                    <button class="close-modal-btn" onclick="hideStaffModal()">✕</button>
+                </div>
+                <div class="staff-mgmt-body" style="padding: 10px 0;">
+                    <div class="add-staff-form"
+                        style="display: flex; gap: 8px; margin-bottom: 20px; background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid var(--border);">
+                        <input type="text" id="new-staff-name" placeholder="Họ và tên..."
+                            style="flex: 2; padding: 10px; border-radius: 8px; border: 1px solid var(--border); font-size: 0.9rem;">
+                        <select id="new-staff-position"
+                            style="flex: 1.5; padding: 10px; border-radius: 8px; border: 1px solid var(--border); font-size: 0.9rem;">
+                            <option value="ĐIỀU DƯỠNG DỤNG CỤ">ĐIỀU DƯỠNG DỤNG CỤ</option>
+                            <option value="ĐIỀU DƯỠNG HỒI SỨC">ĐIỀU DƯỠNG HỒI SỨC</option>
+                            <option value="KTV GÂY MÊ">KTV GÂY MÊ</option>
+                            <option value="PHỤ TRÁCH KHO">PHỤ TRÁCH KHO</option>
+                            <option value="THƯ KÍ Y KHOA">THƯ KÍ Y KHOA</option>
+                            <option value="HỘ LÝ">HỘ LÝ</option>
+                        </select>
+                        <button id="add-staff-submit" class="btn btn-save"
+                            style="padding: 0 15px; min-width: 80px;">Thêm</button>
+                    </div>
+                    <div id="staff-list-container"
+                        style="max-height: 400px; overflow-y: auto; border: 1px solid var(--border); border-radius: 12px; background: white;">
+                        <table style="width: 100%; border-collapse: collapse; min-width: unset;">
+                            <thead style="position: sticky; top: 0; z-index: 10;">
+                                <tr>
+                                    <th
+                                        style="background: var(--accent); color: white; padding: 12px; text-align: left; font-size: 0.8rem;">
+                                        TÊN NHÂN VIÊN</th>
+                                    <th
+                                        style="background: var(--accent); color: white; padding: 12px; text-align: left; font-size: 0.8rem;">
+                                        CHỨC VỤ</th>
+                                    <th
+                                        style="background: var(--accent); color: white; padding: 12px; text-align: center; font-size: 0.8rem; width: 60px;">
+                                        XÓA</th>
+                                </tr>
+                            </thead>
+                            <tbody id="staff-mgmt-list">
+                                <!-- Staff rows will be injected here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: var(--text-dim);">
+                    💡 Mẹo: Nhân viên mới thêm vào sẽ xuất hiện ngay trong danh sách gợi ý.
+                </div>
+            </div>
+        </div>
+
         <footer>
             <div class="signature-section">
                 <div class="signature-box">
@@ -245,7 +304,7 @@
             <div class="dev-info">
                 <p>Phát triển bởi <a href="tel:0367287102" class="zalo-link">Tân Nguyễn (036.728.7102)</a></p>
                 <p class="slogan">"Code một lần- Dùng một đời"</p>
-                <p class="version-info">Version 3.65 PRODUCTION (Released: 15.02.2026 - Master Icon Engine)</p>
+                <p class="version-info">Version 3.75 PRODUCTION (Released: 02.03.2026 - Ultimate Sync Engine)</p>
                 <button onclick="forceUpdateApp()"
                     style="background:none;border:none;color:var(--royal-gold);font-size:0.7rem;text-decoration:underline;cursor:pointer;padding:0;margin-top:5px;">Cập
                     nhật bản mới nhất ⚡</button>
