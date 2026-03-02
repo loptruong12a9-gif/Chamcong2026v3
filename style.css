@@ -14,23 +14,6 @@
     --sticky-bg: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Dark Mode (Premium, mờ ảo) */
-        --bg-main: #0a0a0c;
-        --bg-card: rgba(23, 23, 33, 0.85);
-        --accent: #2c6fff;
-        --accent-hover: #3d7cff;
-        --text-main: #ffffff;
-        --text-dim: #94a3b8;
-        --border: rgba(255, 255, 255, 0.1);
-        --danger: #ef4444;
-        --glass-blur: blur(25px);
-        --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
-        --input-bg: rgba(255, 255, 255, 0.05);
-        --sticky-bg: #15151e;
-    }
-}
 
 * {
     margin: 0;
@@ -229,11 +212,6 @@ header {
     background: rgba(0, 0, 0, 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
-    .btn-print:hover {
-        background: rgba(255, 255, 255, 0.1);
-    }
-}
 
 .btn-clear {
     background: rgba(239, 68, 68, 0.1);
@@ -897,11 +875,6 @@ th {
     /* Hint to browser for faster rendering */
 }
 
-@media (prefers-color-scheme: dark) {
-    th {
-        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.5);
-    }
-}
 
 .sticky-col {
     position: sticky;
@@ -1005,11 +978,6 @@ thead tr th.sticky-col {
     background: rgba(0, 0, 0, 0.02);
 }
 
-@media (prefers-color-scheme: dark) {
-    .weekend {
-        background: rgba(255, 255, 255, 0.02);
-    }
-}
 
 .sunday-holiday {
     background: rgba(239, 68, 68, 0.25) !important;
