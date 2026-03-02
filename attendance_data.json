@@ -3,7 +3,7 @@
     "exportTime": "2026-02-05T14:08:12.486Z",
     "version": "3.5",
     "source": "BẢNG CHẤM CÔNG KHOA PT - GMHS",
-    "lastUpdate": "2026-03-01T15:40:39.237Z",
+    "lastUpdate": "2026-03-02T13:28:16.367Z",
     "updatedBy": "TÂN"
   },
   "attendance": {
@@ -237,11 +237,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-02-23",
           "type": "regular",
           "value": "8"
@@ -301,7 +296,13 @@
         {
           "date": "2026-02-05",
           "type": "overtime",
-          "value": "16H30-17H10",
+          "value": "16H30-17H15",
+          "multiplier": "1.5"
+        },
+        {
+          "date": "2026-02-06",
+          "type": "overtime",
+          "value": "16H30-17H15",
           "multiplier": "1.5"
         }
       ],
@@ -337,107 +338,115 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-06",
+          "value": "TRỰC NGOÀI Ở LẠI"
+        },
+        {
+          "date": "2026-02-07",
+          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "22:39:14 10/2/2026",
+          "time": "19:28:04 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "06:38:35 12/2/2026",
+          "time": "19:28:26 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:09:36 14/2/2026",
+          "time": "19:29:47 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:10:10 14/2/2026",
+          "time": "19:33:03 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:10:57 14/2/2026",
+          "time": "19:33:08 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:11:05 14/2/2026",
+          "time": "19:33:50 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:11:53 14/2/2026",
+          "time": "19:35:38 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:11:57 14/2/2026",
+          "time": "19:35:40 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "20:12:24 14/2/2026",
+          "time": "19:35:47 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:59:11 14/2/2026",
-          "user": "ADMIN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "12:27:02 15/2/2026",
-          "user": "ADMIN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "21:06:49 26/2/2026",
+          "time": "19:35:58 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:06:50 26/2/2026",
+          "time": "19:36:08 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:07:23 26/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "21:07:23 26/2/2026",
+          "time": "19:37:56 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:07:30 26/2/2026",
+          "time": "19:37:58 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:07:40 26/2/2026",
+          "time": "19:37:59 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:52:33 26/2/2026",
+          "time": "19:38:36 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:52:34 26/2/2026",
+          "time": "19:39:16 14/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:53:01 26/2/2026",
+          "time": "19:45:21 14/2/2026",
           "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "19:45:34 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "19:46:12 14/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "19:49:04 14/2/2026",
+          "user": null,
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
@@ -1040,56 +1049,6 @@
           "value": "4"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-18H45",
@@ -1118,60 +1077,6 @@
           "type": "overtime",
           "value": "16h30-19h10",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h00",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "07h25-14h35\n18h15-19h10\n22h15-23h45",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "overtime",
-          "value": "16h30-16h40",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "overtime",
-          "value": "16h30-18h10",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "06h35-07h30",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "22h00-22h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "overtime",
-          "value": "16h30-18h30",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "overtime",
-          "value": "16h30-18h50",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "overtime",
-          "value": "04h55-07h20",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -1194,143 +1099,107 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-10",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-11",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-23",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-24",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-25",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:29:47 21/2/2026",
+          "time": "22:01:40 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:01:40 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:29:47 21/2/2026",
+          "time": "22:01:41 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:02:02 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:30:00 21/2/2026",
+          "time": "22:02:02 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:26:56 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:27:03 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:27:03 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:27:03 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:27:25 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-18h30]"
-        },
-        {
-          "time": "08:27:33 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
-          "time": "08:27:40 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:27:41 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 24: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:27:44 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:27:44 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:27:57 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 24: Ngoài giờ [Trống] ➔ [16h30-18h50]"
-        },
-        {
-          "time": "08:28:04 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 25: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:28:08 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:28:08 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:28:23 26/2/2026",
-          "user": "HUY",
-          "action": "- Ngày 25: Ngoài giờ [Trống] ➔ [04h55-07h20]"
-        },
-        {
-          "time": "08:33:25 26/2/2026",
-          "user": "HUY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "10:29:37 27/2/2026",
+          "time": "22:02:03 5/2/2026",
           "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:02:22 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-18H45]"
+        },
+        {
+          "time": "22:02:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:02:41 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-22H25]"
+        },
+        {
+          "time": "22:02:43 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:02:57 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [Trống] ➔ [16H30-18H55]"
+        },
+        {
+          "time": "22:03:03 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "22:03:22 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [16H30-18H00\n21H00-23H20]"
+        },
+        {
+          "time": "09:54:33 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:54:43 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-19h10]"
+        },
+        {
+          "time": "09:54:53 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [8] ➔ [4]"
+        },
+        {
+          "time": "09:54:54 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "09:54:54 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "09:54:56 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:18:40 6/2/2026",
+          "user": null,
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
@@ -1409,147 +1278,107 @@
           "date": "2026-02-06",
           "type": "regular",
           "value": "8"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "8"
         }
       ],
       "duties": [],
       "history": [
         {
-          "time": "09:02:05 21/2/2026",
+          "time": "10:21:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:05 21/2/2026",
+          "time": "10:21:07 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:21:07 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:06 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "09:02:06 21/2/2026",
+          "time": "10:21:07 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:08 21/2/2026",
+          "time": "10:21:09 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "09:02:09 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "09:02:09 21/2/2026",
+          "time": "10:21:09 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:10 21/2/2026",
+          "time": "10:21:10 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "09:02:10 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "09:02:11 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "09:02:11 21/2/2026",
+          "time": "10:21:10 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:13 21/2/2026",
+          "time": "10:21:12 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "09:02:13 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "09:02:14 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "09:02:17 21/2/2026",
+          "time": "10:21:13 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:17 21/2/2026",
+          "time": "10:21:13 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:19 21/2/2026",
+          "time": "10:21:14 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "09:02:19 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "09:02:21 21/2/2026",
+          "time": "10:21:14 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:02:37 21/2/2026",
+          "time": "10:21:16 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:21:16 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:21:16 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:21:18 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:21:32 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:29:11 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "11:33:33 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -1646,56 +1475,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "6"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-21H00",
@@ -1730,30 +1509,6 @@
           "type": "overtime",
           "value": "04H50-06H10",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "overtime",
-          "value": "16h30-17h55",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-19h20",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-22",
-          "type": "overtime",
-          "value": "08h00-12h20\n13h40-15h10",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -1784,126 +1539,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-10",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-22",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-25",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:33:58 21/2/2026",
+          "time": "21:40:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:40:20 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở LẠI] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+        },
+        {
+          "time": "21:40:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:41:38 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:21:17 25/2/2026",
+          "time": "21:59:41 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [1] ➔ [8]"
+          "action": "- Ngày 07: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:21:17 25/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:21:45 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 18: Ngoài giờ [10h30-12h00] ➔ [Bỏ]"
-        },
-        {
-          "time": "08:21:45 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 18: Trực [TRỰC CHÍNH] ➔ [-]"
-        },
-        {
-          "time": "08:21:58 25/2/2026",
+          "time": "21:59:41 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:21:59 25/2/2026",
+          "time": "21:59:47 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 22: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 06: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:22:04 25/2/2026",
+          "time": "22:01:09 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 09: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:22:27 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 22: Ngoài giờ [Trống] ➔ [08h00-12h20]"
-        },
-        {
-          "time": "08:22:41 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 22: Ngoài giờ [08h00-12h20] ➔ [08h00-12h20\n13h40-15h10]"
-        },
-        {
-          "time": "08:23:05 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:23:05 25/2/2026",
+          "time": "22:01:09 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:23:07 25/2/2026",
+          "time": "22:01:10 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 10: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:23:08 25/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:23:08 25/2/2026",
+          "time": "22:01:10 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:23:09 25/2/2026",
+          "time": "22:01:11 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 11: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:23:10 25/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:23:10 25/2/2026",
+          "time": "22:01:11 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:23:11 25/2/2026",
+          "time": "22:01:13 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 25: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 12: Trong giờ [8] ➔ [Bỏ]"
         },
         {
-          "time": "08:23:34 25/2/2026",
+          "time": "22:01:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:01:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:01:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:03:46 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:03:46 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:03:46 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -1948,7 +1683,7 @@
         {
           "date": "2026-02-02",
           "type": "regular",
-          "value": "0"
+          "value": "8"
         },
         {
           "date": "2026-02-03",
@@ -1967,51 +1702,6 @@
         },
         {
           "date": "2026-02-06",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "0"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-16",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
           "type": "regular",
           "value": "8"
         },
@@ -2050,42 +1740,6 @@
           "type": "overtime",
           "value": "16h30-20h30",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h20",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "07h50-11h30",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-18h00",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "06h20-07h30",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-15",
-          "type": "overtime",
-          "value": "09h05-09h30",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-20",
-          "type": "overtime",
-          "value": "19h00-20h50",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -2112,130 +1766,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-15",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-20",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:18:02 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Ngoài giờ [Trống] ➔ [06h20-07h30]"
-        },
-        {
-          "time": "08:18:21 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:18:51 21/2/2026",
+          "time": "21:50:16 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:18:51 21/2/2026",
+          "time": "21:50:16 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:19:00 21/2/2026",
+          "time": "21:50:18 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 15: Ngoài giờ [Trống] ➔ [09h05-09h30]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:19:10 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 15: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:19:33 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 16: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:19:53 21/2/2026",
+          "time": "21:50:27 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:19:53 21/2/2026",
+          "time": "21:50:27 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:19:53 21/2/2026",
+          "time": "21:50:28 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 20: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:20:05 21/2/2026",
+          "time": "21:50:39 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 20: Ngoài giờ [Trống] ➔ [19h00-20h50]"
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-17H00]"
         },
         {
-          "time": "08:20:54 21/2/2026",
+          "time": "21:50:41 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 20: Trực [TRỰC CHÍNH] ➔ [-]"
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:20:56 21/2/2026",
+          "time": "21:50:57 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 20: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-19H45]"
         },
         {
-          "time": "08:21:25 21/2/2026",
+          "time": "21:50:59 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:21:25 21/2/2026",
+          "time": "21:51:18 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-23H00]"
         },
         {
-          "time": "08:21:25 21/2/2026",
+          "time": "21:51:23 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
         },
         {
-          "time": "08:21:30 21/2/2026",
+          "time": "21:51:39 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [20H30-21H45]"
         },
         {
-          "time": "09:01:36 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 02: Trong giờ [8] ➔ [0]"
-        },
-        {
-          "time": "09:01:36 21/2/2026",
+          "time": "21:51:55 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "09:01:41 21/2/2026",
+          "time": "21:51:58 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "09:53:28 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:53:43 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-17h10]"
+        },
+        {
+          "time": "09:53:44 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "09:54:02 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-20h30]"
+        },
+        {
+          "time": "09:54:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -2540,61 +2170,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-22H00",
@@ -2623,24 +2198,6 @@
           "type": "overtime",
           "value": "04h50-06h10",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h30",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "overtime",
-          "value": "16h30-20h40",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "overtime",
-          "value": "16h30-18h30",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -2663,119 +2220,107 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-11",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-23",
-          "value": "TRỰC NGOÀI Ở LẠI"
         }
       ],
       "history": [
         {
-          "time": "08:47:01 21/2/2026",
+          "time": "22:06:16 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:06:16 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:47:03 21/2/2026",
+          "time": "22:06:17 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:06:17 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "12:56:38 23/2/2026",
-          "user": "LÊ THỊ THU THẢO",
+          "time": "22:06:18 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:06:18 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:20:58 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
+          "time": "22:06:19 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:20:59 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
+          "time": "22:06:23 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:20:59 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
+          "time": "22:06:23 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:21:00 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
+          "time": "22:06:30 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:21:00 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "22:06:42 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-22H00]"
         },
         {
-          "time": "08:21:00 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "22:06:43 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:21:02 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
+          "time": "22:06:58 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Ngoài giờ [Trống] ➔ [04H45-07H00]"
         },
         {
-          "time": "08:21:07 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "22:06:59 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
         },
         {
-          "time": "08:21:07 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "22:07:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 01: Ngoài giờ [Trống] ➔ [15H30-17H00]"
         },
         {
-          "time": "08:21:10 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+          "time": "10:01:03 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:21:41 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-18h30]"
+          "time": "10:01:34 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-20h00\n21h40-23h20]"
         },
         {
-          "time": "08:21:41 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "10:01:35 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:22:22 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "10:01:51 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [04h50-06h10]"
         },
         {
-          "time": "08:25:10 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:29:03 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:29:55 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:32:07 25/2/2026",
-          "user": "LÊ THỊ THU THẢO",
+          "time": "10:01:53 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ],
@@ -2812,11 +2357,6 @@
           "value": "8"
         },
         {
-          "date": "2026-01-31",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-02-02",
           "type": "regular",
           "value": "8"
@@ -2843,41 +2383,6 @@
         },
         {
           "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
           "type": "regular",
           "value": "8"
         },
@@ -2922,24 +2427,6 @@
           "type": "overtime",
           "value": "16h30-20h30",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "07h30-14h30\n18h15-19h10\n22h05-23h45",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "overtime",
-          "value": "16h30-20h40",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-20",
-          "type": "overtime",
-          "value": "19h00-20h50",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -2970,118 +2457,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-11",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-20",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:31:11 21/2/2026",
+          "time": "10:17:54 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [21h00-23h20]"
+        },
+        {
+          "time": "10:18:06 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16h30-18h30]"
+        },
+        {
+          "time": "10:18:13 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:18:20 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:18:21 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:32:05 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 08: Ngoài giờ [07h30-14h30] ➔ [07h30-14h30\n18h15-19h10\n22h05-23h45]"
-        },
-        {
-          "time": "08:32:14 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:32:16 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:32:16 21/2/2026",
+          "time": "10:18:21 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:32:17 21/2/2026",
+          "time": "10:18:33 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-20h30]"
         },
         {
-          "time": "08:32:17 21/2/2026",
+          "time": "10:18:34 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:32:32 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Ngoài giờ [Trống] ➔ [16h30-20h40]"
-        },
-        {
-          "time": "08:32:34 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:32:34 21/2/2026",
+          "time": "10:18:38 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:32:35 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:32:35 21/2/2026",
+          "time": "10:19:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:32:37 21/2/2026",
+          "time": "10:19:54 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 03: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:32:46 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:32:46 21/2/2026",
+          "time": "10:20:07 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:32:47 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 20: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:32:59 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 20: Ngoài giờ [Trống] ➔ [19h00-20h50]"
-        },
-        {
-          "time": "08:33:00 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:33:00 21/2/2026",
+          "time": "10:20:25 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:33:23 21/2/2026",
+          "time": "18:23:27 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "18:23:29 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:29 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:30 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "18:23:30 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:30 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:32 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -3199,41 +2674,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "5"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "0"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "15H30-16H20",
@@ -3248,102 +2688,102 @@
       ],
       "history": [
         {
-          "time": "08:36:26 21/2/2026",
+          "time": "22:05:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:05:21 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:26 21/2/2026",
+          "time": "22:05:22 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:05:22 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:28 21/2/2026",
+          "time": "22:05:23 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 31: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:36:28 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:36:29 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:36:30 21/2/2026",
+          "time": "22:05:23 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:30 21/2/2026",
+          "time": "22:05:24 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:05:24 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:34 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:36:34 21/2/2026",
+          "time": "22:05:24 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:34 21/2/2026",
+          "time": "22:05:26 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:05:28 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:35 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:36:36 21/2/2026",
+          "time": "22:05:28 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:36 21/2/2026",
+          "time": "22:05:28 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:05:28 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:39 21/2/2026",
+          "time": "22:05:29 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [5]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:36:42 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:36:42 21/2/2026",
+          "time": "22:05:29 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:44 21/2/2026",
+          "time": "22:05:31 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:36:48 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:36:48 21/2/2026",
+          "time": "22:05:31 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:50 21/2/2026",
+          "time": "22:05:31 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:05:31 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -3459,102 +2899,102 @@
       "duties": [],
       "history": [
         {
-          "time": "23:29:17 5/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:49:18 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:49:22 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:50:23 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:52:08 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:52:28 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:52:45 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:53:42 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:53:48 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:59:07 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:59:16 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "19:59:20 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:00:11 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:00:18 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:11:58 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:12:13 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:12:22 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "20:13:49 14/2/2026",
-          "user": "MY",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
           "time": "20:13:54 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
           "time": "20:13:57 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:16:15 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:25:18 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:25:24 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:25:42 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:27:06 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:32:03 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:32:11 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:35:22 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:35:28 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:43:53 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:43:58 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:44:36 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:44:43 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:57:55 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "20:58:27 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:05:13 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:05:16 14/2/2026",
+          "user": "MY",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "21:16:11 14/2/2026",
           "user": "MY",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -3627,41 +3067,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "06h40-07h30",
@@ -3690,30 +3095,6 @@
           "type": "overtime",
           "value": "16h30-22h05",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-06",
-          "type": "overtime",
-          "value": "16h30-18h45",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "overtime",
-          "value": "16h30-19h25",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-20h25",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "05h10-07h30",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -3736,122 +3117,106 @@
         {
           "date": "2026-02-03",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-06",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-09",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:42:45 21/2/2026",
+          "time": "10:08:50 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:03 21/2/2026",
+          "time": "10:08:52 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 09: Ngoài giờ [Trống] ➔ [16h30-19h25]"
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:43:11 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:43:12 21/2/2026",
+          "time": "10:08:57 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:12 21/2/2026",
+          "time": "10:08:57 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:13 21/2/2026",
+          "time": "10:08:58 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:43:13 21/2/2026",
+          "time": "10:09:09 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16h30-22h05]"
         },
         {
-          "time": "08:43:13 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:43:24 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Ngoài giờ [Trống] ➔ [16h30-20h25]"
-        },
-        {
-          "time": "08:43:30 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:43:32 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:43:32 21/2/2026",
+          "time": "10:09:11 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:40 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Ngoài giờ [Trống] ➔ [05h10-07h30]"
-        },
-        {
-          "time": "08:43:44 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:43:50 21/2/2026",
+          "time": "10:09:14 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:50 21/2/2026",
+          "time": "18:23:44 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "18:23:44 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:52 21/2/2026",
+          "time": "18:23:45 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:43:52 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:43:52 21/2/2026",
+          "time": "18:23:45 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:43:55 21/2/2026",
+          "time": "18:23:46 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "18:23:47 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:47 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:49 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "18:23:49 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:49 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:23:49 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "18:24:57 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -4120,36 +3485,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "06H40-07H50",
@@ -4190,34 +3525,12 @@
           "type": "overtime",
           "value": "16h30-19h10",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-06",
-          "type": "overtime",
-          "value": "16h30-18h45",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-22h25",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "05h10-07h30",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
         {
           "date": "2026-01-26",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-01-27",
-          "value": "TRỰC NGOÀI Ở LẠI"
         },
         {
           "date": "2026-01-28",
@@ -4242,119 +3555,107 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-06",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:40:07 21/2/2026",
+          "time": "22:10:56 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:40:07 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:40:08 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:40:08 21/2/2026",
+          "time": "22:10:56 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:40:09 21/2/2026",
+          "time": "22:10:58 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:40:10 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:40:10 21/2/2026",
+          "time": "22:10:59 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:40:11 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:40:11 21/2/2026",
+          "time": "22:10:59 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:40:12 21/2/2026",
+          "time": "22:11:15 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [06H40-07H50]"
         },
         {
-          "time": "08:40:25 21/2/2026",
+          "time": "22:11:16 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Ngoài giờ [Trống] ➔ [16h30-22h25]"
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:40:29 21/2/2026",
+          "time": "22:11:30 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-21H00]"
         },
         {
-          "time": "08:40:29 21/2/2026",
+          "time": "22:11:32 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 31: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:40:29 21/2/2026",
+          "time": "22:12:28 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 31: Ngoài giờ [Trống] ➔ [16H30-18H55\n20H45-22H20\n06H40-07H55]"
         },
         {
-          "time": "08:40:41 21/2/2026",
+          "time": "09:57:49 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 02: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:40:49 21/2/2026",
+          "time": "09:58:07 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Ngoài giờ [Trống] ➔ [05h10-07h30]"
+          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [16h30-18h00]"
         },
         {
-          "time": "08:40:49 21/2/2026",
+          "time": "09:58:08 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:41:16 21/2/2026",
+          "time": "09:58:53 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16h30-19h30\n20h30-22h05]"
         },
         {
-          "time": "08:31:31, 25/2/2026",
-          "user": "NGUYỄN KIM NGỌC",
-          "action": "- Ngày 27: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+          "time": "09:58:54 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [TRỰC NGOÀI Ở LẠI] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
         },
         {
-          "time": "08:31:49, 25/2/2026",
-          "user": "NGUYỄN KIM NGỌC",
+          "time": "09:59:01 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:59:13 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-17h00]"
+        },
+        {
+          "time": "09:59:20 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-19h10]"
+        },
+        {
+          "time": "09:59:21 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "09:59:25 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ],
@@ -4531,56 +3832,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-20H30",
@@ -4615,48 +3866,6 @@
           "type": "overtime",
           "value": "16h30-19h15",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h00",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "07h25-14h35\n18h15-19h10\n22h15-23h45",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "overtime",
-          "value": "16h30-16h40",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "overtime",
-          "value": "16h30-18h10",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-15",
-          "type": "overtime",
-          "value": "09h05-09h30",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "overtime",
-          "value": "16h30-16h55",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "overtime",
-          "value": "16h30-20h50",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -4683,135 +3892,107 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-10",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-11",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-15",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-24",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-25",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "21:58:16 25/2/2026",
-          "user": "THÁI",
+          "time": "22:17:52 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:52 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:58:16 25/2/2026",
-          "user": "THÁI",
+          "time": "22:17:53 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:53 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:58:16 25/2/2026",
-          "user": "THÁI",
+          "time": "22:17:55 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:17:57 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:58:30 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "21:58:30 25/2/2026",
-          "user": "THÁI",
+          "time": "22:17:57 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:58:30 25/2/2026",
-          "user": "THÁI",
+          "time": "22:18:07 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [16H30-20H30]"
+        },
+        {
+          "time": "22:18:15 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [04H50-07H00]"
+        },
+        {
+          "time": "22:18:16 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "22:18:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-18H30]"
+        },
+        {
+          "time": "22:18:38 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:18:46 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:19:00 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-22H30]"
+        },
+        {
+          "time": "22:19:23 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "21:58:57 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 24: Ngoài giờ [Trống] ➔ [16h30-16h55]"
+          "time": "10:03:43 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "21:59:00 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 24: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+          "time": "10:03:53 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-17h30]"
         },
         {
-          "time": "21:59:04 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
+          "time": "10:04:06 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-19h15]"
         },
         {
-          "time": "21:59:14 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
+          "time": "10:04:07 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "21:59:15 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "21:59:15 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "21:59:55 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 25: Ngoài giờ [Trống] ➔ [16h30-20h50]"
-        },
-        {
-          "time": "21:59:57 25/2/2026",
-          "user": "THÁI",
-          "action": "- Ngày 25: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "22:00:01 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:00:33 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:00:36 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:00:46 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:06:43 25/2/2026",
-          "user": "THÁI",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "22:08:50 25/2/2026",
-          "user": "THÁI",
+          "time": "10:04:14 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ],
@@ -4883,56 +4064,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "6"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "4"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-22H00",
@@ -4955,24 +4086,6 @@
           "type": "overtime",
           "value": "16H30-22H05",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-17h00",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "09h05-11h00",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "overtime",
-          "value": "16h30-19h25",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -4991,120 +4104,108 @@
         {
           "date": "2026-02-03",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-09",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:28:25 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [1] ➔ [4]"
-        },
-        {
-          "time": "08:28:25 25/2/2026",
+          "time": "21:47:22 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:28:40 25/2/2026",
+          "time": "21:47:23 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [4] ➔ [6]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:28:40 25/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:28:53 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [6] ➔ [1]"
-        },
-        {
-          "time": "08:28:53 25/2/2026",
+          "time": "21:47:23 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:28:56 25/2/2026",
+          "time": "21:47:24 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [1] ➔ [4]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:28:56 25/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:29:01 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:29:01 25/2/2026",
+          "time": "21:47:25 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:29:03 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:29:03 25/2/2026",
+          "time": "21:47:25 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:29:03 25/2/2026",
+          "time": "21:47:27 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 07: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "21:47:40 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:29:04 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:29:04 25/2/2026",
+          "time": "21:47:40 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:29:15 25/2/2026",
+          "time": "21:47:41 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:47:55 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-22H00]"
+        },
+        {
+          "time": "21:47:56 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:48:09 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Ngoài giờ [Trống] ➔ [04H45-07H00]"
+        },
+        {
+          "time": "21:48:11 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:48:27 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-20H05]"
+        },
+        {
+          "time": "21:48:28 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:48:49 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16H30-22H05]"
+        },
+        {
+          "time": "21:49:08 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:45:44 25/2/2026",
-          "user": "NGUYỄN VĂN THANH",
-          "action": "- Ngày 23: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+          "time": "21:49:15 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:46:14 25/2/2026",
-          "user": "NGUYỄN VĂN THANH",
-          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-19h15]"
-        },
-        {
-          "time": "08:48:13 25/2/2026",
-          "user": "NGUYỄN VĂN THANH",
-          "action": "- Ngày 23: Ngoài giờ [16h30-19h15] ➔ [Bỏ]"
-        },
-        {
-          "time": "08:48:14 25/2/2026",
-          "user": "NGUYỄN VĂN THANH",
-          "action": "- Ngày 23: Trực [TRỰC NGOÀI Ở LẠI] ➔ [-]"
+          "time": "21:49:33 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
         }
       ],
       "adminCoeff": "1.3"
@@ -5185,56 +4286,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-27",
           "type": "overtime",
           "value": "16H30-17H10",
@@ -5257,30 +4308,6 @@
           "type": "overtime",
           "value": "16h30-17h10",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-17h30",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "22h00-22h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-20",
-          "type": "overtime",
-          "value": "19h00-20h50",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -5299,122 +4326,106 @@
         {
           "date": "2026-02-04",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-20",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:59:04 21/2/2026",
+          "time": "22:09:29 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 07: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:59:12 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 07: Ngoài giờ [Trống] ➔ [16h30-19h50]"
-        },
-        {
-          "time": "08:59:19 21/2/2026",
+          "time": "22:09:30 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:59:48 21/2/2026",
+          "time": "22:09:30 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:17:42 25/2/2026",
+          "time": "22:09:31 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 18: Ngoài giờ [18h50-21h20] ➔ [Bỏ]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:17:43 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 18: Trực [TRỰC NGOÀI Ở NHÀ VÔ] ➔ [-]"
-        },
-        {
-          "time": "08:18:02 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:18:02 25/2/2026",
+          "time": "22:09:33 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:18:04 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:18:04 25/2/2026",
+          "time": "22:09:33 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:18:04 25/2/2026",
+          "time": "22:09:34 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:18:06 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:18:07 25/2/2026",
+          "time": "22:09:36 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:18:07 25/2/2026",
+          "time": "22:09:42 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:26:06 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 21: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:26:25 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 21: Trực [TRỰC CHÍNH] ➔ [-]"
-        },
-        {
-          "time": "08:26:28 25/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [8] ➔ [Bỏ]"
-        },
-        {
-          "time": "08:26:33 25/2/2026",
+          "time": "22:09:47 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:26:33 25/2/2026",
+          "time": "22:09:51 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:26:48 25/2/2026",
+          "time": "22:10:00 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [4] ➔ [4.5]"
+        },
+        {
+          "time": "22:10:01 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:04 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Trong giờ [4.5] ➔ [4]"
+        },
+        {
+          "time": "22:10:04 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:06 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "22:10:23 5/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:02:12 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "10:02:21 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-17h10]"
+        },
+        {
+          "time": "10:02:23 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -5512,41 +4523,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "0"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "0"
-        },
-        {
           "date": "2026-01-28",
           "type": "overtime",
           "value": "16H30-22H00",
@@ -5563,24 +4539,6 @@
           "type": "overtime",
           "value": "16H30-17H30",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-05",
-          "type": "overtime",
-          "value": "16h30-19h15",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-06",
-          "type": "overtime",
-          "value": "16h30-18h45",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "overtime",
-          "value": "16h30-20h40",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -5595,118 +4553,106 @@
         {
           "date": "2026-02-04",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-05",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-06",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-11",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:35:09 21/2/2026",
+          "time": "21:41:58 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:10 21/2/2026",
+          "time": "21:41:58 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:35:10 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:35:12 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:35:12 21/2/2026",
+          "time": "21:41:58 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:13 21/2/2026",
+          "time": "21:42:00 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:35:19 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:35:19 21/2/2026",
+          "time": "21:42:01 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:20 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:35:28 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Ngoài giờ [Trống] ➔ [16h30-20h40]"
-        },
-        {
-          "time": "08:35:29 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:35:33 21/2/2026",
+          "time": "21:42:01 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:33 21/2/2026",
+          "time": "21:42:19 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-22H00]"
+        },
+        {
+          "time": "21:42:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:42:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "21:42:51 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [Trống] ➔ [20H45-22H20]"
+        },
+        {
+          "time": "21:43:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 31: Ngoài giờ [20H45-22H20] ➔ [20H45-22H20\n06H40-07H55]"
+        },
+        {
+          "time": "21:43:36 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "21:43:50 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16H30-17H30]"
+        },
+        {
+          "time": "22:03:52 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:03:52 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:34 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [0]"
-        },
-        {
-          "time": "08:35:34 21/2/2026",
+          "time": "22:03:52 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:36 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [0]"
-        },
-        {
-          "time": "08:35:40 21/2/2026",
+          "time": "01:51:02 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:40 21/2/2026",
+          "time": "09:55:52 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:35:48 21/2/2026",
+          "time": "09:57:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:36:00 21/2/2026",
+          "time": "09:57:16 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -5771,46 +4717,6 @@
         {
           "date": "2026-02-06",
           "type": "regular",
-          "value": "4"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
           "value": "8"
         },
         {
@@ -5842,42 +4748,6 @@
           "type": "overtime",
           "value": "17h50-19h15",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "08h00-11h20",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "overtime",
-          "value": "16h30-19h20",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "06h35-07h30",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-18",
-          "type": "overtime",
-          "value": "09h00-11h20",
-          "multiplier": "3"
-        },
-        {
-          "date": "2026-02-19",
-          "type": "overtime",
-          "value": "09h00-11h30",
-          "multiplier": "3"
         }
       ],
       "duties": [
@@ -5900,130 +4770,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-12",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-18",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-19",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:49:31 21/2/2026",
+          "time": "22:16:17 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:16:17 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:49:32 21/2/2026",
+          "time": "22:16:17 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:49:32 21/2/2026",
-          "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "08:49:33 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
-        },
-        {
-          "time": "08:49:50 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 12: Ngoài giờ [Trống] ➔ [16h30-19h20]"
-        },
-        {
-          "time": "08:49:51 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:49:51 21/2/2026",
+          "time": "22:16:17 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:50:02 21/2/2026",
+          "time": "22:16:19 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Ngoài giờ [Trống] ➔ [06h35-07h30]"
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:50:03 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
-        },
-        {
-          "time": "08:50:09 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:50:34 21/2/2026",
+          "time": "22:16:27 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:50:34 21/2/2026",
+          "time": "22:16:27 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:50:35 21/2/2026",
+          "time": "22:16:28 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 18: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:51:00 21/2/2026",
+          "time": "22:16:44 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 18: Ngoài giờ [Trống] ➔ [09h00-11h20]"
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-19H40]"
         },
         {
-          "time": "08:51:01 21/2/2026",
+          "time": "22:16:45 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 18: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:51:07 21/2/2026",
+          "time": "22:16:58 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 19: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [04H50-06H20]"
         },
         {
-          "time": "08:51:18 21/2/2026",
+          "time": "22:17:00 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 19: Ngoài giờ [Trống] ➔ [09h00-11h30]"
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:51:23 21/2/2026",
+          "time": "22:17:18 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-20H00]"
         },
         {
-          "time": "08:51:23 21/2/2026",
+          "time": "22:17:20 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [TRỰC CHÍNH] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "22:17:27 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:51:27 21/2/2026",
+          "time": "10:13:39 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:14:21 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 02: Ngoài giờ [Trống] ➔ [16h30-18h30\n21h00-23h20]"
+        },
+        {
+          "time": "10:14:32 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "10:15:08 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [17h50-19h15]"
+        },
+        {
+          "time": "10:15:10 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -6342,51 +5188,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-06",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "0"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16h30-20h30",
@@ -6433,30 +5234,6 @@
           "type": "overtime",
           "value": "04h50-06h00",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-19h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "overtime",
-          "value": "16h30-17h55",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "overtime",
-          "value": "22h00-22h50",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-19",
-          "type": "overtime",
-          "value": "09h00-11h30",
-          "multiplier": "3"
         }
       ],
       "duties": [
@@ -6491,122 +5268,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-10",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-13",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-19",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:55:31 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Ngoài giờ [Trống] ➔ [16h30-17h55]"
-        },
-        {
-          "time": "08:55:34 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:55:37 21/2/2026",
+          "time": "10:11:10 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:55:37 21/2/2026",
+          "time": "10:11:10 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:55:39 21/2/2026",
+          "time": "10:11:10 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [8]"
+          "action": "- Ngày 01: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:55:42 21/2/2026",
+          "time": "10:11:56 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 01: Ngoài giờ [Trống] ➔ [08h00-11h30\n13h00-17h30\n06h30-07h30]"
         },
         {
-          "time": "08:55:42 21/2/2026",
+          "time": "10:11:58 6/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 02: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:55:43 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:55:43 21/2/2026",
+          "time": "10:12:01 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:55:43 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:56:13 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 13: Ngoài giờ [Trống] ➔ [22h00-22h50]"
-        },
-        {
-          "time": "08:56:20 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:56:20 21/2/2026",
+          "time": "10:12:01 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:56:20 21/2/2026",
+          "time": "10:12:03 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:12:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:56:38 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 19: Trực [-] ➔ [TRỰC CHÍNH]"
-        },
-        {
-          "time": "08:57:08 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 19: Ngoài giờ [Trống] ➔ [09h00-11h30]"
-        },
-        {
-          "time": "08:57:17 21/2/2026",
+          "time": "10:12:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:57:18 21/2/2026",
+          "time": "10:12:06 6/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:57:18 21/2/2026",
+          "time": "10:12:06 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:57:21 21/2/2026",
+          "time": "10:12:07 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:12:35 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-20h00\n21h40-23h20]"
+        },
+        {
+          "time": "10:12:37 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "10:12:37 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:12:42 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:12:58 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [04h50-06h00]"
+        },
+        {
+          "time": "10:13:00 6/2/2026",
+          "user": "TÂN",
+          "action": "Lưu lại (không có thay đổi)"
+        },
+        {
+          "time": "10:13:05 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -6689,41 +5450,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "0"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "0"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "0"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "0"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-16H45",
@@ -6758,24 +5484,6 @@
           "type": "overtime",
           "value": "16h30-20h30",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-17h20",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-08",
-          "type": "overtime",
-          "value": "09h05-11h50",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "overtime",
-          "value": "16h30-19h25",
-          "multiplier": "1.5"
         }
       ],
       "duties": [
@@ -6802,118 +5510,106 @@
         {
           "date": "2026-02-05",
           "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-08",
-          "value": "TRỰC NGOÀI Ở NHÀ VÔ"
-        },
-        {
-          "date": "2026-02-09",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "08:44:35 21/2/2026",
+          "time": "22:12:56 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 07: Ngoài giờ [Trống] ➔ [16h30-17h20]"
+          "action": "- Ngày 04: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:44:43 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 08: Trực [-] ➔ [TRỰC NGOÀI Ở NHÀ VÔ]"
-        },
-        {
-          "time": "08:45:01 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 08: Ngoài giờ [Trống] ➔ [09h05-11h50]"
-        },
-        {
-          "time": "08:45:02 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 09: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:45:02 21/2/2026",
+          "time": "22:12:56 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:45:06 21/2/2026",
+          "time": "22:12:57 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 09: Trực [-] ➔ [TRỰC CHÍNH]"
+          "action": "- Ngày 05: Trong giờ [Trống] ➔ [8]"
         },
         {
-          "time": "08:45:30 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 09: Ngoài giờ [Trống] ➔ [16h30-19h25]"
-        },
-        {
-          "time": "08:45:34 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 10: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "08:45:37 21/2/2026",
+          "time": "22:12:57 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:45:37 21/2/2026",
+          "time": "22:12:58 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trong giờ [Trống] ➔ [8]"
+        },
+        {
+          "time": "22:13:06 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:45:39 21/2/2026",
-          "user": "TÂN",
-          "action": "- Ngày 11: Trong giờ [Trống] ➔ [0]"
-        },
-        {
-          "time": "08:45:39 21/2/2026",
+          "time": "22:13:06 5/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "08:45:40 21/2/2026",
+          "time": "22:13:14 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 12: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [16H30-16H45]"
         },
         {
-          "time": "08:45:40 21/2/2026",
+          "time": "22:13:16 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 26: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:45:42 21/2/2026",
+          "time": "22:13:22 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 13: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 27: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:45:42 21/2/2026",
+          "time": "22:13:31 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 27: Ngoài giờ [Trống] ➔ [16H30-19H00]"
         },
         {
-          "time": "08:45:44 21/2/2026",
+          "time": "22:13:39 5/2/2026",
           "user": "TÂN",
-          "action": "- Ngày 14: Trong giờ [Trống] ➔ [0]"
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-19H45]"
         },
         {
-          "time": "08:45:47 21/2/2026",
+          "time": "22:13:40 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "08:45:47 21/2/2026",
+          "time": "22:13:46 5/2/2026",
           "user": "TÂN",
-          "action": "Lưu lại (không có thay đổi)"
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
         },
         {
-          "time": "08:45:49 21/2/2026",
+          "time": "22:14:10 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [16H30-18H10\n19H30-23H00]"
+        },
+        {
+          "time": "10:02:50 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
+        },
+        {
+          "time": "10:03:01 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 04: Ngoài giờ [Trống] ➔ [16h30-19h10]"
+        },
+        {
+          "time": "10:03:08 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:03:20 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-20h30]"
+        },
+        {
+          "time": "10:03:27 6/2/2026",
           "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
@@ -6980,61 +5676,6 @@
           "value": "8"
         },
         {
-          "date": "2026-02-07",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-09",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-11",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-12",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-13",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-14",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-21",
-          "type": "regular",
-          "value": "4"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "regular",
-          "value": "8"
-        },
-        {
-          "date": "2026-02-25",
-          "type": "regular",
-          "value": "8"
-        },
-        {
           "date": "2026-01-26",
           "type": "overtime",
           "value": "16H30-18H00",
@@ -7075,36 +5716,6 @@
           "type": "overtime",
           "value": "16H30-17H15",
           "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-07",
-          "type": "overtime",
-          "value": "16h30-16h55",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-10",
-          "type": "overtime",
-          "value": "16h30-17h55",
-          "multiplier": "1.5"
-        },
-        {
-          "date": "2026-02-17",
-          "type": "overtime",
-          "value": "10h30-12h00",
-          "multiplier": "3"
-        },
-        {
-          "date": "2026-02-23",
-          "type": "overtime",
-          "value": "16h30-19h45",
-          "multiplier": "2"
-        },
-        {
-          "date": "2026-02-24",
-          "type": "overtime",
-          "value": "5h00-6h50",
-          "multiplier": "2"
         }
       ],
       "duties": [
@@ -7135,127 +5746,107 @@
         {
           "date": "2026-02-06",
           "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-07",
-          "value": "TRỰC NGOÀI Ở LẠI"
-        },
-        {
-          "date": "2026-02-10",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-17",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-23",
-          "value": "TRỰC CHÍNH"
-        },
-        {
-          "date": "2026-02-24",
-          "value": "TRỰC CHÍNH"
         }
       ],
       "history": [
         {
-          "time": "14:42:31 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 17: Trực [-] ➔ [TRỰC CHÍNH]"
+          "time": "22:15:10 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 26: Ngoài giờ [Trống] ➔ [16H30-18H00]"
         },
         {
-          "time": "14:44:01 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 17: Ngoài giờ [Trống] ➔ [10h30-12h00]"
+          "time": "22:15:12 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "14:44:06 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 23: Trong giờ [Trống] ➔ [8]"
+          "time": "22:15:21 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 28: Ngoài giờ [Trống] ➔ [16H30-21H00]"
         },
         {
-          "time": "14:44:07 25/2/2026",
-          "user": "LINH",
+          "time": "22:15:25 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "22:15:42 5/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 29: Ngoài giờ [Trống] ➔ [16H30-17H45]"
+        },
+        {
+          "time": "22:15:55 5/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:44:07 25/2/2026",
-          "user": "LINH",
+          "time": "10:00:07 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Ngoài giờ [Trống] ➔ [04h35-06h55]"
+        },
+        {
+          "time": "10:00:08 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 30: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:00:17 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Trực [-] ➔ [TRỰC CHÍNH]"
+        },
+        {
+          "time": "10:00:44 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 03: Ngoài giờ [Trống] ➔ [16h30-17h00\n18h50-21h45]"
+        },
+        {
+          "time": "10:00:45 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:44:31 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 23: Ngoài giờ [Trống] ➔ [16h30-19h45]"
+          "time": "11:35:22 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Ngoài giờ [Trống] ➔ [16h30-17h15]"
         },
         {
-          "time": "14:44:32 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 23: Trực [-] ➔ [TRỰC CHÍNH]"
+          "time": "11:35:22 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 05: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "14:44:41 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 24: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "14:44:41 25/2/2026",
-          "user": "LINH",
+          "time": "11:35:26 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:45:24 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 24: Ngoài giờ [Trống] ➔ [5h00-6h50]"
+          "time": "18:09:23 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Trực [-] ➔ [TRỰC NGOÀI Ở LẠI]"
         },
         {
-          "time": "14:45:25 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 24: Trực [-] ➔ [TRỰC CHÍNH]"
+          "time": "18:09:29 6/2/2026",
+          "user": "TÂN",
+          "action": "- Ngày 06: Ngoài giờ [Trống] ➔ [16H30-17H15]"
         },
         {
-          "time": "14:45:32 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 25: Trong giờ [Trống] ➔ [8]"
-        },
-        {
-          "time": "14:45:41 25/2/2026",
-          "user": "LINH",
+          "time": "18:09:29 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:45:41 25/2/2026",
-          "user": "LINH",
+          "time": "18:09:31 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:45:57 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 21: Trong giờ [8] ➔ [Bỏ]"
-        },
-        {
-          "time": "14:45:58 25/2/2026",
-          "user": "LINH",
-          "action": "- Ngày 21: Trong giờ [Trống] ➔ [4]"
-        },
-        {
-          "time": "14:46:10 25/2/2026",
-          "user": "LINH",
+          "time": "18:09:47 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         },
         {
-          "time": "14:46:10 25/2/2026",
-          "user": "LINH",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "14:58:54 25/2/2026",
-          "user": "LINH",
-          "action": "Lưu lại (không có thay đổi)"
-        },
-        {
-          "time": "15:07:09 25/2/2026",
-          "user": "LINH",
+          "time": "18:10:26 6/2/2026",
+          "user": "TÂN",
           "action": "Lưu lại (không có thay đổi)"
         }
       ]
