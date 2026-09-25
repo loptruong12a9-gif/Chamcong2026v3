@@ -1144,7 +1144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const saveData = () => {
-        const name = document.getElementById('employee-name').value.trim();
+        const name = document.getElementById('employee-name').value.trim().toUpperCase();
         if (!name) {
             alert('Vui lòng nhập họ và tên trước khi lưu!');
             return;
@@ -1211,7 +1211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ...currentData.duties.map(d => d.date)
         ]);
 
-        const dateSorted = Array.from(allDates).sort();
+        const dateSorted = Array.from(allDates).filter(Boolean).sort();
 
         dateSorted.forEach(dateStr => {
             const dayNum = dateStr.split('-')[2];
@@ -1320,7 +1320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const loadData = () => {
-        const name = document.getElementById('employee-name').value.trim();
+        const name = document.getElementById('employee-name').value.trim().toUpperCase();
         const saved = localStorage.getItem(`attendance_${monthPicker.value}_${name}`);
 
         // Clear board first
