@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let EMPLOYEE_MAP = JSON.parse(localStorage.getItem('EMPLOYEE_MAP')) || DEFAULT_EMPLOYEES;
 
+    // Danh sách nhân viên đã bị xóa — tự động dọn khỏi localStorage mọi lần khởi động
+    const DELETED_EMPLOYEES = [
+        "NGUYỄN VĂN ĐÔNG"
+    ];
+    DELETED_EMPLOYEES.forEach(name => {
+        delete EMPLOYEE_MAP[name];
+    });
+    // Lưu lại ngay để xóa khỏi localStorage
+    localStorage.setItem('EMPLOYEE_MAP', JSON.stringify(EMPLOYEE_MAP));
+
     function saveEmployeeMap() {
         localStorage.setItem('EMPLOYEE_MAP', JSON.stringify(EMPLOYEE_MAP));
         updateNameSuggestions();
@@ -61,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     const data = JSON.parse(localStorage.getItem(key));
                     const upperName = (data.name || '').toUpperCase();
+                    // Bỏ qua nhân viên đã bị xóa
+                    if (DELETED_EMPLOYEES.includes(upperName)) return;
                     if (upperName && data.position && upperName !== 'ADMIN' && !EMPLOYEE_MAP[upperName]) {
                         EMPLOYEE_MAP[upperName] = data.position;
                     }
