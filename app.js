@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "PHẠM THỊ A NHỊ": "ĐIỀU DƯỠNG HỒI SỨC",
         "HUỲNH THỊ THẢO": "ĐIỀU DƯỠNG HỒI SỨC",
         "KHƯƠNG THỊ THANH": "ĐIỀU DƯỠNG HỒI SỨC",
+        "NGUYỄN THỤY HOÀNG VÂN": "ĐIỀU DƯỠNG HỒI SỨC",
         "LƯU THỊ MAI THƯƠNG": "THƯ KÍ Y KHOA",
         "TRẦN LÊ CẨM MY": "THƯ KÍ Y KHOA",
         "NGUYỄN THỊ HIỀN TÂM THẢO": "HỘ LÝ",
@@ -123,7 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "THƯƠNG": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "HẬU": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "KHUYÊN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
-        "NGUYỄN THỊ ĐỨC KHUYÊN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+        "NGUYỄN THỊ ĐỨC KHUYÊN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "VÂN": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
     };
 
     // Mapping short names to full names for unique names
@@ -143,7 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "MY": "TRẦN LÊ CẨM MY",
         "THƯƠNG": "LƯU THỊ MAI THƯƠNG",
         "HẬU": "NGUYỄN THỊ HẬU",
-        "KHUYÊN": "NGUYỄN THỊ ĐỨC KHUYÊN"
+        "KHUYÊN": "NGUYỄN THỊ ĐỨC KHUYÊN",
+        "VÂN": "NGUYỄN THỤY HOÀNG VÂN"
     };
 
     // Authentication functions
