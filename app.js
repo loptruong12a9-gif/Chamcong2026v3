@@ -617,20 +617,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 areaOvt.dataset.date = yyyymmdd;
 
                 let originalValue = '';
+                let ovtDebounce;
                 const handleOvtFocus = (e) => originalValue = e.target.value;
                 const handleOvtInput = () => {
                     calculateTotals();
+                    // Debounce auto-save khi đang gõ (1.5 giây)
+                    clearTimeout(ovtDebounce);
+                    ovtDebounce = setTimeout(() => saveData(), 1500);
                 };
                 const handleOvtChange = (e) => {
+                    clearTimeout(ovtDebounce);
                     if (e.target.value !== originalValue) {
                         // Silent Save for Premium experience
                         saveData();
+                        originalValue = e.target.value;
                     }
+                };
+                const handleOvtFocusOut = () => {
+                    clearTimeout(ovtDebounce);
+                    // Lưu ngay khi rời ô, bất kể có thay đổi hay không
+                    saveData();
                 };
 
                 areaOvt.addEventListener('focus', handleOvtFocus);
                 areaOvt.addEventListener('input', handleOvtInput);
                 areaOvt.addEventListener('change', handleOvtChange);
+                areaOvt.addEventListener('focusout', handleOvtFocusOut);
 
                 if (highlightClass) {
                     tdOvt.classList.add(highlightClass);
@@ -1332,21 +1344,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showSaveNotification = () => showToast('Đã lưu dữ liệu');
 
-    // Force save on app exit/hide (Mobile optimize)
-    ['visibilitychange', 'pagehide'].forEach(evt => {
-        window.addEventListener(evt, () => {
-            if (document.visibilityState === 'hidden') {
-                const name = document.getElementById('employee-name')?.value;
-                if (name) {
-                    saveData();
-                    // Force immediate sync without debounce
-                    if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled() && dirtyKeys.size > 0) {
-                        GitHubSync.uploadData(false, Array.from(dirtyKeys)).catch(console.error);
-                        dirtyKeys.clear();
-                    }
+    // Force save on app exit/hide (Mobile + Desktop optimize)
+    // Xử lý riêng từng sự kiện để đảm bảo lưu đúng trong mọi tình huống
+    window.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+            const name = document.getElementById('employee-name')?.value;
+            if (name) {
+                saveData();
+                if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled() && dirtyKeys.size > 0) {
+                    GitHubSync.uploadData(false, Array.from(dirtyKeys)).catch(console.error);
+                    dirtyKeys.clear();
                 }
             }
-        });
+        }
+    });
+
+    // pagehide: kích hoạt khi đóng tab/cửa sổ — KHÔNG kiểm tra visibilityState
+    window.addEventListener('pagehide', () => {
+        const name = document.getElementById('employee-name')?.value;
+        if (name) {
+            saveData();
+            if (typeof GitHubSync !== 'undefined' && GitHubSync.isAutoSyncEnabled() && dirtyKeys.size > 0) {
+                GitHubSync.uploadData(false, Array.from(dirtyKeys)).catch(console.error);
+                dirtyKeys.clear();
+            }
+        }
+    });
+
+    // beforeunload: lớp bảo vệ cuối cùng khi reload hoặc đóng trang
+    window.addEventListener('beforeunload', () => {
+        const name = document.getElementById('employee-name')?.value;
+        if (name) {
+            saveData();
+        }
     });
 
     const loadData = () => {
