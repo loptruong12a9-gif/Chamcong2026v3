@@ -54,6 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lưu lại ngay để xóa khỏi localStorage
     localStorage.setItem('EMPLOYEE_MAP', JSON.stringify(EMPLOYEE_MAP));
 
+    // Hệ số mặc định — chỉ áp dụng nếu nhân viên chưa từng có hệ số được thiết lập
+    const DEFAULT_COEFFICIENTS = {
+        "NGUYỄN THỤY HOÀNG VÂN": 0.53
+    };
+    Object.entries(DEFAULT_COEFFICIENTS).forEach(([name, coeff]) => {
+        const key = `coeff_global_${name.toUpperCase()}`;
+        if (!localStorage.getItem(key)) {
+            localStorage.setItem(key, String(coeff));
+        }
+    });
+
     function saveEmployeeMap() {
         localStorage.setItem('EMPLOYEE_MAP', JSON.stringify(EMPLOYEE_MAP));
         updateNameSuggestions();
