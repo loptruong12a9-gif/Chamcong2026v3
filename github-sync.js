@@ -466,7 +466,24 @@ const GitHubSync = (function () {
         }
     }
 
-    // Khôi phục dữ liệu từ GitHub vào localStorage
+    // Lấy timestamp mới nhất từ history của một bản ghi
+    function getLatestHistoryTime(record) {
+        if (!record || !Array.isArray(record.history) || record.history.length === 0) return 0;
+        const lastEntry = record.history[record.history.length - 1];
+        if (!lastEntry || !lastEntry.time) return 0;
+        // Parse Vietnamese date format: "DD/MM/YYYY, HH:MM:SS"
+        try {
+            const parts = lastEntry.time.split(', ');
+            if (parts.length === 2) {
+                const [datePart, timePart] = parts;
+                const [day, month, year] = datePart.split('/');
+                return new Date(`${year}-${month}-${day}T${timePart}`).getTime();
+            }
+        } catch (e) { }
+        return 0;
+    }
+
+    // Khôi phục dữ liệu từ GitHub vào localStorage (MERGE THÔNG MINH - không ghi đè dữ liệu mới hơn)
     async function restoreFromGitHub() {
         try {
             const data = await downloadData();
@@ -475,27 +492,53 @@ const GitHubSync = (function () {
                 throw new Error('Dữ liệu không hợp lệ.');
             }
 
-            // Backup dữ liệu hiện tại trước
-            const backup = getAllAttendanceData();
-            const backupKey = `backup_before_restore_${Date.now()}`;
-            localStorage.setItem(backupKey, JSON.stringify(backup));
+            let restoredCount = 0;
+            let skippedCount = 0;
 
-            // Restore attendance data
+            // MERGE THÔNG MINH: So sánh timestamp trước khi ghi đè
             Object.keys(data.attendance).forEach(key => {
-                localStorage.setItem(key, JSON.stringify(data.attendance[key]));
+                const remoteRecord = data.attendance[key];
+                const localRaw = localStorage.getItem(key);
+
+                if (!localRaw) {
+                    // Không có local → lấy từ GitHub
+                    localStorage.setItem(key, JSON.stringify(remoteRecord));
+                    restoredCount++;
+                } else {
+                    try {
+                        const localRecord = JSON.parse(localRaw);
+                        const localTime = getLatestHistoryTime(localRecord);
+                        const remoteTime = getLatestHistoryTime(remoteRecord);
+
+                        if (remoteTime > localTime) {
+                            // GitHub mới hơn → cập nhật
+                            localStorage.setItem(key, JSON.stringify(remoteRecord));
+                            restoredCount++;
+                        } else {
+                            // Local mới hơn hoặc bằng → GIỮ NGUYÊN local, không ghi đè
+                            skippedCount++;
+                        }
+                    } catch (e) {
+                        // Nếu parse lỗi → lấy từ GitHub
+                        localStorage.setItem(key, JSON.stringify(remoteRecord));
+                        restoredCount++;
+                    }
+                }
             });
 
-            // Restore coefficients
+            // Restore coefficients (hệ số ít thay đổi, an toàn hơn)
             if (data.coefficients) {
                 Object.keys(data.coefficients).forEach(key => {
                     localStorage.setItem(key, data.coefficients[key]);
                 });
             }
 
+            console.log(`GitHub Restore: Cập nhật ${restoredCount} bản ghi, giữ nguyên ${skippedCount} bản ghi local mới hơn.`);
+
             return {
                 success: true,
-                recordsRestored: Object.keys(data.attendance).length,
-                backupKey: backupKey
+                recordsRestored: restoredCount,
+                skipped: skippedCount
             };
 
         } catch (error) {
