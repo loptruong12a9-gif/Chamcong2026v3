@@ -1205,34 +1205,34 @@ document.addEventListener('DOMContentLoaded', () => {
         // Deep Comparison for History
         const changes = [];
         const allDates = new Set([
-            ...oldData.entries.map(e => e.date),
-            ...currentData.entries.map(e => e.date),
-            ...oldData.duties.map(d => d.date),
-            ...currentData.duties.map(d => d.date)
-        ]);
+            ...(oldData.entries || []).map(e => e?.date),
+            ...(currentData.entries || []).map(e => e?.date),
+            ...(oldData.duties || []).map(d => d?.date),
+            ...(currentData.duties || []).map(d => d?.date)
+        ].filter(Boolean));
 
-        const dateSorted = Array.from(allDates).filter(Boolean).sort();
+        const dateSorted = Array.from(allDates).sort();
 
         dateSorted.forEach(dateStr => {
             const dayNum = dateStr.split('-')[2];
 
             // 1. Check Regular hours
-            const oldReg = oldData.entries.find(e => e.date === dateStr && e.type === 'regular')?.value || '';
-            const newReg = currentData.entries.find(e => e.date === dateStr && e.type === 'regular')?.value || '';
+            const oldReg = (oldData.entries || []).find(e => e?.date === dateStr && e?.type === 'regular')?.value || '';
+            const newReg = (currentData.entries || []).find(e => e?.date === dateStr && e?.type === 'regular')?.value || '';
             if (oldReg !== newReg) {
                 changes.push(`- Ngày ${dayNum}: Trong giờ [${oldReg || 'Trống'}] ➔ [${newReg || 'Bỏ'}]`);
             }
 
             // 2. Check Overtime hours
-            const oldOvt = oldData.entries.find(e => e.date === dateStr && e.type === 'overtime')?.value || '';
-            const newOvt = currentData.entries.find(e => e.date === dateStr && e.type === 'overtime')?.value || '';
+            const oldOvt = (oldData.entries || []).find(e => e?.date === dateStr && e?.type === 'overtime')?.value || '';
+            const newOvt = (currentData.entries || []).find(e => e?.date === dateStr && e?.type === 'overtime')?.value || '';
             if (oldOvt !== newOvt) {
                 changes.push(`- Ngày ${dayNum}: Ngoài giờ [${oldOvt || 'Trống'}] ➔ [${newOvt || 'Bỏ'}]`);
             }
 
             // 3. Check Duties
-            const oldDuty = oldData.duties.find(d => d.date === dateStr)?.value || '';
-            const newDuty = currentData.duties.find(d => d.date === dateStr)?.value || '';
+            const oldDuty = (oldData.duties || []).find(d => d?.date === dateStr)?.value || '';
+            const newDuty = (currentData.duties || []).find(d => d?.date === dateStr)?.value || '';
             if (oldDuty !== newDuty) {
                 changes.push(`- Ngày ${dayNum}: Trực [${oldDuty || '-'}] ➔ [${newDuty || '-'}]`);
             }
