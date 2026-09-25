@@ -1082,7 +1082,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.calc-ovt-cell').forEach(cell => {
             const date = cell.dataset.date;
             const dailyTotal = dailyTotalsMap[date] || 0;
-            cell.textContent = dailyTotal > 0 ? dailyTotal.toFixed(1) : '';
+            if (dailyTotal > 0) {
+                const totalMins = Math.round(dailyTotal * 60);
+                const h = Math.floor(totalMins / 60);
+                const m = totalMins % 60;
+                cell.textContent = m === 0 ? `${h} giờ` : `${h}h${m} phút`;
+            } else {
+                cell.textContent = '';
+            }
         });
 
         // Calculate total sum from the consolidated map
