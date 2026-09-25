@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const DEFAULT_EMPLOYEES = {
         "NGUYỄN VĂN TÂN": "ĐIỀU DƯỠNG DỤNG CỤ",
         "NGUYỄN VĂN THANH": "ĐIỀU DƯỠNG DỤNG CỤ",
-        "NGUYỄN VĂN ĐÔNG": "ĐIỀU DƯỠNG DỤNG CỤ",
         "ĐỖ THỊ HẰNG NGA": "ĐIỀU DƯỠNG DỤNG CỤ",
         "PHẠM NGỌC ĐÀI": "ĐIỀU DƯỠNG DỤNG CỤ",
         "HOÀNG SỸ HUY": "ĐIỀU DƯỠNG DỤNG CỤ",
@@ -97,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "NGUYỄN THỊ HIỀN TÂM THẢO": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "NGUYỄN KIM NGỌC": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "HAN LÊ BẢO NGỌC": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
-        "ĐÔNG": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "ĐÀI": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "HUY": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
         "LỆ": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
@@ -119,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mapping short names to full names for unique names
     const SHORTNAME_TO_FULLNAME = {
         "TÂN": "NGUYỄN VĂN TÂN",
-        "ĐÔNG": "NGUYỄN VĂN ĐÔNG",
         "ĐÀI": "PHẠM NGỌC ĐÀI",
         "HUY": "HOÀNG SỸ HUY",
         "LỆ": "ĐẶNG THỊ MỸ LỆ",
